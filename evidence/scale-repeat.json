@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "started_unix": 1788815303.9349835,
+  "host": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+  "python": "3.14.7 (main, Aug  7 2026, 02:26:00) [Clang 22.1.3 ]",
+  "input_bytes": 1073743632,
+  "input_records": 255318,
+  "source_sha256": "36057ff6d3e0d30f8283516f562bcafd75ad84bef5960b6b4716b204047ba026",
+  "license": "CC0-1.0",
+  "generator": "unique-sha256-words-v1",
+  "command": [
+    "/home/postedism/Desktop/data-experiment-infra/.venv/bin/python",
+    "-m",
+    "corpus_release.cli",
+    "publish",
+    "A-corpus-release-lab/.run/scale/synthetic.jsonl",
+    "A-corpus-release-lab/.run/scale/catalog",
+    "--license",
+    "CC0-1.0"
+  ],
+  "returncode": 0,
+  "stdout": "{\"dataset_id\": \"9e5237536671de720c75eba80cb77decd052bae09b89665ecb409e4f227faa7e\", \"decisions\": {\"accepted\": 255318}, \"elapsed_seconds\": 12.429716543992981, \"records\": 255318}\n",
+  "stderr": "",
+  "resources": "{\"peak_rss_kib\":1488612,\"user_seconds\":15.39,\"system_seconds\":3.66,\"filesystem_inputs\":207696,\"filesystem_outputs\":9145720}\n",
+  "result": {
+    "dataset_id": "9e5237536671de720c75eba80cb77decd052bae09b89665ecb409e4f227faa7e",
+    "decisions": {
+      "accepted": 255318
+    },
+    "elapsed_seconds": 12.429716543992981,
+    "records": 255318
+  },
+  "valid_records_per_second": 20540.935032294827
+}

@@ -1,0 +1,11 @@
+{
+  "captured_at": "2026-09-07T21:18:47.929132+00:00",
+  "files": {
+    "scripts/benchmark.py": "9a5671177fcaa6281202511389433c44754a05e87675c2f4e02710ad0b50fb6d",
+    "src/corpus_release/__init__.py": "e2f0ed2c600ef17f8cc5e9934cb8fbcc57ab50defdc424575c0dcc1b5244e851",
+    "src/corpus_release/cli.py": "e8df82d7d2fe8c0ef9aeeffe62333718fcbdd9b3d3254ade71c98f01f4d0ff09",
+    "src/corpus_release/lifecycle.py": "85aa523b6f16016f32e2a20a035317fc97ced43616b2ba6616812af9de51dad5",
+    "src/corpus_release/release.py": "7ab56118915bd59e4ca958a616409e85f02f06667bcdc5fe9be98052ec9dadbe",
+    "tests/test_release.py": "5190271f56057c6639a8df38729e13c5f4a4118a53bfef438d8aabcabcbf6199"
+  }
+}

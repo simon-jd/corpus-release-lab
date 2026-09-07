@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "corpus-release-lab"
+version = "0.1.0"
+description = "Deterministic and crash-safe local training corpus releases"
+requires-python = ">=3.11"
+dependencies = ["duckdb==1.5.5", "pyarrow==25.0.1"]
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+[project.scripts]
+corpus-release = "corpus_release.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.pytest.ini_options]
+pythonpath = ["src"]

@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "started_unix": 1788815090.9172194,
+  "host": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+  "python": "3.14.7 (main, Aug  7 2026, 02:26:00) [Clang 22.1.3 ]",
+  "input_bytes": 1073743632,
+  "input_records": 255318,
+  "source_sha256": "36057ff6d3e0d30f8283516f562bcafd75ad84bef5960b6b4716b204047ba026",
+  "license": "CC0-1.0",
+  "generator": "unique-sha256-words-v1",
+  "command": [
+    "/home/postedism/Desktop/data-experiment-infra/.venv/bin/python",
+    "-m",
+    "corpus_release.cli",
+    "publish",
+    "A-corpus-release-lab/.run/scale/synthetic.jsonl",
+    "A-corpus-release-lab/.run/scale/catalog",
+    "--license",
+    "CC0-1.0"
+  ],
+  "returncode": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"<frozen runpy>\", line 203, in _run_module_as_main\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/src/corpus_release/cli.py\", line 22, in <module>\n    main()\n    ~~~~^^\n  File \"/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/src/corpus_release/cli.py\", line 18, in main\n    result = publish(a.source, a.root, license=a.license, shard_rows=a.shard_rows) if a.command == \"publish\" else verify(a.root, a.dataset_id)\n             ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/src/corpus_release/release.py\", line 156, in publish\n    con.execute(\"\"\"CREATE TABLE accepted AS SELECT k.content_hash AS sample_id,\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        r.text, k.requested_split AS split, k.line AS source_line, k.record_id,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        row_number() OVER (ORDER BY k.content_hash) AS ordinal\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        FROM ranked k JOIN raw r USING(line) WHERE k.rank=1\"\"\")\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n_duckdb.OutOfMemoryException: Out of Memory Error: could not allocate block of size 256.0 KiB (953.7 MiB/953.6 MiB used)\n\nPossible solutions:\n* Reducing the number of threads (SET threads=X)\n* Disabling insertion-order preservation (SET preserve_insertion_order=false)\n* Increasing the memory limit (SET memory_limit='...GB')\n\nSee also https://duckdb.org/docs/stable/guides/performance/how_to_tune_workloads\n",
+  "resources": "Command exited with non-zero status 1\n{\"peak_rss_kib\":1345128,\"user_seconds\":9.87,\"system_seconds\":2.17,\"filesystem_inputs\":616,\"filesystem_outputs\":7465112}\n"
+}
