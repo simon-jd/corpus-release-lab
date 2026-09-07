@@ -1,0 +1,2429 @@
+{
+  "source": "Google LLC, PAWS-Wiki Labeled (Final)",
+  "human_label_provenance": "Published paraphrase/fluency judgments, not labels authored or independently reviewed by this project.",
+  "repository": "https://github.com/google-research-datasets/paws",
+  "mirror": "https://huggingface.co/datasets/google-research-datasets/paws",
+  "mirror_revision": "161ece9501cf0a11f3e48bd356eaa82de46d6a09",
+  "license_file": "PAWS-LICENSE.txt",
+  "sampling": "lowest 200 SHA256(paws-audit-v1:<split>:<id>) per split, without label filtering",
+  "splits": {
+    "validation": [
+      {
+        "id": 7351,
+        "sentence1": "The Khan rode out with an escort , Tsitsianov moved with two other men and was shot dead .",
+        "sentence2": "The khan advanced out with an escort , Tsitsianov rode with two other men and was shot dead .",
+        "label": 0
+      },
+      {
+        "id": 5537,
+        "sentence1": "The group played extensively , became famous in Israel and even toured in New York City in 2007 .",
+        "sentence2": "The group toured extensively and became famous in Israel , even playing in 2007 in New York City .",
+        "label": 0
+      },
+      {
+        "id": 1343,
+        "sentence1": "In early July , Garrett Whitley , the criminal father of Harper Whitley and Steve Whitley , and brother of Benny Cameron .",
+        "sentence2": "Steve Whitley first appeared in early July . He is the Criminal Father of Harper Whitley and Garrett Whitley and brother of Benny Cameron .",
+        "label": 0
+      },
+      {
+        "id": 4489,
+        "sentence1": "The number of fires reported at the beginning of February was 73 with 26 out of control and expected to be time to control another month of fires .",
+        "sentence2": "The number of fires reported at the beginning of February was 73 with 26 out of control and expected time to control in order to be another month of fires .",
+        "label": 1
+      },
+      {
+        "id": 1594,
+        "sentence1": "The regiment left Philadelphia in October 1777 to join the main army of General George Washington outside Boston .",
+        "sentence2": "The regiment left Boston in October 1777 to join General George Washington 's Main Army outside Philadelphia .",
+        "label": 0
+      },
+      {
+        "id": 7275,
+        "sentence1": "In 2000 , Poonam Devi defeated Devi of RJD Dharmendra Yadav , representing JDU .",
+        "sentence2": "Poonam Devi of RJD defeated Dharmendra Yadav representing JDU in 2000 .",
+        "label": 0
+      },
+      {
+        "id": 6692,
+        "sentence1": "`` Stopped '' Light refers in the context of an EIT medium to the `` quantum '' transmission of photons to the coherent system and back .",
+        "sentence2": "In the context of an EIT medium `` stopped light refers to '' coherent `` transmission of photons to the quantum system and back .",
+        "label": 0
+      },
+      {
+        "id": 5910,
+        "sentence1": "In the history of such devices , it succeeded `` The Turk '' and preceded `` Mephisto '' .",
+        "sentence2": "In the history of such devices '' The Turk `` and '' Mephisto `` succeeded .",
+        "label": 1
+      },
+      {
+        "id": 7727,
+        "sentence1": "Because of these transaction mechanisms , unreliable transport protocols , such as the User Datagram Protocol ( UDP ) , are sufficient for the SIP operation .",
+        "sentence2": "Because of these unreliable mechanisms , transactional transport protocols such as the User Datagram Protocol ( UDP ) , are sufficient for SIP operation .",
+        "label": 0
+      },
+      {
+        "id": 2757,
+        "sentence1": "de Ruiter , who was born in Leiden , played for FC Utrecht , FC Den Bosch , Excelsior , the RKC Waalwijk and FC Emmen .",
+        "sentence2": "de Ruiter was born in Leiden and played for RKC Waalwijk , FC Den Bosch , Excelsior , FC Utrecht and FC Emmen .",
+        "label": 1
+      },
+      {
+        "id": 971,
+        "sentence1": "McMillan spent two years at the Royal Medical Corp. in Tidworth -- and later at Didcot , where he operated an MRS for soldiers injured in Korean War .",
+        "sentence2": "McMillan spent two years in the Royal Medical Corp. at Tidworth -- and later at Didcot , where he ran an MRS for soldiers injured in the Korean War .",
+        "label": 1
+      },
+      {
+        "id": 6724,
+        "sentence1": "The sedan was launched on July 5 , 2003 in Europe and in October 2003 in North America . In late 2004 , the estate was introduced .",
+        "sentence2": "The limousine was launched in Europe on July 5 , 2003 and North America in October 2003 , and in late 2004 the estate was introduced .",
+        "label": 1
+      },
+      {
+        "id": 6444,
+        "sentence1": "The river Jiul de Vest is a tributary of the Jidanul River in Romania .",
+        "sentence2": "The Jidanul River is a tributary of the Jiul de Vest River in Romania .",
+        "label": 0
+      },
+      {
+        "id": 3778,
+        "sentence1": "The private Claiborne Academy is located in unincorporated Haynesville , near Claiborne Parish .",
+        "sentence2": "The private Claiborne Academy is located in Claiborne Parish , not near Haynesville .",
+        "label": 0
+      },
+      {
+        "id": 4192,
+        "sentence1": "In 1645 during the English Civil War a Parliamentarian force from Newport Pagnell surprised a platoon of eighteen Royalists stationed in Finmere .",
+        "sentence2": "During the English Civil War , a parliamentary force from Newport Pagnell surprised a train of eighteen royalists stationed in Finmere in 1645 .",
+        "label": 0
+      },
+      {
+        "id": 5525,
+        "sentence1": "Sepahua is a district in southern Atalaya Province in Peru .",
+        "sentence2": "Sepahua is a district in the southern province of Atalaya in Peru .",
+        "label": 1
+      },
+      {
+        "id": 4241,
+        "sentence1": "In May 1983 , a UK tour with the live guitarist Robin George started for additional performances .",
+        "sentence2": "In May 1983 , a UK tour started with the additional guitarist Robin George for live performances .",
+        "label": 0
+      },
+      {
+        "id": 1604,
+        "sentence1": "It is also the fifth highest building in Russia , the sixth highest in Europe and one of the 90 Supertall skyscrapers in the world .",
+        "sentence2": "It is also the fifth tallest building in Russia , the sixth tallest in Europe and one of the 90 supertall skyscrapers in the world .",
+        "label": 1
+      },
+      {
+        "id": 7383,
+        "sentence1": "Dr. Adams left Miss Sarah Hunt , with whom he married a daughter , married B. Hyatt in 1788 , esq .",
+        "sentence2": "Dr. Adams left Miss Sarah Hunt , by whom he married a daughter , married , in 1788 , to B. Hyatt , esq .",
+        "label": 1
+      },
+      {
+        "id": 6642,
+        "sentence1": "Chandler viewed the computer as a tool for learning , but he rejected a dominant objectivism that recognized data as information and information as knowledge .",
+        "sentence2": "Chandler recognized the computer as a tool for learning , but he rejected a predominant objectivism that viewed data as information and information as knowledge .",
+        "label": 0
+      },
+      {
+        "id": 97,
+        "sentence1": "When it opened , the Director of BBC television was David Nixon , and the first programme broadcast was `` First Night '' with Gerald Beadle in Studio Three .",
+        "sentence2": "When it was opened was the director of the BBC - TV Gerald Beadle , and the first broadcast was '' First Night `` with David Nixon in Studio Three .",
+        "label": 0
+      },
+      {
+        "id": 4681,
+        "sentence1": "From her second marriage with businessman Babis Lazaridis has a son , Vasilis .",
+        "sentence2": "From her second marriage with the businessman Vasilis has a son , Babis Lazaridis .",
+        "label": 0
+      },
+      {
+        "id": 4318,
+        "sentence1": "In February 2014 , Network Ten announced that Danielle would replace Isdale Hugh Riminton as a presenter , and Victoria Murphy would become the sports presenter .",
+        "sentence2": "In February 2014 , Network Ten announced that Danielle Isdale would replace Hugh Riminton as presenter , and Victoria Murphy would become the sports presenter .",
+        "label": 0
+      },
+      {
+        "id": 2734,
+        "sentence1": "The typical Merganian ( `` Mergus octosetaceus '' ) is a duck in the Brazilian genus Merganser .",
+        "sentence2": "The Brazilian Merganser ( `` Mergus octosetaceus '' ) is a duck in the typical Merganian genus .",
+        "label": 0
+      },
+      {
+        "id": 68,
+        "sentence1": "`` Angel Eyes '' is a 1946 popular song composed by Matt Dennis , with lyrics by Earl Brent .",
+        "sentence2": "`` Angel Eyes '' is a popular song composed by Earl Brent in 1946 , with texts by Matt Dennis .",
+        "label": 0
+      },
+      {
+        "id": 5463,
+        "sentence1": "Pennmakkal is a 1966 Indian Malayalam film directed by J. Sasikumar , produced by KP Kottarakkara .",
+        "sentence2": "Pennmakkal is an Indian Malayalam film from 1966 , produced by J. Sasikumar and directed by KP Kottarakkara .",
+        "label": 0
+      },
+      {
+        "id": 2055,
+        "sentence1": "According to the United States Census Bureau , Kennesaw has a total surface area of which land and , or 1.08 % , is water .",
+        "sentence2": "According to the United States Census Bureau , Kennesaw is a total area of which is land and 1.08 % has water .",
+        "label": 1
+      },
+      {
+        "id": 1420,
+        "sentence1": "Praised by Richard Gibson and court painter Joan Carlile , she is considered as successful as Peter Lely .",
+        "sentence2": "Praised by Richard Gibson and the court painter Joan Carlile , she is considered to be as successful as Peter Lely .",
+        "label": 1
+      },
+      {
+        "id": 3586,
+        "sentence1": "The son of Raymond Rickman in the film was played by Rose 's real son Carol .",
+        "sentence2": "Rose 's son in the film was played by Carol 's real son Raymond Rickman .",
+        "label": 0
+      },
+      {
+        "id": 2355,
+        "sentence1": "Norman Bel Geddes , born Norman Melancton Geddes , ( April 27 , 1893 -- May 8 , 1958 ) was an American theatrical and industrial designer .",
+        "sentence2": "Norman Bel Geddes , born Norman Melancton Geddes ( April 27 , 1893 - May 8 , 1958 ) , was an American theatrical and industrial designer .",
+        "label": 1
+      },
+      {
+        "id": 4149,
+        "sentence1": "Finland was an autonomous Grand Duchy before its independence within Imperial Russia .",
+        "sentence2": "Imperial Russia was an autonomous Grand Duchy before its independence within Finland .",
+        "label": 0
+      },
+      {
+        "id": 5936,
+        "sentence1": "Also the groups '' Air `` , Howie B , Mars IV , Les Négresses Vertes and FFF and Manu Chao attended the album .",
+        "sentence2": "Cassius , the groups `` Air '' , Howie B , Mars IV , Les Négresses Vertes and FFF , and Manu Chao also participated in the album .",
+        "label": 1
+      },
+      {
+        "id": 5177,
+        "sentence1": "The 1st constituency of Finistère is a French legislative constituency in the Finistère `` département '' .",
+        "sentence2": "The 1st constituency of Finistère is a French constituency in the Finistère `` département '' .",
+        "label": 1
+      },
+      {
+        "id": 77,
+        "sentence1": "The racial Rubber Bowl was used by the National Guard of the United States as a base during the historical Wooster Avenue Riots of 1968 .",
+        "sentence2": "The historic Rubber Bowl was used by the National Guard of the United States as the base during the racist Wooster Avenue Riots of 1968 .",
+        "label": 0
+      },
+      {
+        "id": 7683,
+        "sentence1": "Loyang 's team defeated Xinmin Secondary School in the opening round and Raffles Institution in the quarter-finals , before losing to Hwa Chong Institution in the semi-finals .",
+        "sentence2": "The Loyang team defeated the Xinmin Secondary School in the opening round and the Raffles Institution in the quarter-finals before losing to the Hwa Chong Institution in the semi-finals .",
+        "label": 1
+      },
+      {
+        "id": 1110,
+        "sentence1": "The series then converges almost everywhere .",
+        "sentence2": "Then the series converges almost everywhere .",
+        "label": 1
+      },
+      {
+        "id": 290,
+        "sentence1": "After his service Lockhart lived in Texas but recently moved to Florida .",
+        "sentence2": "After his service , Lockhart lived in Florida , but moved recently to Texas .",
+        "label": 0
+      },
+      {
+        "id": 2539,
+        "sentence1": "Duminda Silva , also known as Arumadura Lawrence Romelo Duminda Silva and R. Dumindha Silva , is a Sri Lankan politician and a former Member of Parliament .",
+        "sentence2": "Arumadura Lawrence Romelo Duminda Silva , also known as Duminda Silva and R. Dumindha Silva , is a politician from Sri Lanka and a former Member of Parliament .",
+        "label": 1
+      },
+      {
+        "id": 2254,
+        "sentence1": "In 284 BC , King Xi met with King Zhao of Qin in West - Zhou to form an alliance against Qi .",
+        "sentence2": "In 284 BC , King Qi met King Zhao of Qin in western Zhou to form an alliance against Xi .",
+        "label": 0
+      },
+      {
+        "id": 5939,
+        "sentence1": "Cape Don was named in 1818 by Phillip Parker King as a compliment to General Sir George Don , lieutenant governor of Gibraltar .",
+        "sentence2": "Cape Don was named by Phillip Parker King in 1818 , as a compliment to General Sir George Don , the Lieutenant-Governor of Gibraltar .",
+        "label": 1
+      },
+      {
+        "id": 3400,
+        "sentence1": "Robert Vincent Goldsborough was born October 3 , 1937 , in Chicago , the son of architect Robert Goldsborough and Wilma ( Janak ) Goldsborough .",
+        "sentence2": "Vincent Goldsborough was born on October 3 , 1937 in Chicago , the son of architect Robert Goldsborough and Wilma ( Janak ) in Goldsborough .",
+        "label": 1
+      },
+      {
+        "id": 1854,
+        "sentence1": "Enoteche extended to Austria north of the Alps under the German name `` Vinothek '' and from Germany to Austria .",
+        "sentence2": "Enoteche have spread north of the Alps to Austria under the German name `` Vinothek '' and from Germany to Austria .",
+        "label": 1
+      },
+      {
+        "id": 2058,
+        "sentence1": "Joe R. Campa Jr. is a former U.S. Navy sailor , who served as the 11th Master Chief Petty Officer of the United States Navy .",
+        "sentence2": "Joe R. Campa Jr. is a former sailor of the United States Navy , who served as the eleventh Master Chief Petty Officer of the U.S. Navy .",
+        "label": 1
+      },
+      {
+        "id": 4495,
+        "sentence1": "In 1924 he was an invited spokesperson for the ICM in Toronto , in 1932 in Zurich and in Oslo in 1936 .",
+        "sentence2": "He was an Invited Speaker of the ICM in Toronto in 1924 , in 1932 in Oslo , and in 1936 in Zurich .",
+        "label": 0
+      },
+      {
+        "id": 7157,
+        "sentence1": "12 January 1978 : Ron Atkinson , the manager of West Bromwich Albion , is appointed manager of Cambridge United .",
+        "sentence2": "12 January , 1978 : West Bromwich Albion manager Ron Atkinson is appointed as manager of Cambridge United .",
+        "label": 1
+      },
+      {
+        "id": 6447,
+        "sentence1": "Carlton House was acquired in 1909 by Bridget Horan , then in 1917 by John Luddy , a Toowoomba winner and in 1924 by William Glover from Toowoomba .",
+        "sentence2": "Carlton House was acquired by Bridget Horan in 1909 , then by John Luddy , a Toowoomba victualler in 1917 , and by William Glover of Toowoomba in 1924 .",
+        "label": 1
+      },
+      {
+        "id": 3244,
+        "sentence1": "A biblical doom is a formal blessing in its most negative sense .",
+        "sentence2": "A biblical damnation , in its most negative sense , is a formal blessing .",
+        "label": 1
+      },
+      {
+        "id": 5545,
+        "sentence1": "In this outstanding record for Stretch Records , Ford shows a second growth as songwriter besides his notorious virtuosity as a guitarist .",
+        "sentence2": "In this second album for Stretch Records , Ford shows besides his outstanding virtuosity as a guitarist a notorious ascent as songwriter .",
+        "label": 0
+      },
+      {
+        "id": 5504,
+        "sentence1": "Buccinum pulchellum is a species of sea snail , a marine gastropod mollusk in the family Buccinidae , the true whelks .",
+        "sentence2": "Buccinum pulchellum is a species of sea snail , a marine gastropod mollusk in the Buccinidae family , the true well horn screws .",
+        "label": 0
+      },
+      {
+        "id": 12,
+        "sentence1": "The Tabaci River is a tributary of the River Leurda in Romania .",
+        "sentence2": "The Leurda River is a tributary of the River Tabaci in Romania .",
+        "label": 0
+      },
+      {
+        "id": 4064,
+        "sentence1": "The crash of Aerosucre Flight 4544 was the first aviation incident involving Aerosucre , the second being the crash of another Boeing 727 on November 18 , 2006 .",
+        "sentence2": "The crash of Aerosucre Flight 4544 was the second aviation incident with Aerosucre , the first being the crash of another Boeing 727 on November 18 , 2006 .",
+        "label": 0
+      },
+      {
+        "id": 3149,
+        "sentence1": "Bayezid II married Gülbahar Hatun , who was the mother of Bayezid II 's successor , Selim I and nephew of Sitti Mükrime Hatun .",
+        "sentence2": "Bayezid II married Gülbahar Hatun , who was the mother of Bayezid II. , Selim I , and nephew of Sitti Mükrime Hatun .",
+        "label": 1
+      },
+      {
+        "id": 5442,
+        "sentence1": "One sister event was held at the Albert Park Lake in Melbourne and sponsored by Fox FM ( Melbourne , Australia ) .",
+        "sentence2": "A sister event was held at Albert Park Lake in Melbourne , Australia and sponsored by Fox FM ( Melbourne ) .",
+        "label": 1
+      },
+      {
+        "id": 7415,
+        "sentence1": "Very few , possibly 20 , of the 75s were cancelled before the course was made .",
+        "sentence2": "Very few , possibly 20 , of the 75s were made before the range was cancelled .",
+        "label": 0
+      },
+      {
+        "id": 6897,
+        "sentence1": "Eugene D. Engley was born on the 5th of April 1851 in Attleborough , Massachusetts , the son of James Henry Engley and his wife , former Mary Kaley .",
+        "sentence2": "Eugene D. Engley was born April 5 , 1851 in Attleborough , Massachusetts , the son of James Henry Engley and his wife , the former Mary Kaley .",
+        "label": 1
+      },
+      {
+        "id": 5616,
+        "sentence1": "Pino played in the little leagues for the Minnesota Twins , Cleveland Indians , Toronto Blue Jays and Cincinnati Reds organizations .",
+        "sentence2": "Pino has played in the minor leagues for the Toronto Blue Jays , Cleveland Indians , Minnesota Twins and Cincinnati Reds organizations .",
+        "label": 1
+      },
+      {
+        "id": 5048,
+        "sentence1": "The race started in Castelldefels and finished in Barcelona .",
+        "sentence2": "The race started in Castelldefels and was finished in Barcelona .",
+        "label": 1
+      },
+      {
+        "id": 248,
+        "sentence1": "Stephen Stephen was married on August 29 , 1806 by Benjamin Hough , Justice of Peace , in Jefferson County , Elizabeth Core .",
+        "sentence2": "`` 2 '' Benjamin Hough was married on 29 August 1806 by Stephen Ford , Justice of Peace , in Jefferson County with Elizabeth Core .",
+        "label": 0
+      },
+      {
+        "id": 147,
+        "sentence1": "In the summer of 1924 he went to Union County in southern Arkansas to work in an office in Norphlet near Smackover in the oil boom .",
+        "sentence2": "In the summer of 1924 he went to Smackover in South-Arkansas to work in the oil boom in an office in Norphlet near Union County .",
+        "label": 0
+      },
+      {
+        "id": 3628,
+        "sentence1": "Ukhrul is also a tourist hotspot of Manipur state .",
+        "sentence2": "Ukhrul is also a tourist hotspot in the state of Manipur .",
+        "label": 1
+      },
+      {
+        "id": 5654,
+        "sentence1": "Audio is transcribed with direct digital recording ( the audio quality is maintained ) .",
+        "sentence2": "Audio is transcribed with direct digital recording ( so audio quality is maintained ) .",
+        "label": 1
+      },
+      {
+        "id": 5544,
+        "sentence1": "The 1932 Swedish Ice Hockey Championship was the 11th season of the Swedish Ice Hockey Championship , the national championship of Sweden . Hammarby IF won the championship .",
+        "sentence2": "The Swedish Ice Hockey Championship of 1932 was the 11th season of the Swedish Ice Hockey Championship , the Swedish National Championship , Hammarby IF won the championship .",
+        "label": 1
+      },
+      {
+        "id": 203,
+        "sentence1": "The Houston Main Building ( HMB ) earlier the Prudential Building was a skyscraper at the Texas Medical Center in Houston , Texas .",
+        "sentence2": "The Houston Main Building ( HMB ) formerly the Prudential Building , was a skyscraper in the Texas Medical Center , Houston , Texas .",
+        "label": 1
+      },
+      {
+        "id": 1310,
+        "sentence1": "Agbo played for the Belgrade clubs FK Rad and FK Obilić in FR Yugoslavia before moving to clubs to France and Turkey .",
+        "sentence2": "Agbo played for the FR Yugoslavia clubs , FK Rad and FK Obilić in Belgrade before moving to clubs in France and Turkey .",
+        "label": 0
+      },
+      {
+        "id": 201,
+        "sentence1": "It is found in North America , where it was recorded from California , Arizona , Nevada and Utah .",
+        "sentence2": "It has been found in California , Arizona , Nevada and Utah , where it was recorded from North America .",
+        "label": 0
+      },
+      {
+        "id": 7185,
+        "sentence1": "In the summer of 1924 he went to Smackover in South-Arkansas to work in the oil boom in an office in Norphlet near Union County .",
+        "sentence2": "In the summer of 1924 , he went to Union County in south Arkansas to work in the oil boom in an office at Norphlet near Smackover .",
+        "label": 0
+      },
+      {
+        "id": 3932,
+        "sentence1": "The Prudential Building ( HMB ) formerly the Houston Main Building , was a skyscraper in the Texas Medical Center , Houston , Texas .",
+        "sentence2": "The Prudential Building ( HMB ) , formerly the Houston Main Building , was a skyscraper at the Texas Medical Center , Houston , Texas .",
+        "label": 1
+      },
+      {
+        "id": 1316,
+        "sentence1": "The private Claiborne Academy is located in Claiborne Parish , not near Haynesville .",
+        "sentence2": "The private Claiborne Academy is located in unincorporated Claiborne Parish , near Haynesville .",
+        "label": 1
+      },
+      {
+        "id": 627,
+        "sentence1": "`` Stopped '' light , in the context of an EIT medium , refers to the `` quantum '' transfer of photons to the coherent system and back again .",
+        "sentence2": "`` Stopped '' Light refers in the context of an EIT medium to the `` quantum '' transfer of photons to the coherent system and return .",
+        "label": 1
+      },
+      {
+        "id": 6008,
+        "sentence1": "The completed fence is located mainly in New Mexico , Arizona and California , with the construction in Texas .",
+        "sentence2": "The completed fence is mainly in New Mexico , Arizona , and California , with construction underway in Texas .",
+        "label": 1
+      },
+      {
+        "id": 227,
+        "sentence1": "Manu Chao , the groups `` Air '' , Cassius , Mars IV , Les Négresses Vertes , and FFF , and Howie B also participated in the album .",
+        "sentence2": "The groups '' Air `` , Howie B , Mars IV , Les Négresses Vertes and FFF and Manu Chao also participated in the album .",
+        "label": 0
+      },
+      {
+        "id": 2994,
+        "sentence1": "Although rugby union in Slovenia was the main centre for the sport in the former Yugoslavia , there was still quite a bit of rugby played in Croatia .",
+        "sentence2": "Although the Rugby - Union in Croatia was the main centre for sport in the former Yugoslavia - a lot of rugby was still being played in Slovenia .",
+        "label": 0
+      },
+      {
+        "id": 3490,
+        "sentence1": "Two Rotavirus vaccines against Rotavirus A infection are safe and effective in children : Rotarix by GlaxoSmithKline and RotaTeq from Merck .",
+        "sentence2": "Two rotavirus vaccines against Rotavirus A infection are safe and effective in children : Rotarix by Merck and RotaTeq by GlaxoSmithKline .",
+        "label": 0
+      },
+      {
+        "id": 1759,
+        "sentence1": "It surrounded the older ditch , which was built in the early 16th century by Aloisio the New , who delimited Bely Gorod .",
+        "sentence2": "It delimited the older moat built by Aloisio the New in the early 16th century which surrounded Bely Gorod .",
+        "label": 0
+      },
+      {
+        "id": 7974,
+        "sentence1": "She married Sir Edward George Hulton Warris , son of Sir Edward Hulton , 1st Baronet .",
+        "sentence2": "She married Sir Edward George Warris Hulton , son of Sir Edward Hulton , 1st Baronet .",
+        "label": 1
+      },
+      {
+        "id": 4237,
+        "sentence1": "Frank James joined a local society recruited for the secessionist Drew Lobbs Army , and fought in August 1861 at the Battle of Wilson 's Creek .",
+        "sentence2": "Frank James joined a secessionist company , recruited for the local Drew Lobbs Army , and fought in August 1861 in the Battle of Wilson 's Creek .",
+        "label": 0
+      },
+      {
+        "id": 5961,
+        "sentence1": "He worked as a glassmaker and performed with many different bands on several musical instruments .",
+        "sentence2": "He appeared as a glassmaker and worked with many different bands on various musical instruments .",
+        "label": 0
+      },
+      {
+        "id": 2590,
+        "sentence1": "Cher and MCA were the labels with which Kapp had more success in the seventies and she remained with them until 1974 .",
+        "sentence2": "Capp and MCA were the labels with which Cher had more success in the seventies and remained with them until 1974 .",
+        "label": 0
+      },
+      {
+        "id": 3591,
+        "sentence1": "Aamir Khan has agreed to play immediately after reading Mehra 's script in `` Rang De Basanti '' .",
+        "sentence2": "Immediately after reading Aamir Khan 's script , Mehra agreed to play in `` Rang De Basanti '' .",
+        "label": 0
+      },
+      {
+        "id": 2961,
+        "sentence1": "Mohammad Shafiq ( variants : Shafeeq , Shafik , Shafeek , Mohammed , Muhammad , Shafique , Shafic , Chafic ) may refer to",
+        "sentence2": "Mohammad Shafiq ( variants : Mohammed , Muhammad , Shafik , Shafeek , Shafeeq , Shafique , Shafic , Chafic ) can refer to",
+        "label": 1
+      },
+      {
+        "id": 6926,
+        "sentence1": "The song was written and produced by Gala composed by Filippo Andrea Carmeni and Maurizio Molella .",
+        "sentence2": "The song was written and produced by the gala , which was composed by Filippo Andrea Carmeni and Maurizio Molella .",
+        "label": 1
+      },
+      {
+        "id": 4758,
+        "sentence1": "Dotty was born in 1923 in Gloucester and died in Boston in 2014 .",
+        "sentence2": "Dotty was born in 1923 in Boston and died in Gloucester in 2014 .",
+        "label": 0
+      },
+      {
+        "id": 3202,
+        "sentence1": "Sher Mohammed Akhundzada ( also known as Sher Ahmed Akhundzada ) is a tribal leader who was the governor of Helmand in Afghanistan from 2001 to 2005 .",
+        "sentence2": "Sher Ahmed Akhundzada ( also known as Sher Mohammed Akhundzada ) is a tribal leader who was the Governor of Helmand in Afghanistan between 2001 and 2005 .",
+        "label": 1
+      },
+      {
+        "id": 7379,
+        "sentence1": "Lito played football club for Zingone .",
+        "sentence2": "Zingone played for Lito 's club football .",
+        "label": 0
+      },
+      {
+        "id": 933,
+        "sentence1": "An analysis of millions of public RSA keys from the Internet was announced by Augier , Hughes , Lenstra , Bos , Kleinjung and Wachter in 2012 .",
+        "sentence2": "An analysis comparing millions of RSA public keys gathered from the Internet was announced in 2012 by Lenstra , Hughes , Augier , Bos , Kleinjung , and Wachter .",
+        "label": 1
+      },
+      {
+        "id": 1870,
+        "sentence1": "Vempati Chinna Satyam ( 15 October 1929 -- 29 July 2012 ) was a Kuchipudi dancer and a guru of Indian dance .",
+        "sentence2": "Vempati Chinna Satyam ( October 15 , 1929 -- July 29 , 2012 ) was a Kuchipudi dancer and a guru of the Indian dance form .",
+        "label": 1
+      },
+      {
+        "id": 1462,
+        "sentence1": "In 2009 , Genevieve McDonagh took a dramatic role as Coolidge .",
+        "sentence2": "In 2009 , Coolidge took on a dramatic role in `` as Genevieve McDonagh .",
+        "label": 0
+      },
+      {
+        "id": 1137,
+        "sentence1": "Udaipur is a town in the Indian state of Madhya Pradesh near Ganj Basoda .",
+        "sentence2": "Ganj Basoda is a city in the Indian state of Madhya Pradesh near Udaipur .",
+        "label": 0
+      },
+      {
+        "id": 6900,
+        "sentence1": "The biography has now been published in Great Britain , the USA ( St. Martin 2013 ) , Hungary ( Swiat Ksiazki , 2013 ) , Poland and China .",
+        "sentence2": "The biography has now been published in Britain , the USA ( St Martin 's 2013 ) , Poland ( Swiat Ksiazki , 2013 ) , Hungary and China .",
+        "label": 0
+      },
+      {
+        "id": 5834,
+        "sentence1": "Julia 's younger brother , Charles Martin Hall , was born in 1863 in Thompson , Geauga County , Ohio .",
+        "sentence2": "Julia ’ s younger brother , Charles Martin Hall , was born in Thompson , Geauga County , Ohio , in 1863 .",
+        "label": 1
+      },
+      {
+        "id": 3936,
+        "sentence1": "`` Everything But You '' is a song of 1945 , composed by Don George , written by Duke Ellington and Harry James .",
+        "sentence2": "`` Everything But You '' is a 1945 song composed by Duke Ellington and Harry James with lyrics written by Don George .",
+        "label": 0
+      },
+      {
+        "id": 7258,
+        "sentence1": "The Asian activities became part of Ebel while the European activities were sold to Hong Kong entrepreneur Joseph Wong and are now part of Stelux Holdings .",
+        "sentence2": "The European activities became part of Ebel , while Asian activities were sold to the Hong Kong entrepreneur Joseph Wong and now belong to Stelux Holdings .",
+        "label": 0
+      },
+      {
+        "id": 7037,
+        "sentence1": "Through their family company Divine Foods , 85 % of the Dali Foods Group own their wife Xu Shihui and his daughter , Xu Yangyang .",
+        "sentence2": "Xu Shihui , his wife Chen Liling , and daughter Xu Yangyang own 85 % of Dali Foods Group , through their family company , Divine Foods .",
+        "label": 0
+      },
+      {
+        "id": 3252,
+        "sentence1": "The Communists discreetly believed that the Central Intelligence Agency financially and otherwise strongly supported these protests .",
+        "sentence2": "The communists strongly believed that the Central Intelligence Agency discreetly supported these protests , financially and otherwise .",
+        "label": 0
+      },
+      {
+        "id": 6786,
+        "sentence1": "It was published by his wife Stella Gemmell following his death on 28 July 2006 and finished under the joint authorship of David and Stella Gemmell .",
+        "sentence2": "It was released by his wife , Stella Gemmell , following his death on July 28 , 2006 and finished under the joint authorship of David and Stella Gemmell .",
+        "label": 1
+      },
+      {
+        "id": 5846,
+        "sentence1": "She added that the rape happened shortly after the incident .",
+        "sentence2": "She added that the rape occurred shortly after the incident .",
+        "label": 1
+      },
+      {
+        "id": 6952,
+        "sentence1": "Following the 1939 invasion of Poland by Nazi Germany and the Soviet Union , Osterwa was active in the underground education but also became ill .",
+        "sentence2": "After the invasion of Poland by Nazi - Germany and the Soviet Union in 1939 , Osterwa was active in underground education , but also became ill .",
+        "label": 1
+      },
+      {
+        "id": 4435,
+        "sentence1": "He eventually published , in the `` Western Republican `` , '' one of the first botanical collections made in Ohio by a professional botanist .",
+        "sentence2": "He finally made one of the first botanical collections in the `` Western Republican '' , which were published in Ohio by a professional botanist .",
+        "label": 0
+      },
+      {
+        "id": 2481,
+        "sentence1": "He moved back to Philadelphia in 2009 and now lives in New York City .",
+        "sentence2": "In 2009 he moved back to New York City and lives today in Philadelphia .",
+        "label": 0
+      },
+      {
+        "id": 6178,
+        "sentence1": "He died of gastric cancer in Claremore , Oklahoma , New York City on June 30 , 1954 , and is home to Lynn Riggs Memorial .",
+        "sentence2": "He died on June 30 , 1954 , of stomach cancer in New York City . Claremore , Oklahoma is home to the Lynn Riggs Memorial .",
+        "label": 0
+      },
+      {
+        "id": 7008,
+        "sentence1": "He began his career in the Football League with Scunthorpe United before joining Sheffield United in the fourth division in June 1961 .",
+        "sentence2": "He began his career in the Football League with Sheffield United , before joining Scunthorpe United of the Fourth Division in June 1961 .",
+        "label": 0
+      },
+      {
+        "id": 2580,
+        "sentence1": "It was sold over to Lord Cromwell in 1605 and made to Sir Francis Blundell in 1636 .",
+        "sentence2": "In 1605 , it was sold to Lord Cromwell and moved to Sir Francis Blundell in 1636 .",
+        "label": 1
+      },
+      {
+        "id": 5756,
+        "sentence1": "Celestin III became the center of a new and stricter branch of the Cistercian order , approved by Fiore in 1198 .",
+        "sentence2": "Fiore became the center of a new and stricter branch of the Cistercian order , approved by Celestine III in 1198 .",
+        "label": 0
+      },
+      {
+        "id": 7579,
+        "sentence1": "The Petkeljärvi National Park is a national park in Ilomantsi in the region of North Karelia in Finland .",
+        "sentence2": "The Petkeljärvi National Park is a national park in Finland in the region of Ilomantsi in North Karelia .",
+        "label": 0
+      },
+      {
+        "id": 4689,
+        "sentence1": "The typical merganser ( `` Mergus octosetaceus '' ) is a duck in the Brazilian merganser genus .",
+        "sentence2": "The Brazilian Merganser ( `` Mergus octosetaceus '' ) is a duck in the typical Merganian genus .",
+        "label": 0
+      },
+      {
+        "id": 4617,
+        "sentence1": "The Olt River is a tributary of the Seghes River in Romania .",
+        "sentence2": "The River Olt is a tributary of the Seghes River in Romania .",
+        "label": 1
+      },
+      {
+        "id": 4130,
+        "sentence1": "Propilidium pelseneeri is a species of sea snail , a true limpet , a marine gastropod mollusk in the Lepetidae family , one of the families of the true limpets .",
+        "sentence2": "Propilidium pelseneeri is a species of sea snail , a true limpet , a marine gastropod mollusk in the family Lepetidae , one of the families of true limpets .",
+        "label": 1
+      },
+      {
+        "id": 3683,
+        "sentence1": "Vempati Chinna Satyam ( October 15 , 1929 -- July 29 , 2012 ) was an Indian dancer and a guru of Kuchipudi - dance form .",
+        "sentence2": "Vempati Chinna Satyam ( October 15 , 1929 -- July 29 , 2012 ) was an Indian dancer and a guru of the Kuchipudi dance form .",
+        "label": 1
+      },
+      {
+        "id": 4083,
+        "sentence1": "The next town hall was damaged in baroque style in 1627 and constructed in 1650 , 1653 , 1735 and 1779 .",
+        "sentence2": "The next town hall built in 1627 , in a Baroque architectural style , and was damaged in 1650 , 1653 , 1735 , and 1779 .",
+        "label": 0
+      },
+      {
+        "id": 5594,
+        "sentence1": "His son married Mary O. Kennedy ( of San Francisco ) and he died in California in 1883 .",
+        "sentence2": "His son married Mary O. Kennedy ( of California ) and died in San Francisco in 1883 .",
+        "label": 0
+      },
+      {
+        "id": 4317,
+        "sentence1": "It is based in the city of Luxembourg , south of Mondercange .",
+        "sentence2": "It is based in Mondercange , to the south of Luxembourg City .",
+        "label": 0
+      },
+      {
+        "id": 5124,
+        "sentence1": "It illustrated the most important art producing communities and discussed the work of 23 of the best known artists .",
+        "sentence2": "It discussed the most important art producing communities and illustrated the work of 23 of the best known artists .",
+        "label": 0
+      },
+      {
+        "id": 1130,
+        "sentence1": "The campus was located in Wan Chai and Kennedy Town and was moved to its new permanent site in Sai Kung in August 2013 .",
+        "sentence2": "The campus was located in Wan Chai and Sai Kung . In August 2013 the school moved to its new permanent site in Kennedy Town .",
+        "label": 0
+      },
+      {
+        "id": 3673,
+        "sentence1": "In 1991 before 1995 he was a master ( together with Dzhigarkhanyan Armen ) acting course at VGIK , he taught at GITIS .",
+        "sentence2": "In 1991 before 1995 he was a master ( together with Armen Dzhigarkhanyan ) acting course at VGIK , he taught at GITIS .",
+        "label": 1
+      },
+      {
+        "id": 6513,
+        "sentence1": "David was born on September 21 , 1933 in Coventry with his twin father Charles and Jessamine Robbins , the eighth and ninth child of twelve of Robbins .",
+        "sentence2": "Robbins was born on September 21 , 1933 in Coventry , with his twin David , the eighth and ninth child of twelve of Charles and Jessamine Robbins .",
+        "label": 0
+      },
+      {
+        "id": 598,
+        "sentence1": "Upstream is the decommissioned Michigan Central Railway Bridge , which with its predecessor , the Niagara Cantilever Bridge , competed with the Rapids Bridge whirlpool for rail transport .",
+        "sentence2": "Upstream is the decommissioned Michigan Central Railway Bridge , which competed with its predecessor , the Rapids Bridge whirlpool , with the Niagara Cantilever Bridge for railway traffic .",
+        "label": 0
+      },
+      {
+        "id": 6765,
+        "sentence1": "The river Vălcea is a tributary of the River Arieşul Mare in Romania .",
+        "sentence2": "The Arieşul Mare River is a tributary of the Vâlcea River in Romania .",
+        "label": 0
+      },
+      {
+        "id": 7834,
+        "sentence1": "There are 43 permanent teachers and most teachers are the outstanding artists of the country .",
+        "sentence2": "There are 43 permanent teachers and most of the teachers are eminent artists of the country .",
+        "label": 1
+      },
+      {
+        "id": 15,
+        "sentence1": "The family moved to Camp Hill in 1972 , where he attended Trinity High School in Harrisburg , Pennsylvania .",
+        "sentence2": "In 1972 , the family moved to Camp Hill , where he visited the Trinity High School in Harrisburg , Pennsylvania .",
+        "label": 1
+      },
+      {
+        "id": 1146,
+        "sentence1": "He learned binding in Caen , and in Paris he learned typography .",
+        "sentence2": "He learned binding in Caen and typography in Paris .",
+        "label": 1
+      },
+      {
+        "id": 3671,
+        "sentence1": "Katz was born in New York City in 1947 and moved to Sweden at the age of 1 years .",
+        "sentence2": "Katz was born in Sweden in 1947 and moved to New York City at the age of 1 .",
+        "label": 0
+      },
+      {
+        "id": 6039,
+        "sentence1": "Tarapacá department was a department of the Tarapacá province from 1883 to 1928 . It was part of Chile .",
+        "sentence2": "Tarapacá Department was a department of Chile from 1883 to 1928 . It was part of Tarapacá Province .",
+        "label": 0
+      },
+      {
+        "id": 4439,
+        "sentence1": "In 2012 , Adrian Belew released `` Treehouse '' , his sixth solo record , produced in Nashville Tennessee by musician Ned Evett .",
+        "sentence2": "In 2012 , Ned Evett `` Treehouse '' released his sixth solo record , produced in Nashville Tennessee by musician Adrian Belew .",
+        "label": 0
+      },
+      {
+        "id": 927,
+        "sentence1": "Anyone watching should have the impression that the school is a continuous body , a single set .",
+        "sentence2": "Anyone watching should have the impression that the school is a continuous body , a single row .",
+        "label": 1
+      },
+      {
+        "id": 3652,
+        "sentence1": "It was the sixth edition of the tournament and the third stop of the 2013 -- 14 IRB Sevens World Series .",
+        "sentence2": "It was the sixth edition of the tournament and the third station of the 2013 -- 14 IRB Sevens World Series .",
+        "label": 1
+      },
+      {
+        "id": 4591,
+        "sentence1": "Mei Shigenobu is the mother of Japanese national Fusako Shigenobu , a journalist .",
+        "sentence2": "Mei Shigenobu is the mother of the Japanese national Fusako Shigenobu , a journalist .",
+        "label": 1
+      },
+      {
+        "id": 6248,
+        "sentence1": "Nadège du Bospertus is a French model and former judge on `` Italia 's Next Top Model '' . She was the muse of Giorgio Armani and Gianni Versace .",
+        "sentence2": "Nadège du Bospertus was a former model and French judge of `` Italia 's Next Top Model '' , the muse by Giorgio Armani and Gianni Versace .",
+        "label": 0
+      },
+      {
+        "id": 1181,
+        "sentence1": "Shia Islam is dominant among the Arab population in Bahrain and northern Iraq while southern Iraq is mostly Sunni .",
+        "sentence2": "Shia Islam is dominant among the Arab population in Bahrain and northern Iraq , while southern Iraq is largely Sunni .",
+        "label": 1
+      },
+      {
+        "id": 2523,
+        "sentence1": "According to the United States Census Bureau , the city is a total surface area of which has land and or 33.45 % , is water .",
+        "sentence2": "According to the United States Census Bureau , the town is a total area of , of which has land and or 33.45 % , is water .",
+        "label": 1
+      },
+      {
+        "id": 4820,
+        "sentence1": "The first or `` narrow '' system consists of red lines of ( O III ) and other ionized elements at a redshift of z = 0,712 .",
+        "sentence2": "The first or `` red '' system consists of narrow lines of ( O III ) and other ionized elements at redshift z = 0.712 .",
+        "label": 0
+      },
+      {
+        "id": 5377,
+        "sentence1": "In `` The Stand '' by Stephen King , Woodsville is mentioned as the home of Glen Pequod Bateman , a leading character in the novel .",
+        "sentence2": "In `` The Stand '' by Glen Pequod Bateman , Woodsville is mentioned as the home of Stephen King , a leading character in the novel .",
+        "label": 0
+      },
+      {
+        "id": 773,
+        "sentence1": "Callum O 'brien ( born November 4 , 1982 in Cambridge , New Zealand ) is a professional squash player .",
+        "sentence2": "Callum O'brien ( born 4 November 1982 in New Zealand ) is a Cambridge professional squash player .",
+        "label": 0
+      },
+      {
+        "id": 4208,
+        "sentence1": "Lusaghbyur ( also known as the Lusakhpyur romanized ; formerly Svanverdi and Svan ) is a village in the province of Shirak of Armenia .",
+        "sentence2": "Lusaghbyur ( formerly the Lusakhpyur romanized ; also Svanverdi and Svan ) is a village in Shirak province of Armenia .",
+        "label": 0
+      },
+      {
+        "id": 2269,
+        "sentence1": "An international independent group of experts studied the impact of the accident and concluded that no one was killed or poisoned as a result of the accident .",
+        "sentence2": "An international independent group of experts examined the impact of the accident and concluded that no one was poisoned or killed as a result of the accident .",
+        "label": 1
+      },
+      {
+        "id": 6009,
+        "sentence1": "Utley was born in Laguna , California in 1920 . He graduated from the Choate School in Connecticut , and attended Pomona College and the University of Southern California .",
+        "sentence2": "Born in Laguna , California in 1920 , he graduated from the Choate School in Connecticut and attended Pomona College and the University of Southern California .",
+        "label": 1
+      },
+      {
+        "id": 3917,
+        "sentence1": "The Elder House of Welf was a Frankish noble dynasty of European rulers documented since the 9th century .",
+        "sentence2": "Since the 9th century , the Elder House of Welf was a Franconian noble dynasty of European rulers .",
+        "label": 1
+      },
+      {
+        "id": 981,
+        "sentence1": "The Roman - Catholic diocese of Lugazi is a diocese in the city of Lugazi in the church province of Kampala , Uganda .",
+        "sentence2": "The Roman Catholic Diocese of Lugazi is a diocese , located in the city of Lugazi in the Ecclesiastical province of Uganda in Kampala .",
+        "label": 0
+      },
+      {
+        "id": 5475,
+        "sentence1": "Cancellopollia gracilis is a species of sea snail , a true gastropod mollusk in the family Buccinidae , the marine whelks .",
+        "sentence2": "Cancellopollia gracilis is a sea snail species , a true gastropod mollusk in the Buccinidae family , the whelks marine .",
+        "label": 1
+      },
+      {
+        "id": 5793,
+        "sentence1": "Superstar Jackie Shroff 's driver Alok Nath was not able to do his job so he was replaced by his son Deepak ( Rahul Roy ) .",
+        "sentence2": "Alok Nath , the driver of superstar Jackie Shroff , was not able to do his job so that he was replaced by his son Deepak ( Rahul Roy ) .",
+        "label": 1
+      },
+      {
+        "id": 2394,
+        "sentence1": "This genus is currently classified in the family of lizards , known as Iguanidae , subfamily Polychrotinae , and is no longer classified in the now invalid family , polychrotidae .",
+        "sentence2": "This species is now in the family of lizards , known as Iguanidae , subfamily Polychrotinae , and is no longer classified in the currently invalid family , polychrotidae .",
+        "label": 1
+      },
+      {
+        "id": 825,
+        "sentence1": "The group toured extensively and was famous in Israel and even played in New York City in 2007 .",
+        "sentence2": "The group played extensively and became famous in Israel and even toured in 2007 in New York City .",
+        "label": 0
+      },
+      {
+        "id": 4726,
+        "sentence1": "The Webster Groves City Council consisted of councillors Greg Mueller , Ken Burns , Kathy Hart , Debi Salberg , Toni Hunt and Anne Tolan .",
+        "sentence2": "The Webster Groves City Council consisted of council members Greg Mueller , Ken Burns , Kathy Hart , Debi Salberg , Toni Hunt , and Anne Tolan .",
+        "label": 1
+      },
+      {
+        "id": 6498,
+        "sentence1": "David was born in Coventry on 21 September 1933 , with his twin Charles and Jessamine Robbins , the eighth and ninth children of twelve by Robbins .",
+        "sentence2": "David was born on September 21 , 1933 in Coventry with his twin father Charles and Jessamine Robbins , the eighth and ninth child of twelve of Robbins .",
+        "label": 1
+      },
+      {
+        "id": 6675,
+        "sentence1": "Tommy Connolly , who plays Rory Jennings , plays teenagers - Davros in the Big Finish Productions .",
+        "sentence2": "Rory Jennings , who plays Tommy Connolly , plays the teenage Davros in Big Finish Productions ' `` .",
+        "label": 0
+      },
+      {
+        "id": 7695,
+        "sentence1": "Later , Richard would be Adhemar 's forces during the attack on Andrew , count of Angoulême .",
+        "sentence2": "Later , during the attack on Adhemar , Count of Angoulême , Andrew was to be Richard 's forces .",
+        "label": 0
+      },
+      {
+        "id": 6961,
+        "sentence1": "With sectoral regulation , financial regulators sometimes share the worldview of their regulated entities .",
+        "sentence2": "Using sectoral regulation , financial regulators sometimes share the worldview of their regulated entities .",
+        "label": 1
+      },
+      {
+        "id": 1156,
+        "sentence1": "Audio is maintained with direct digital recording ( so the audio quality is transcribed ) .",
+        "sentence2": "Audio is maintained with direct digital recording ( so audio quality is transcribed ) .",
+        "label": 1
+      },
+      {
+        "id": 2016,
+        "sentence1": "During this first year , Larco Hoyle received some advice from his uncle , Victor Larco Herrera , founder of the same museum in Lima .",
+        "sentence2": "During that same year , Larco Hoyle received some advice from his uncle , Victor Larco Herrera , a founder of the first museum in Lima .",
+        "label": 0
+      },
+      {
+        "id": 1209,
+        "sentence1": "Ishkashim District is one of the 28 districts in the province of Badakhshan in eastern Afghanistan .",
+        "sentence2": "Badakhshan Province is one of the 28 districts of Ishkashim District in eastern Afghanistan .",
+        "label": 0
+      },
+      {
+        "id": 5330,
+        "sentence1": "The team won the final two test matches against England and France , but lost the first test against Italy .",
+        "sentence2": "The team lost the first two test matches against England and France , but won the final exam against Italy .",
+        "label": 0
+      },
+      {
+        "id": 3885,
+        "sentence1": "Until the end of Second World War , the largest number of Roman Catholics in the territory of Yugoslav Banat was of German ethnicity .",
+        "sentence2": "Until the end of the Second World War , the largest number of Roman Catholics was in the territory of the Yugoslav banat of German origin .",
+        "label": 1
+      },
+      {
+        "id": 7781,
+        "sentence1": "He married Marie Magdalene Schweigaard , daughter of Tellef Dahll Schweigaard , niece of the senior politician Anton Martin Schweigaard and Tante of later prime minister Christian Homann Schweigaard .",
+        "sentence2": "He married Marie Magdalene Schweigaard , daughter of Tellef Dahll Schweigaard , niece of leading politician Christian Homann Schweigaard and aunt of later Prime Minister Anton Martin Schweigaard .",
+        "label": 0
+      },
+      {
+        "id": 5962,
+        "sentence1": "She was observed as '' has very great potential and a great talent and will grow in the future to a unique musical personality `` .",
+        "sentence2": "She was observed as '' has a very great potential and great talent and will grow in the future to a unique musical personality .",
+        "label": 1
+      },
+      {
+        "id": 3712,
+        "sentence1": "It is sometimes used as reductio ad absurdum of the well-known argument of design , which runs as follows :",
+        "sentence2": "It is sometimes known as a reductio ad absurdum of the well-used argument from design , which runs as follows :",
+        "label": 0
+      },
+      {
+        "id": 2547,
+        "sentence1": "The Continental League was the last serious attempt to create a third large league of new clubs .",
+        "sentence2": "The Continental League was the last serious attempt to create a new league of third major clubs .",
+        "label": 0
+      },
+      {
+        "id": 4098,
+        "sentence1": "The Tabaci River is a tributary of the River Leurda in Romania .",
+        "sentence2": "The Tabaci River is a tributary of the Leurda River in Romania .",
+        "label": 1
+      },
+      {
+        "id": 6200,
+        "sentence1": "Northamptonshire was a county constituency in North Northamptonshire , represented at the House of Commons of the United Kingdom Parliament .",
+        "sentence2": "Northamptonshire was a county constituency in Northamptonshire , represented in the House of Commons of the United Kingdom Parliament .",
+        "label": 0
+      },
+      {
+        "id": 5188,
+        "sentence1": "The Chenzhou Administrative Region in the Tang Dynasty is under the administration of modern Zhoukou in eastern Henan :",
+        "sentence2": "The administrative region of Chenzhou in the Tang dynasty is under the administration of modern Henan in eastern Zhoukou :",
+        "label": 0
+      },
+      {
+        "id": 3875,
+        "sentence1": "The Australian government issued recommendations for British awards in 1983 , and the last two Australian state governments ended recommendations in 1989 .",
+        "sentence2": "The Australian Government ceased recommendations for Australian awards in 1983 and the last two British state governments ceased recommendations in 1989 .",
+        "label": 0
+      },
+      {
+        "id": 2010,
+        "sentence1": "In 2011 , a new amusement park called CC Joyland opened in Taihuwan near Taihu lake in Changzhou in the south of Wujin District .",
+        "sentence2": "In 2011 , a new amusement park , named CC Joyland , was opened in Taihuwan , near Taihu Lake in the Wujin district in the south of Changzhou .",
+        "label": 0
+      },
+      {
+        "id": 6254,
+        "sentence1": "Santa Cruz Sky Park was an airport in Scotts Valley , California , within Santa Cruz County .",
+        "sentence2": "Santa Cruz Sky Park was an airport located in Scotts Valley , California , within Santa Cruz County .",
+        "label": 1
+      },
+      {
+        "id": 3204,
+        "sentence1": "Another member of the group was Sir George Throckmorton , whose sister Thomas Giffard was married .",
+        "sentence2": "Another member of that group was Sir Thomas Giffard , whose sister George Throckmorton married .",
+        "label": 0
+      },
+      {
+        "id": 5311,
+        "sentence1": "Using the analytical hypotheses the linguist can form new sentences and create a translation manual .",
+        "sentence2": "The linguist can create new sentences and create a translation manual using the analytical hypotheses .",
+        "label": 1
+      },
+      {
+        "id": 360,
+        "sentence1": "An international independent group of experts examined the impact of the accident and concluded that no one was killed or poisoned as a result of the accident .",
+        "sentence2": "An international independent group of experts studied the impact of the accident and concluded that no one was killed or poisoned as a result of the accident .",
+        "label": 1
+      },
+      {
+        "id": 2098,
+        "sentence1": "During his time in Savannah , Charles Celestine learned from a newspaper that his son , Sherman , had died during the Savannah campaign , the general had never seen the child .",
+        "sentence2": "While in Savannah , Sherman learned from a newspaper that his infant son Charles Celestine had died during the Savannah Campaign ; the general had never seen the child .",
+        "label": 0
+      },
+      {
+        "id": 2896,
+        "sentence1": "The announcer was John Reed King , and the orchestra headed Ray Bloch .",
+        "sentence2": "Ray Bloch was the announcer , and John Reed King led the orchestra .",
+        "label": 0
+      },
+      {
+        "id": 6875,
+        "sentence1": "He was survived by his wife , former Barbara Crutchley , his sons Norman F. Boas and Donald P. Boas and his daughter , Helen Tuthill Sisson .",
+        "sentence2": "He was survived by his wife , former Helen Tuthill Sisson , his sons Norman F. Boas and Donald P. Boas and his daughter , Barbara Crutchley .",
+        "label": 0
+      },
+      {
+        "id": 3147,
+        "sentence1": "An analysis comparing millions of RSA public keys gathered from the Internet was announced in 2012 by Lenstra , Hughes , Augier , Bos , Kleinjung , and Wachter .",
+        "sentence2": "An analysis of millions of public RSA keys collected from the Internet was announced in 2012 by Lenstra , Hughes , Augier , Bos , Kleinjung and Wachter .",
+        "label": 1
+      },
+      {
+        "id": 1189,
+        "sentence1": "It was the third season broadcast more than two years after the family edition and more than three years after the first celebrity edition .",
+        "sentence2": "It was the third season to air more than two years after the family edition and more than three years after the first celebrity edition .",
+        "label": 1
+      },
+      {
+        "id": 5130,
+        "sentence1": "An atoll in French - Polynesia Niau is called after Aleksey Greig Greig .",
+        "sentence2": "An atoll in French Polynesia Niau is named Greig after Aleksey Greig .",
+        "label": 0
+      },
+      {
+        "id": 7272,
+        "sentence1": "An atoll in France , Polynesia Niau is named Aleksey Greig after Greig .",
+        "sentence2": "One atoll in French - Polynesia Niau is named after Aleksey Greig Greig .",
+        "label": 0
+      },
+      {
+        "id": 4904,
+        "sentence1": "As part of his attempt to turn the Austrian right , Dessaix ordered a battalion to move along the Aire stream near Tairier and Crache .",
+        "sentence2": "As part of his attempt to bend the Austrian right , Dessaix ordered a battalion to move along the Aire electricity near Tairier and Crache .",
+        "label": 1
+      },
+      {
+        "id": 1087,
+        "sentence1": "Among them are Sylvia Rexach , a composer of boleros , Marie Teresa Rios , an author , and Julita Ross , a singer .",
+        "sentence2": "Among them are Marie Teresa Rios , a composer of Boleros , Julita Ross , author , and Sylvia Rexach , a singer .",
+        "label": 0
+      },
+      {
+        "id": 5359,
+        "sentence1": "Valgjärv is a lake in the southeastern county of Voru Latvia , close to the border with Estonia .",
+        "sentence2": "Rõuge Valgjärv is a lake in the southeastern county of Voru in Estonia , close to the border with Latvia .",
+        "label": 0
+      },
+      {
+        "id": 3672,
+        "sentence1": "Mark Knowles and Daniel Nestor won the title , defeating Jonathan Erlich and Andy Ram 5 -- 3 , 5 -- 4 in the final .",
+        "sentence2": "Mark Knowles and Daniel Nestor won the title , defeating Jonathan Erlich and Andy Ram 5 : 3 , 5 : 4 in the final .",
+        "label": 1
+      },
+      {
+        "id": 5495,
+        "sentence1": "On 29 November 1171 , Gonzalo signed a document for the first time as Gonzalo Ruiz de Bureba `` .",
+        "sentence2": "On 29 November 1171 , Gonzalo Ruiz de Bureba signed a certificate for the first time as '' Gonzalo .",
+        "label": 0
+      },
+      {
+        "id": 7179,
+        "sentence1": "The built methodist chapel is one of the few brick buildings in Upsall .",
+        "sentence2": "The abandoned Methodist chapel is one of the few brick-built buildings in Upsall .",
+        "label": 0
+      },
+      {
+        "id": 1371,
+        "sentence1": "Nathan Slade played the bass on 5 songs , using Ugly Kid Joe Bassist Cordell Crockett on the rest bass .",
+        "sentence2": "Cordell Crockett played the bass on 5 songs , using Ugly Kid Joe Bassist Nathan Slade on the rest bass .",
+        "label": 0
+      },
+      {
+        "id": 1954,
+        "sentence1": "From her second marriage with the businessman Vasilis has a son , Babis Lazaridis .",
+        "sentence2": "From the second marriage with businessman Babis Lazaridis has a son , Vasilis .",
+        "label": 0
+      },
+      {
+        "id": 5786,
+        "sentence1": "They have 13 anal soft spines , 11 to 13 dorsale soft rays , 2 dorsal spines and 11 to 13 anal rays .",
+        "sentence2": "They have 13 anal soft spines , 11 to 13 dorsal soft rays , 2 dorsal spines , and 11 to 13 anal rays .",
+        "label": 1
+      },
+      {
+        "id": 5,
+        "sentence1": "The group toured extensively and became famous in Israel , and even played in New York City in 2007 .",
+        "sentence2": "The group toured extensively and was famous in Israel and even played in New York City in 2007 .",
+        "label": 1
+      },
+      {
+        "id": 4894,
+        "sentence1": "During its presence at DTM the Audi V8 competed with much smaller and about lighter Mercedes 190 , BMW M3 , and slightly smaller Opel Omega 3000 .",
+        "sentence2": "The Audi V8 competed with much smaller and lighter Mercedes 190 , BMW M3 and somewhat smaller Opel Omega 3000 during its DTM presence .",
+        "label": 1
+      },
+      {
+        "id": 609,
+        "sentence1": "For conventional warfare , three brigades ( 11 battalions ) were set up , a large guerrilla force ( estimated at 100,000 ) was trained .",
+        "sentence2": "Three brigades ( 11 Battalions ) were raised for conventional warfare ; a large guerrilla force ( estimated at 100,000 ) was trained .",
+        "label": 1
+      },
+      {
+        "id": 4054,
+        "sentence1": "Somers was the son of Richard Eliot , the 1st Baron Somers and Charles Cocks , the daughter of Elizabeth .",
+        "sentence2": "Somers was the son of Charles Cocks , 1st Baron Somers , and Elizabeth , the daughter of Richard Eliot .",
+        "label": 0
+      },
+      {
+        "id": 6299,
+        "sentence1": "The simple medium can be characterized by effective cross-sections of absorption and emission at the frequencies Formula 2 and Formula 3 .",
+        "sentence2": "The effective medium can be characterized by simple cross-sections of absorption and emission at frequencies of Formula 2 and Formula 3 .",
+        "label": 0
+      },
+      {
+        "id": 2485,
+        "sentence1": "The stars Lilie Rabe , Timothée Chalamet , Lili Reinhart , Anthony Quintal , Oscar Nunez and Rob Huebel .",
+        "sentence2": "The film stars Oscar Nunez , Rob Huebel , Timothée Chalamet , Lily Rabe , Anthony Quintal , and Lili Reinhart .",
+        "label": 1
+      },
+      {
+        "id": 3574,
+        "sentence1": "Norman Melancton Geddes , born Norman Bel Geddes , ( April 27 , 1893 -- May 8 , 1958 ) was an American theatrical and industrial designer .",
+        "sentence2": "Norman Bel Geddes , born Norman Melancton Geddes ( April 27 , 1893 - May 8 , 1958 ) , was an American theatrical and industrial designer .",
+        "label": 0
+      },
+      {
+        "id": 6833,
+        "sentence1": "This is the formal style of serving and dining meals practiced in Zen Temples .",
+        "sentence2": "This is the Zen style of serving and eating meals practiced in formal temples .",
+        "label": 0
+      },
+      {
+        "id": 6947,
+        "sentence1": "The compound was patented by Dr. Patrick Page and his team and was invented by Genkyotex in 2007 .",
+        "sentence2": "The preparation was invented by Dr. Patrick Page and his team and patented by Genkyotex in 2007 .",
+        "label": 0
+      },
+      {
+        "id": 464,
+        "sentence1": "In 2002 , the song was published by the British producer Vincent Stormfield and covered by Independiente as '' Sweet Harmony 02 `` .",
+        "sentence2": "In 2002 , the song was covered by the British producer Vincent Stormfield and was released by Independiente as '' Sweet Harmony '02 `` .",
+        "label": 0
+      },
+      {
+        "id": 4716,
+        "sentence1": "Madonna , Prince and Michael Jackson were , however , influences on the album .",
+        "sentence2": "Michael Jackson , Prince and Madonna , however , were influenced on the album .",
+        "label": 1
+      },
+      {
+        "id": 5321,
+        "sentence1": "In 1937 , Donald became the owner of the baseball team Toronto Maple Leafs , his son Ross became club president .",
+        "sentence2": "In 1937 , Ross became co-owner of the Toronto Maple Leafs baseball team . His son Donald became club president .",
+        "label": 0
+      },
+      {
+        "id": 3602,
+        "sentence1": "A new molecular entity ( NME ) contains a drug that is an active moiety that has never been approved by the FDA or marketed in the US .",
+        "sentence2": "A New Molecular Entity ( NME ) is a medicine that contains an active component that has never been approved by the FDA or marketed in the US .",
+        "label": 0
+      },
+      {
+        "id": 3623,
+        "sentence1": "A Khap is a clan , or a group of related clans , mainly under the jats of the eastern Uttar Pradesh and Western Haryana .",
+        "sentence2": "A Khap is a clan , or a group of related clans , mainly among the Jats of eastern Uttar Pradesh and western Haryana .",
+        "label": 1
+      },
+      {
+        "id": 6727,
+        "sentence1": "Dora Rangelova is the Bulgarian captain of the current Fed Cup team . She 's also the mother of tennis player Dimitar Kuzmanov .",
+        "sentence2": "Dora Rangelova is the Bulgarian captain of the current Fed Cup team and mother of the tennis player Dimitar Kuzmanov .",
+        "label": 1
+      },
+      {
+        "id": 5661,
+        "sentence1": "The family moved to Camp Hill in 1972 , where he attended Trinity High School in Harrisburg , Pennsylvania .",
+        "sentence2": "In 1972 , the family moved to Harrisburg , Pennsylvania , where he visited the Trinity High School in Camp Hill .",
+        "label": 0
+      },
+      {
+        "id": 2175,
+        "sentence1": "They have 13 anal soft spines , 11 to 13 dorsal soft rays , 2 back spines and 11 to 13 anal rays .",
+        "sentence2": "They have 13 anal soft spines , 11 to 13 dorsal soft rays , 2 dorsal spines , and 11 to 13 anal rays .",
+        "label": 1
+      },
+      {
+        "id": 3798,
+        "sentence1": "Zinovjev 's works have been so far performed by Oulu Symphony Orchestra , Lahti Symphony Orchestra , Kymi Sinfonietta , Finnish Radio Symphony Orchestra and Avanti !",
+        "sentence2": "So far Zinovjev ’ s works have been performed by the Oulu Symphony Orchestra , Lahti Symphony Orchestra , Kymi Sinfonietta , Finnish Radio Symphony Orchestra and Avanti !",
+        "label": 1
+      },
+      {
+        "id": 1486,
+        "sentence1": "Rashidi was not charged , but he was detained by Moroccan authorities , when he was repatriated .",
+        "sentence2": "Rashidi was not charged , but he was repatriated by the Moroccan authorities when he was arrested .",
+        "label": 0
+      },
+      {
+        "id": 4893,
+        "sentence1": "Ungarala Rambabu is a Telugu film written and directed by Kranthi Madhav and produced by Paruchuri Kiriti .",
+        "sentence2": "Ungarala Rambabu is a Telugu film , written and staged by Kranthi Madhav and produced by Paruchuri Kiriti .",
+        "label": 1
+      }
+    ],
+    "test": [
+      {
+        "id": 4955,
+        "sentence1": "Tom Gullikson defeated Tim Gullikson , 4 -- 6 , 6 -- 2 , 7 -- 6",
+        "sentence2": "Tim Gullikson defeated Tom Gullikson 4 -- 6 , 6 -- 2 , 7 - 6 .",
+        "label": 0
+      },
+      {
+        "id": 4022,
+        "sentence1": "Hankensbüttel is a municipality in Gifhorn in the district of Samtgemeinde Hankensbüttel , Lower Saxony , Germany .",
+        "sentence2": "Hankensbüttel is a municipality in the Gifhorn in the district of Samtgemeinde Hankensbüttel , Lower Saxony , Germany .",
+        "label": 1
+      },
+      {
+        "id": 4173,
+        "sentence1": "Luís Neves is a modern Portuguese composer of classical music and writer of several other genres .",
+        "sentence2": "Pedro Luís Neves is a classical composer of Portuguese modern music and author of several other genres .",
+        "label": 0
+      },
+      {
+        "id": 7910,
+        "sentence1": "The hybrids are , however , always male and appear infertile .",
+        "sentence2": "However , the hybrids are always male and appear to be infertile .",
+        "label": 1
+      },
+      {
+        "id": 4227,
+        "sentence1": "Al Smith ( D ) was elected as speaker for Harold J. Hinman ( R ) and 3 for Michael Schaap ( P ) with 102 votes to 42 votes .",
+        "sentence2": "Michael Schaap ( D ) was voted spokesman for Harold J. Hinman ( R ) and 3 for Al Smith ( P ) with 102 votes against 42 .",
+        "label": 0
+      },
+      {
+        "id": 6006,
+        "sentence1": "Alappuzha constituency is part of Alappuzha ( Lok Sabha constituency ) , the other constituency of Lok Sabha is the district Mavelikkarare",
+        "sentence2": "Mavelikkara assembly constituency is part of Alappuzha ( Lok Sabha constituency ) . The other Lok Sabha constituency of the district is Alappuzha .",
+        "label": 0
+      },
+      {
+        "id": 5146,
+        "sentence1": "In the second round , UTA eliminated Red Star Belgrade from the competition ( 0-3 , 1-3 ) .",
+        "sentence2": "In the second round UTA was eliminated from the competition by Red Star Belgrade ( 0-3 , 1-3 ) .",
+        "label": 0
+      },
+      {
+        "id": 7058,
+        "sentence1": "Līvi is a village in the parish of Biksti and the municipality of Dobele in the historical region of Zemgale and the planning region of Zemgale in Latvia .",
+        "sentence2": "Līvi is a village in Latvia and Dobele Municipality in the historical region of Zemgale , and the Zemgale Planning Region in Biksti Parish .",
+        "label": 0
+      },
+      {
+        "id": 6748,
+        "sentence1": "Radley had further opportunities to expand his skills by being abroad at the Peninsula Hotel in Bangkok and the Mandarin Oriental in Hong Kong in 1991 .",
+        "sentence2": "Radley had further opportunities to expand his skills , spending time abroad in 1991 at the Peninsula Hotel in Bangkok and the Mandarin Oriental in Hong Kong .",
+        "label": 1
+      },
+      {
+        "id": 4601,
+        "sentence1": "According to the United States Census Bureau , Ardmore has a total area of , of which is land and , or 3.67 % , is water .",
+        "sentence2": "According to the United States Census Bureau , Ardmore is a total surface area of which is land and , or 3.67 % , has water .",
+        "label": 1
+      },
+      {
+        "id": 4547,
+        "sentence1": "The book collects fourteen short stories , nineteen essays and two plays by the author , including two of his Jorkens - stories , with an introductory preface by Schweitzer .",
+        "sentence2": "The book collects fourteen Jorkens - stories , nineteen essays and two plays by the author , including two of his short stories , with an introductory preface by Schweitzer .",
+        "label": 0
+      },
+      {
+        "id": 1794,
+        "sentence1": "The Military ranks of Tajikistan are the military insignia used by the Military of Tajikistan .",
+        "sentence2": "The military ranks of Tajikistan are the military insignia used by the military in Tajikistan .",
+        "label": 1
+      },
+      {
+        "id": 6774,
+        "sentence1": "The Potez X was a French colonial transport aircraft of the 1920s designed and built by Potez .",
+        "sentence2": "The Potez X was a French colonial transport aircraft of the 1920s , designed and built by Potez .",
+        "label": 0
+      },
+      {
+        "id": 3511,
+        "sentence1": "In addition to artificial insemination by rams , natural insemination and embryo transfers have been used in sheep breeding programs for many years in Australia and New Zealand .",
+        "sentence2": "In addition to natural insemination by rams , Australia and New Zealand have been using artificial insemination and embryo transfers in sheep breeding programmes for many years .",
+        "label": 0
+      },
+      {
+        "id": 3381,
+        "sentence1": "Nearby cities ( with 15,000 + population ) include Ada , Oklahoma ( 21 miles south ) and Shawnee , Oklahoma ( 27 miles north ) .",
+        "sentence2": "Ada , Oklahoma ( 21 miles south ) and Shawnee , Oklahoma ( 27 miles north ) are cities nearby ( with 15,000 + population ) .",
+        "label": 1
+      },
+      {
+        "id": 3898,
+        "sentence1": "Intelsat has teamed up with Intelsat to launch the Intelsat 22 - Satellite for International Launch Services on a Proton rocket .",
+        "sentence2": "International Launch Services teamed up with Intelsat to launch the Intelsat 22 satellite for Intelsat on a Proton rocket .",
+        "label": 0
+      },
+      {
+        "id": 3906,
+        "sentence1": "Panaon Island is a small island in the Philippines , in the province of Southern Leyte .",
+        "sentence2": "Panaon Island is a small island in the Philippines located in the province of Southern Leyte .",
+        "label": 1
+      },
+      {
+        "id": 2521,
+        "sentence1": "On a smaller scale , Ohio hosts Minor League Baseball , Arena Soccer , Indoor Football , Mid - Level - Hockey and Lower Division Football .",
+        "sentence2": "On a smaller scale , Ohio hosts minor league baseball , arena football , indoor football , mid-level hockey , and lower division soccer .",
+        "label": 1
+      },
+      {
+        "id": 1969,
+        "sentence1": "Only when symbols ... are consciously used to form words used to record sentences is there a true sign that the development of script has begun .",
+        "sentence2": "Only if symbols ... be consciously used to form words that are used to record sentences , there is a true sign that the development of the script has begun .",
+        "label": 1
+      },
+      {
+        "id": 796,
+        "sentence1": "Philip Ernest Daly ( December 1860 - January 22 , 1923 ) was a politician in Edmonton and a town councillor in Alberta , Canada .",
+        "sentence2": "Philip Ernest Daly ( December 1860 -- January 22 , 1923 ) was a politician in Alberta , Canada and a municipal councillor in Edmonton .",
+        "label": 0
+      },
+      {
+        "id": 7445,
+        "sentence1": "He was born in Bergen and represented , was a brother of Nils Opdahl and died Bergens TF .",
+        "sentence2": "He was born and represented in Bergen , was a brother of Nils Opdahl , and died Bergens TF .",
+        "label": 1
+      },
+      {
+        "id": 176,
+        "sentence1": "A short double track was also built between Langensteinbach and the newly created Schießhüttenäcker railway station in 2011 .",
+        "sentence2": "In 2011 , a short double track section was also created between Langensteinbach and the newly built station of Schießhüttenäcker .",
+        "label": 1
+      },
+      {
+        "id": 1690,
+        "sentence1": "For this reason , Castello di Monterone was damaged mainly by military attacks , seriously by Braccio da Montone or Malatesta Baglioni ( around 1416 and 1582 ) .",
+        "sentence2": "For this reason , Castello di Monterone was especially damaged by military attacks , seriousely by Braccio da Montone or Malatesta Baglioni ( around 1416 and 1582 ) .",
+        "label": 1
+      },
+      {
+        "id": 5953,
+        "sentence1": "Liuzhou , autonomous region of Guangxi Zhuang ( Standard Zhuang ) is under the administration of the Rongshui Miao Autonomous County of China .",
+        "sentence2": "Autonomous County of Rongshui Miao ( ; Standard Zhuang : ) is under the administration of Liuzhou , Guangxi Zhuang Autonomous Region , China .",
+        "label": 0
+      },
+      {
+        "id": 4875,
+        "sentence1": "Later , Peyton is seen on the phone with Larry , her adoptive father .",
+        "sentence2": "Larry was later seen with Peyton , her adoptive father , on the phone .",
+        "label": 0
+      },
+      {
+        "id": 2366,
+        "sentence1": "Wu Xiang 's son Wu Sangui was the commander of Shanhai Pass , the last major obstacle between the Manchus and Beijing .",
+        "sentence2": "The son of Wu Xiang , Wu Sangui , was the commander of Shanhai Pass , the last major obstacle between Manchu and Beijing .",
+        "label": 1
+      },
+      {
+        "id": 1096,
+        "sentence1": "The Consonant - Ejective is a kind of alveolar sound that is used in some spoken languages The symbol in the International Phonetic Alphabet that represents this sound .",
+        "sentence2": "The alveolar ejective is a type of consonantal sound , used in some spoken languages . The symbol in the International Phonetic Alphabet that represents this sound is .",
+        "label": 0
+      },
+      {
+        "id": 33,
+        "sentence1": "The resignation of Councillor Horace Muspratt ( party ? , St. Peter , reported April 15 , 1908 ) was elected to the council on 2 June 1909 .",
+        "sentence2": "The resignation of Councillor Horace Muspratt ( Party ? , St. Peter 's , reported 15 April 1908 ) was elected to the Council on 2 June 1909 .",
+        "label": 1
+      },
+      {
+        "id": 236,
+        "sentence1": "He was fellow of the Royal Colonial Institute , the Royal Statistical Society and the Royal Geographic Society ( RGS ) .",
+        "sentence2": "He was a fellow of the Royal Colonial Institute , the Royal Geographic Society , and the Royal Statistical Society ( RGS ) .",
+        "label": 0
+      },
+      {
+        "id": 7568,
+        "sentence1": "Since the split , both former members have created new bands . Todd Marriott has formed YGT , an electronic duo with Tom Mclean .",
+        "sentence2": "Since Split , the two former members have founded new bands : Todd Marriott has created an electronic duo YGT with Tom Mclean .",
+        "label": 1
+      },
+      {
+        "id": 7477,
+        "sentence1": "This tells us that the isomorphic cohomology groups formula 4 are all de-Rham .",
+        "sentence2": "This tells us that the Formula 4 isomorphic cohomology groups are all DeRhams .",
+        "label": 1
+      },
+      {
+        "id": 1983,
+        "sentence1": "The son of Charles Gordon was the soldier and MP Colonel John Gordon ( c.1776 -- 1858 ) .",
+        "sentence2": "John Gordon 's son was the soldier and MP Colonel Charles Gordon ( c.1776 -- 1858 ) .",
+        "label": 0
+      },
+      {
+        "id": 6942,
+        "sentence1": "Several members of the McMillan Commission were appointed , as were many supporters of the McMillan plan , to the CFA .",
+        "sentence2": "Several members of the McMillan Commission were appointed to the CFA , as were many McMillan Plan supporters .",
+        "label": 1
+      },
+      {
+        "id": 4159,
+        "sentence1": "Lake Iijärvi ( Ristijärvi ) is a medium-sized lake in the Oulujoki main catchment area . It is located in the Kainuu region , northern Finland .",
+        "sentence2": "Iijärvi - Lake ( Ristijärvi ) is a medium-sized lake in the main catchment area of Kainuu and is located in the region of Oulujoki , northern Finland .",
+        "label": 0
+      },
+      {
+        "id": 861,
+        "sentence1": "While the local archives can not be replaced , local universities and various groups in Quebec have collected books for a new Library Mégantic .",
+        "sentence2": "While the local archives can not be replaced , local universities and various groups in Quebec have collected books for a new Bibliothèque Mégantic .",
+        "label": 0
+      },
+      {
+        "id": 5226,
+        "sentence1": "This neurological disease is caused by a lack of thiamine ( vitamin B ) in the brain and is often amplified by the neurotoxic effects of alcohol .",
+        "sentence2": "This neurological disease is exacerbated by a lack of thiamine ( vitamin B ) in the brain and is also often caused by the neurotoxic effects of alcohol .",
+        "label": 0
+      },
+      {
+        "id": 7030,
+        "sentence1": "Other regions believed free of CSF include Ireland ( 1962 ) , Australia , Canada , New Zealand and Scandinavia .",
+        "sentence2": "Other regions believed to be free of CSF include Ireland ( 1962 ) , Australia , Canada , New Zealand , and Scandinavia .",
+        "label": 1
+      },
+      {
+        "id": 751,
+        "sentence1": "In 1933 , Carleman published a short proof of what Denjoy -- Carleman -- Ahlfors Theorem is called today .",
+        "sentence2": "In 1933 Carleman published a short proof of what is now called the Denjoy -- Carleman -- Ahlfors theorem .",
+        "label": 1
+      },
+      {
+        "id": 3923,
+        "sentence1": "This is a list of the international sporting events in the Greater Manila Area in the Philippines :",
+        "sentence2": "This is a list of international sporting events in the Greater Manila Area in the Philippines :",
+        "label": 0
+      },
+      {
+        "id": 254,
+        "sentence1": "For example , the following two definitions are safe for an equivalent division for values in maybe - monad .",
+        "sentence2": "For example , both following definitions for equivalent division for values in the Maybe monad are safe .",
+        "label": 1
+      },
+      {
+        "id": 6049,
+        "sentence1": "The most promising individuals in each generation are selected , while the others are finished .",
+        "sentence2": "The most promising individuals in each generation are terminated while the others are selected .",
+        "label": 0
+      },
+      {
+        "id": 7667,
+        "sentence1": "He always added his own surname of Bhosle and then treated the child like his own son .",
+        "sentence2": "Afterwards , he added his own surname to Bhosle and always treated the child like his own son .",
+        "label": 0
+      },
+      {
+        "id": 2089,
+        "sentence1": "Arthur Charles Bannington ( born 1951 ) , sometimes known as Charlie Bannington , was a British political activist .",
+        "sentence2": "Charlie Bannington ( died 1951 ) , sometimes known as Arthur Charles Bannington , was a British political activist .",
+        "label": 0
+      },
+      {
+        "id": 2120,
+        "sentence1": "They defeated the Seattle Seahawks in the Wild Card Round before losing to the Tampa Bay Buccaneers in the Divisional Round .",
+        "sentence2": "They beat the Tampa Bay Buccaneers in the Wild Card Round before returning to the Seattle Seahawks in the Divisional round .",
+        "label": 0
+      },
+      {
+        "id": 3102,
+        "sentence1": "It was held in Des Moines in 2015 and 2016 and will return to Wisconsin in 2017 .",
+        "sentence2": "It was held in Wisconsin in 2015 and 2016 , and it will return to Des Moines in 2017 .",
+        "label": 0
+      },
+      {
+        "id": 5611,
+        "sentence1": "Goodhue died before the project was finished ; it was completed by Hardie Phillip .",
+        "sentence2": "Goodhue died before the project was completed and was finished by Hardie Phillip .",
+        "label": 1
+      },
+      {
+        "id": 5792,
+        "sentence1": "My husband and I sold our house in Los Angeles , put the dog in the car , and headed to Nashville .",
+        "sentence2": "My husband and I sold our house in Los Angeles , put the dog in the car and went to Nashville .",
+        "label": 1
+      },
+      {
+        "id": 3647,
+        "sentence1": "It is near Point Pleasant Beach , a municipality independent of Point Pleasant borough .",
+        "sentence2": "It is located near Point Pleasant Borough , a municipality of Point Pleasant Beach independent .",
+        "label": 0
+      },
+      {
+        "id": 6682,
+        "sentence1": "Back in the secret laboratory , Vornoff uses a wave of his hand to summon Janet to his current location .",
+        "sentence2": "Back in the current laboratory , Vornoff uses a wave of his hand to call Janet to his secret location .",
+        "label": 0
+      },
+      {
+        "id": 4453,
+        "sentence1": "In 1934 , Walter committed suicide and Wilder died on 20 April 1938 .",
+        "sentence2": "In 1934 , Wilder committed suicide , and Walter died on April 20 , 1938 .",
+        "label": 0
+      },
+      {
+        "id": 262,
+        "sentence1": "Most individualistic anarchists supported anarcho-syndicalism and communist anarchism , while a few Jewish anarchists were .",
+        "sentence2": "Most Jewish anarchists supported anarchosyndicalism and communist anarchism , while a few individualist anarchists were .",
+        "label": 0
+      },
+      {
+        "id": 2536,
+        "sentence1": "He attended the Oregon State College for two years before taking over Rutgers University , where he received a Bachelor of Science degree .",
+        "sentence2": "He attended Rutgers University for two years before transferring Oregon State College , where he received a Bachelor of Science degree .",
+        "label": 0
+      },
+      {
+        "id": 1473,
+        "sentence1": "In April 2014 , president Randy Garfield retired . Kenneth Svendsen was named president in March 2014 .",
+        "sentence2": "In April 2014 , President Kenneth Svendsen retired , and Randy Garfield was elected president in March 2014 .",
+        "label": 0
+      },
+      {
+        "id": 1952,
+        "sentence1": "Marshall Clemens ( 11 August 1798 - 24 March 1847 ) was the father of the author Mark Twain .",
+        "sentence2": "Mark Twain ( August 11 , 1798 -- March 24 , 1847 ) was the father of author John Marshall Clemens .",
+        "label": 0
+      },
+      {
+        "id": 7351,
+        "sentence1": "5th-General Robin Vincent Searby ( born 20 July 1947 ) is a former British Army officer who commanded Major Division .",
+        "sentence2": "Robin Vincent Searby ( born July 20 , 1947 ) is a former officer of the British Army , who commanded Major Division .",
+        "label": 1
+      },
+      {
+        "id": 1837,
+        "sentence1": "Jonas Björkman and Brett Steven won the final on a walkover against Marcos Ondruska and Jack Waite .",
+        "sentence2": "Jonas Björkman and Brett Steven won the final against Marcos Ondruska and Jack Waite at a Walkover .",
+        "label": 1
+      },
+      {
+        "id": 6283,
+        "sentence1": "The clock mechanism was installed in 1695 and today 's works were replaced in 1792 .",
+        "sentence2": "The clock 's mechanism was installed in 1695 and the present works were replaced in 1792 .",
+        "label": 1
+      },
+      {
+        "id": 5693,
+        "sentence1": "Steiner held that the spiritual world can be researched in the right circumstances through direct experience , by persons practicing rigorous forms of ethical and cognitive self-discipline .",
+        "sentence2": "Steiner argued that , in the right circumstances , the spiritual world can be explored through direct experience by practicing rigorous forms of ethical and cognitive self-discipline .",
+        "label": 1
+      },
+      {
+        "id": 225,
+        "sentence1": "After the Belgian Revolution of 1830 , the Southern Netherlands ( including South and Central Brabant ) became independent as Luxembourg and later also Belgium .",
+        "sentence2": "After the Belgian Revolution of 1830 , the southern Netherlands ( including South and Central Brabant ) became independent as Luxembourg and later also as Belgium .",
+        "label": 1
+      },
+      {
+        "id": 587,
+        "sentence1": "It is a yellow solid with good solubility in water , but low solubility in DMF .",
+        "sentence2": "It is a yellow solid with a low solubility in water , but good solubility in DMF .",
+        "label": 0
+      },
+      {
+        "id": 5684,
+        "sentence1": "This article lists the Phoenix 's history record at the University of Wisconsin -- Green Bay .",
+        "sentence2": "This article lists the Green Bay history of the University of Wisconsin -- Phoenix .",
+        "label": 0
+      },
+      {
+        "id": 6482,
+        "sentence1": "Assembled by producer Mick Walsh , the group also included singers Melody Washington and Stevie Vincent .",
+        "sentence2": "Compiled by producer Mick Walsh , the group also included singers Melody Washington and Stevie Vincent .",
+        "label": 1
+      },
+      {
+        "id": 4750,
+        "sentence1": "In 1928 a children 's edition of poems from Bianco 's `` Songs of Innocence '' , selected and illustrated by William Blake , was published .",
+        "sentence2": "In 1928 , a children 's edition of poems from Biancos '' Songs of Innocence `` was published and selected and illustrated by William Blake .",
+        "label": 1
+      },
+      {
+        "id": 4877,
+        "sentence1": "1 BFTS trained students from the Australian Army and the Air Arm fleet of the Royal Australian Navy .",
+        "sentence2": "1 BFTS trained students from the Australian Army and the Royal Australian Navy 's Fleet Air Arm .",
+        "label": 1
+      },
+      {
+        "id": 5132,
+        "sentence1": "By the close of the 1940s , Springfield , had doubled in size to approximately 3 square miles and a population of nearly 10,000 .",
+        "sentence2": "By the end of the 1940s , Springfield had doubled , to about 3 square miles and a population of nearly 10,000 in size .",
+        "label": 1
+      },
+      {
+        "id": 6267,
+        "sentence1": "Guru Arjan Dev has also said that Bhagat Beni attained enlightenment only through the Holy Word .",
+        "sentence2": "Guru Arjan Dev also said that Bhagat Beni has obtained enlightenment only through the Holy Word .",
+        "label": 1
+      },
+      {
+        "id": 2071,
+        "sentence1": "On 3 January 1874 , Spanish President Emilio Castelar was voted out of office and replaced by Francisco Serrano .",
+        "sentence2": "On January 3 , 1874 , Spanish President Francisco Serrano was voted out of office and replaced by Emilio Castelar .",
+        "label": 0
+      },
+      {
+        "id": 3506,
+        "sentence1": "After the season in 1971 , Ed Farmer was traded by the Tigers to the Cleveland - Indians in exchange for Collins , together with Tom Timmermann .",
+        "sentence2": "After the 1971 season , Collins was traded by the Tigers along with Tom Timmermann to the Cleveland Indians in exchange for Ed Farmer .",
+        "label": 0
+      },
+      {
+        "id": 4621,
+        "sentence1": "The village lies 11 miles east of Wrexham and only 10 miles south of Chester in Wales .",
+        "sentence2": "The village is 11 miles east of Wrexham , and only 10 miles south of Chester in Wales .",
+        "label": 1
+      },
+      {
+        "id": 3246,
+        "sentence1": "The Los Angeles County Department of Health Services operates the Monrovia Health Centre in Rosemead , Monrovia .",
+        "sentence2": "The Los Angeles County Department of Health Services operates the Monrovia Health Center in Rosemead , serving Monrovia .",
+        "label": 1
+      },
+      {
+        "id": 2976,
+        "sentence1": "It is one of the 324 fish species found in Montana , and is a species of concern in the Charles M. Russell National Wildlife Refuge in Tennessee .",
+        "sentence2": "It is one of 324 species of fish that are found in Montana and is a species of concern in the Charles M. Russell National Wildlife Refuge in Tennessee .",
+        "label": 1
+      },
+      {
+        "id": 4176,
+        "sentence1": "Jack Fifield was the nephew of Cec Fifield , the brilliant Kangaroo centre ( 1929-1930 ) .",
+        "sentence2": "Jack Fifield was the nephew of Cec Fifield , the glossy Kangaroo centre ( 1929-1930 ) .",
+        "label": 1
+      },
+      {
+        "id": 3395,
+        "sentence1": "ObjecTime Developer ( or ObjecTime or OTD for short ) is a software automation tool designed to meet the development requirements of real-time software development teams .",
+        "sentence2": "ObjecTime Developer ( or ObjecTime or OTD , for real ) is a software automation tool designed to meet the development needs of short-time software development teams .",
+        "label": 0
+      },
+      {
+        "id": 5031,
+        "sentence1": "On a scale of 0 ( very clean ) to 10 ( highly corrupt ) , the Corruption Perceptions Index marked Zimbabwe 2.0 .",
+        "sentence2": "On a scale of 0 ( highly corrupt ) to 10 ( very clean ) marked the Zimbabwe 2.0 corruption perception index .",
+        "label": 0
+      },
+      {
+        "id": 2016,
+        "sentence1": "The Mavelikkara meeting constituency is part of Alappuzha ( constituency of Lok Sabha ) , the other constituency Lok Sabha of the district is Alappuzha .",
+        "sentence2": "Mavelikkara assembly constituency is part of Alappuzha ( Lok Sabha constituency ) . The other Lok Sabha constituency of the district is Alappuzha .",
+        "label": 1
+      },
+      {
+        "id": 4306,
+        "sentence1": "The tiny island is from northwest to southeast meters wide and up to meters long and about in the surface .",
+        "sentence2": "The tiny island is from northwest to southeast meters long and up to meters wide and about surface-dependent .",
+        "label": 0
+      },
+      {
+        "id": 7425,
+        "sentence1": "In addition to artificial insemination by rams , natural insemination and embryo transfers in sheep farming programs have been used in Australia and New Zealand for many years .",
+        "sentence2": "In addition to natural insemination by rams , Australia and New Zealand have been using artificial insemination and embryo transfers in sheep breeding programmes for many years .",
+        "label": 0
+      },
+      {
+        "id": 221,
+        "sentence1": "On September 8 , 2014 , David Burtka announced on his Twitter page that Harris and he had married in Italy at the weekend .",
+        "sentence2": "On September 8 , 2014 , David Burtka announced on his Twitter page that Harris and he were married over the weekend in Italy .",
+        "label": 1
+      },
+      {
+        "id": 7196,
+        "sentence1": "Lucky Wahyu ( born April 1 , 1990 ) is an Indonesian football player who plays for Barito Putera in the Indonesia Super League .",
+        "sentence2": "Lucky Wahyu ( born April 1 , 1990 ) is an Indonesian footballer , who plays for Indonesia Super League in the Barito Putera .",
+        "label": 0
+      },
+      {
+        "id": 2240,
+        "sentence1": "Rugi is a small village in Bagalkot , Karnataka , India , district Mudhol .",
+        "sentence2": "Rugi is a small village in Bagalkot , Karnataka , India , in the Mudhol district .",
+        "label": 1
+      },
+      {
+        "id": 2073,
+        "sentence1": "`` Madang '' was built by Evans Deakin in Brisbane , Queensland , launched on August 10 , 1968 and commissioned on November 28 , 1968 .",
+        "sentence2": "`` Madang '' was built by Evans Deakin at Brisbane , Queensland , commissioned on 10 August 1968 , and launched on 28 November 1968 .",
+        "label": 0
+      },
+      {
+        "id": 6681,
+        "sentence1": "He is a fan of his hometown of Philadelphia Eagles , while his twin brother is a fan of the rival Dallas Cowboy .",
+        "sentence2": "He is a fan of his hometown Dallas Cowboys while his twin brother is a fan of the rival Philadelphia Eagles .",
+        "label": 0
+      },
+      {
+        "id": 3949,
+        "sentence1": "He was born in Houston , Texas , attended the Worthing High School in Houston and played High School Football at the Worthing Colts .",
+        "sentence2": "Hudson was born in Houston , attended the Worthing High School in Houston , Texas and played high school football for the Worthing Colts .",
+        "label": 1
+      },
+      {
+        "id": 6571,
+        "sentence1": "Once the dog leader is with the subject , the dog is released ( and rewarded during training ) .",
+        "sentence2": "Once the handler is with the subject , the dog is released ( and during training , rewarded ) .",
+        "label": 1
+      },
+      {
+        "id": 6361,
+        "sentence1": "Grace Grace Elliott also appears as a major character in Hallie Rubenhold 's novel `` The French Lesson '' ( Doubleday , 2016 ) .",
+        "sentence2": "Hallie Rubenhold also appears as a major character in Grace Elliott 's novel , `` The French Lesson '' ( Doubleday , 2016 ) .",
+        "label": 0
+      },
+      {
+        "id": 65,
+        "sentence1": "Evariste Baizeau ( June 3 , 1821 - Nantes , February 6 , 1910 ) was a French military physician .",
+        "sentence2": "Anacharsis Evariste Baizeau ( 3 June 1821 , Paris -- 6 February 1910 , Nantes ) was a French military physician .",
+        "label": 1
+      },
+      {
+        "id": 3223,
+        "sentence1": "Becker stopped writing , playing and recording music in 2009 for personal reasons and resumed in 2015 .",
+        "sentence2": "In 2009 , Beck Becker stopped writing , playing and recording music for personal reasons and continued in 2015 .",
+        "label": 1
+      },
+      {
+        "id": 4764,
+        "sentence1": "On February 7 , 2014 , the musical opened in Malmö , Sweden at Malmö Opera . Director was Anders Eljas and Musical Director Åsa Melldahl .",
+        "sentence2": "On February 7 , 2014 , the musical was opened in Malmö , Sweden , at the Malmö Opera , directed by Anders Eljas and musical director Åsa Melldahl .",
+        "label": 1
+      },
+      {
+        "id": 7311,
+        "sentence1": "During this period , there were several competing organizations on the Irish side of radical Republican politics .",
+        "sentence2": "During this period , there have been several competing organisations on the radical - Republican side of Irish politics .",
+        "label": 0
+      },
+      {
+        "id": 5591,
+        "sentence1": "Perth and North Perthshire replaced part of the constituency of North Tayside and part of the constituency of Perth .",
+        "sentence2": "North Tayside and North Perthshire replaced part of the constituency of Perth and part of the constituency of Perth .",
+        "label": 0
+      },
+      {
+        "id": 5375,
+        "sentence1": "The Olympic Committee of the Cayman Islands was founded in 1973 and was recognized in 1976 by the IOC ( International Olympic Committee ) .",
+        "sentence2": "The Cayman Islands Olympic Committee was founded in 1973 and was recognised by the International Olympic Committee ( IOC ) in 1976 .",
+        "label": 1
+      },
+      {
+        "id": 2712,
+        "sentence1": "The area has 13 public secondary schools and more than thirty primary schools three village polytechnics , all run by the government .",
+        "sentence2": "The area has 13 secondary public schools and more than thirty primary schools , three village of Polytechnics , all led by the government .",
+        "label": 1
+      },
+      {
+        "id": 4826,
+        "sentence1": "Haptics is the study of touching as nonverbal communication , and haptic communication refers to how people and other animals communicate via touching .",
+        "sentence2": "Haptics is the study of touching as nonverbal communication , and haptic communication refers to how people and other animals communicate about touching .",
+        "label": 1
+      },
+      {
+        "id": 6250,
+        "sentence1": "The film documents the Irish musicians Liam Ó Maonlaí and Paddy Keenan , who are embarking on a musical adventure in Mali in Africa .",
+        "sentence2": "The film documents Irish musicians Liam Ó Maonlaí and Paddy Keenan embarking on a musical adventure to the Africa in Mali .",
+        "label": 0
+      },
+      {
+        "id": 4486,
+        "sentence1": "Robert Hrubý ( born 27 April 1994 ) is a professional Czech football midfielder currently playing for Ostrava in the Czech First League .",
+        "sentence2": "Robert Hrubý ( born 27 April 1994 ) is a professional Czech midfielder who is currently playing in the first Czech League for Ostrava .",
+        "label": 1
+      },
+      {
+        "id": 4385,
+        "sentence1": "Puerto Galera is from Calapan , the provincial capital .",
+        "sentence2": "Calapan is from the provincial capital of Puerto Galera .",
+        "label": 0
+      },
+      {
+        "id": 5656,
+        "sentence1": "It is by car north of Paris , to the east of the English Channel , south of Brussels and south of Amsterdam .",
+        "sentence2": "By car , it is north of Paris , east of the English Channel , south of Brussels , and south of Amsterdam .",
+        "label": 1
+      },
+      {
+        "id": 4346,
+        "sentence1": "In 2015 , Rudy Sarzo and Robert Sarzo became members after the departures of John Moyer , Brian Tichy , and Scott Moughton .",
+        "sentence2": "In 2015 , John Moyer , Brian Tichy , and Scott Moughton became members following the departures of Rudy Sarzo and Robert Sarzo .",
+        "label": 0
+      },
+      {
+        "id": 7728,
+        "sentence1": "The school was taken over by Charles Kilroy in the 1960s , his son Patrick Kilroy took over Kilroy College in 1999 .",
+        "sentence2": "The school was taken over by Charles Kilroy in the 1960s . His son Patrick Kilroy took over running of Kilroy 's College in 1999 .",
+        "label": 1
+      },
+      {
+        "id": 5960,
+        "sentence1": "Hightower studied and worked in Austin and traveled throughout India . Later , Hightower traveled to Mexico , Egypt , Turkey , Morocco , and throughout Europe .",
+        "sentence2": "Hightower studied and worked in Austin and traveled throughout India , later he traveled to Mexico , Egypt , Turkey , Morocco and throughout Europe .",
+        "label": 1
+      },
+      {
+        "id": 6169,
+        "sentence1": "In July 2008 , the Kona Brewing Company opened its first restaurant location and the third franchise at Honolulu International Airport .",
+        "sentence2": "In July 2008 , Kona Brewing Company opened its first restaurant location and third franchise at Honolulu International Airport .",
+        "label": 1
+      },
+      {
+        "id": 2395,
+        "sentence1": "The series returned on Monday , July 9 at 10 pm , after a missing week , from one hour to 30 minutes and from six to five episodes .",
+        "sentence2": "After missing a week , the series returned on Monday , 9 July at 10pm , reduced from one hour to 30 minutes and cut from six episodes to five .",
+        "label": 1
+      },
+      {
+        "id": 6548,
+        "sentence1": "The 2009 Superstars Series season was the third season of Campionato Italiano Superstars ( Italian Superstars Championship ) and the sixth season of the International Superstars Series .",
+        "sentence2": "The 2009 Superstars Series season was the sixth season of the Campionato Italiano Superstars ( Italian Superstars Championship ) and the third season of the International Superstars Series .",
+        "label": 0
+      },
+      {
+        "id": 7478,
+        "sentence1": "No physical evidence has been found for the existence of a historical person that fits in with the description of the Menehune .",
+        "sentence2": "No historical evidence has been discovered of the existence of a physical person that fits in with the description of the Menehune .",
+        "label": 0
+      },
+      {
+        "id": 997,
+        "sentence1": "According to the United States Census Bureau , Ardmore has a total area of which land and , or 3.67 % , is water .",
+        "sentence2": "According to the United States Census Bureau , Ardmore is a total area of which land is and , or 3.67 % , has water .",
+        "label": 1
+      },
+      {
+        "id": 4886,
+        "sentence1": "Edie tries to get at Mike 's early to help him , but Susan has arrived unexpectedly before her .",
+        "sentence2": "Edie tries to be early at Mike to help him , but Susan has arrived unexpectedly before her .",
+        "label": 1
+      },
+      {
+        "id": 327,
+        "sentence1": "In January 1131 , he was captured and executed in a forest near Ringsted in Zealand .",
+        "sentence2": "In January 1131 he was trapped in a forest near Zealand in Ringsted , and executed .",
+        "label": 0
+      },
+      {
+        "id": 3152,
+        "sentence1": "The initial segment of Fulton Street as it exists today is the Fulton Mall between Adams Street and Flatbush Avenue .",
+        "sentence2": "The first segment of the Fulton Mall , as exists today , is Fulton Street between Adams Street and Flatbush Avenue .",
+        "label": 0
+      },
+      {
+        "id": 5349,
+        "sentence1": "Rmetrics is a free , open source and computational development software project for teaching open finance .",
+        "sentence2": "Rmetrics is a free , open and open development software project for computational finance teaching .",
+        "label": 0
+      },
+      {
+        "id": 4944,
+        "sentence1": "In 1902 Konstantinos Aspiotis , the son of Gerasimos , was director of the company .",
+        "sentence2": "In 1902 Gerasimos , son of Konstantinos Aspiotis , became the director of the company .",
+        "label": 0
+      },
+      {
+        "id": 4386,
+        "sentence1": "However , the death of Mao Zedong in 1976 brought economic reform to the PRC , which led to the expected Chinese investment in the Japanese economy .",
+        "sentence2": "The death of Mao Zedong in 1976 , however , brought about economic reform in the PRC , which led to the expected Japanese investment in the Chinese economy .",
+        "label": 0
+      },
+      {
+        "id": 4553,
+        "sentence1": "The estimated median income for a household in the city in 2013 was $ 63,121 while the mean income for a household in the town was $ 78,090 .",
+        "sentence2": "The estimated middle income for a household in the city in 2013 was $ 63,121 , while the median income for a household in the city was $ 78,090 .",
+        "label": 1
+      },
+      {
+        "id": 1300,
+        "sentence1": "It was the most arrogant affair in town and for many years one of the most prominent taverns in the central part of the county .",
+        "sentence2": "It was the most prominent affair in town and for many years one of the most pretentious taverns in the central part of the county .",
+        "label": 0
+      },
+      {
+        "id": 6417,
+        "sentence1": "In the 2015 municipal elections for Konnagar Municipality Congress won 11 seats , CPI ( M ) 4 seats and Trinamool Congress 5 seats .",
+        "sentence2": "In 2015 municipal elections for Konnagar Municipality Congress won 11 seats , CPI ( M ) 4 seats and Trinamool Congress 5 seats .",
+        "label": 1
+      },
+      {
+        "id": 1068,
+        "sentence1": "Durr was born in Birmingham , Alabama , where she was raised by black women but was also taught that the Ku Klux Klan were protectors of southern womanhood .",
+        "sentence2": "Durr was born in Birmingham , Alabama , where she was raised by southern women , but was also taught that the Ku Klux Klan were protectors of black femininity .",
+        "label": 0
+      },
+      {
+        "id": 7797,
+        "sentence1": "He was born in Hong Kong and grew up there and in Shanghai .",
+        "sentence2": "He was born in Hong Kong and grew up there and started in Shanghai .",
+        "label": 1
+      },
+      {
+        "id": 7325,
+        "sentence1": "Lolly cakes can be difficult to find in New Zealand , even in areas where many Australia migrants live .",
+        "sentence2": "In New Zealand , it can be difficult to find Lolly Cakes , even in areas where many Australian migrants live .",
+        "label": 1
+      },
+      {
+        "id": 2415,
+        "sentence1": "The Verehia River is a tributary of the Grămești River in Romania .",
+        "sentence2": "The river Verehia is a tributary of the Grameşti River in Romania .",
+        "label": 1
+      },
+      {
+        "id": 4,
+        "sentence1": "Steiner argued that , in the right circumstances , the spiritual world can be explored through direct experience by practicing ethical and cognitive forms of rigorous self-discipline .",
+        "sentence2": "Steiner held that the spiritual world can be researched in the right circumstances through direct experience , by persons practicing rigorous forms of ethical and cognitive self-discipline .",
+        "label": 0
+      },
+      {
+        "id": 4301,
+        "sentence1": "This system is found in southern Ontario , in northern Manitoba and in southern Saskatchewan .",
+        "sentence2": "This system is found in northern Ontario , southern Manitoba and southern Saskatchewan .",
+        "label": 0
+      },
+      {
+        "id": 812,
+        "sentence1": "Bhagat Beni also said that the guru Arjan Dev has only obtained enlightenment through the Holy Word .",
+        "sentence2": "Guru Arjan Dev also said that Bhagat Beni has obtained enlightenment only through the Holy Word .",
+        "label": 0
+      },
+      {
+        "id": 5367,
+        "sentence1": "Raven was consumed of course , but angered by his work .",
+        "sentence2": "Raven was of course consumed , but angered by his work .",
+        "label": 1
+      },
+      {
+        "id": 3295,
+        "sentence1": "Next year he was followed by a Spanish expedition closely followed by the Portuguese explorer Estêvão Gomes .",
+        "sentence2": "He was closely followed the next year by a Spanish expedition led by the Portuguese explorer Estêvão Gomes .",
+        "label": 0
+      },
+      {
+        "id": 5843,
+        "sentence1": "Axl Rose had wanted Seattle rock band Nirvana to be the opening act , but frontman Kurt Cobain refused .",
+        "sentence2": "Kurt Cobain had wanted the Seattle rock band Nirvana to be the opening act , but frontman Axl Rose declined .",
+        "label": 0
+      },
+      {
+        "id": 6843,
+        "sentence1": "On March 6 , 2016 , he debuted in the Ukrainian Premier League for FC Metalist Kharkiv in a game against FC Volyn Lutsk .",
+        "sentence2": "He made his debut in the Ukrainian Premier League for FC Volyn Lutsk in a game against FC Metalist Kharkiv on 6 March 2016 .",
+        "label": 0
+      },
+      {
+        "id": 893,
+        "sentence1": "Antequera resigned in 1725 and fled to Charcas , while order was seemingly restored in the province .",
+        "sentence2": "In 1725 Antequera resigned and fled to Charcas , while in the province the order was apparently restored .",
+        "label": 1
+      },
+      {
+        "id": 2646,
+        "sentence1": "He was graduated from Mansfield College in 1872 and from the Legal Department of Cumberland University , Lebanon , Tennessee .",
+        "sentence2": "He was graduated in 1872 from Cumberland University and the Legal Department of Mansfield College , Lebanon , Tennessee .",
+        "label": 0
+      },
+      {
+        "id": 6743,
+        "sentence1": "In 2008 , the Republican John McCain defeated Democrat Barack Obama , 61 % -39 % .",
+        "sentence2": "In 2008 Democrat Barack Obama defeated Republican John McCain 61 % -39 % .",
+        "label": 0
+      },
+      {
+        "id": 1261,
+        "sentence1": "Java calls these types simple types , while they are called `` primitive types '' in C # .",
+        "sentence2": "Java calls these types simple types , while in C # `` they are called primitive types '' .",
+        "label": 1
+      },
+      {
+        "id": 3563,
+        "sentence1": "The heroic writer Suetonius recorded an anecdote of the Roman centurion Cassius Scaeva , who fought under Caesar in the Battle of Dyrrachium .",
+        "sentence2": "The Roman writer Suetonius noted an anecdote of the heroic centurios Cassius Scaeva , who fought in the Battle of Dyrrachium under Caesar :",
+        "label": 0
+      },
+      {
+        "id": 7460,
+        "sentence1": "43.0 % were German , 10.8 % Norwegian , 8.3 % Irish , 7.4 % of Finnish and 5.9 % Swedish descent according to the 2000 census .",
+        "sentence2": "43.0 % were German , 10.8 % Norwegian , 8.3 % Swedish , 7.4 % Irish and 5.9 % of Finnish descent according to the 2000 census .",
+        "label": 0
+      },
+      {
+        "id": 1558,
+        "sentence1": "Incorporated in 1849 , Newfields was part of Exeter until 1727 , when it became part of Newmarket .",
+        "sentence2": "Newfields was incorporated in 1849 and was part of Exeter until 1727 when it became part of Newmarket .",
+        "label": 1
+      },
+      {
+        "id": 7176,
+        "sentence1": "Soori is a Telugu film by Debutant Sankara Kumar in 2001 .",
+        "sentence2": "Soori is a 2001 Telugu film directed by debutant Sankara Kumar .",
+        "label": 1
+      },
+      {
+        "id": 5971,
+        "sentence1": "During an interview in April 1994 `` Soap Opera Update '' Howarth said that the only thing he admired of Todd was his clothing style .",
+        "sentence2": "Todd , during an April 1994 `` Soap Opera Update '' interview , said that the only thing that he admired about Howarth was his clothing style .",
+        "label": 0
+      },
+      {
+        "id": 662,
+        "sentence1": "Cedarville is a hamlet on NY 51 in the city of Columbia in Herkimer County , New York .",
+        "sentence2": "Columbia is a hamlet on NY 51 in the city of Cedarville in Herkimer County , New York .",
+        "label": 0
+      },
+      {
+        "id": 890,
+        "sentence1": "In the 2011 elections , Gobinda Chandra Roy defeated his nearest rival , Sukh Bilas Barma of AIFB , from the Congress .",
+        "sentence2": "In the 2011 elections , Gobinda Chandra Roy of Congress defeated his nearest rival Sukh Bilas Barma of AIFB .",
+        "label": 1
+      },
+      {
+        "id": 7072,
+        "sentence1": "The Rondônia ( Juruá River ) is a river of Rondônia state in western Brazil .",
+        "sentence2": "The Rondônia ( Juruá - River ) is a river in the state of Rondônia in western Brazil .",
+        "label": 1
+      },
+      {
+        "id": 1401,
+        "sentence1": "Cool winds come from the local Calanterique - forest and from the immense Cordillera Montecillos , a biological reserve on the southern edge of the valley .",
+        "sentence2": "Cool winds flow down from the immense Calanterique forest and from the local Cordillera Montecillos , a Biological Reserve on the southern edge of the valley .",
+        "label": 0
+      },
+      {
+        "id": 5379,
+        "sentence1": "The estimated mean income for a household in the city in 2013 was $ 63,121 , while the median income for a household in the town was $ 78,090 .",
+        "sentence2": "The estimated middle income for a household in the city in 2013 was $ 63,121 , while the median income for a household in the city was $ 78,090 .",
+        "label": 1
+      },
+      {
+        "id": 4987,
+        "sentence1": "This neurological disorder is aggravated by a lack of thiamine ( vitamin B ) in the brain and is often also caused by the neurotoxic effects of alcohol .",
+        "sentence2": "This neurological disorder is caused by a lack of thiamine ( vitamin B ) in the brain , and is also often exacerbated by the neurotoxic effects of alcohol .",
+        "label": 0
+      },
+      {
+        "id": 4925,
+        "sentence1": "During the second Turkish war ( 1787-92 ) , after Alexander Suvorov , Repnin was the most successful of Russian commanders .",
+        "sentence2": "During the second Turkish war ( 1787-92 ) Repnin was , after Alexander Suvorov , the most successful of the Russian commanders .",
+        "label": 1
+      },
+      {
+        "id": 3466,
+        "sentence1": "But these are idealized representations of the corresponding mathematical entities ; the line and the curve are physical concepts whose width is 0 ( see Line ) .",
+        "sentence2": "These are idealized representations of the corresponding mathematical entities , the line and the curve are physical concepts whose width is 0 ( see line ) .",
+        "label": 1
+      },
+      {
+        "id": 3330,
+        "sentence1": "Rippon played five times for Melbourne in the 1898 VFL season and on one occasion , against St Kilda , appeared with his brothers Les and Norm Rippon .",
+        "sentence2": "During the VFL season in 1898 he played five times for Melbourne and performed against St Kilda on one occasion with his brothers Les and Norm Rippon .",
+        "label": 1
+      },
+      {
+        "id": 6141,
+        "sentence1": "The Rock House was probably built by either Samuel Denton or the brothers Barlow and Madison Fiske , and was originally operated by the latter two .",
+        "sentence2": "The Rock House was initially operated by either Samuel Denton or brothers Barlow and Madison Fiske , and probably built by the latter two .",
+        "label": 0
+      },
+      {
+        "id": 343,
+        "sentence1": "Ghimniye is a village in the Talasari district of Maharashtra , India . It is located in Palghar taluka .",
+        "sentence2": "Ghimniye is a village in Palghar - district of Maharashtra , India . It is located in Talasari Taluka .",
+        "label": 0
+      },
+      {
+        "id": 7413,
+        "sentence1": "Hughes , born in Wales , founded two separate congregations in the city , preaching Welsh sermons to one , and English sermons to the other , every Sunday .",
+        "sentence2": "Hughes , born in Wales , founded two separate communities in the city and every Sunday preaching English sermons to one and Welsh sermons to the other .",
+        "label": 1
+      },
+      {
+        "id": 2744,
+        "sentence1": "Buses run from the bus station to Baildon , Bradford , Cleckheaton , Dewsbury , Leeds , Huddersfield , Elland , Halifax , Shipley and Wakefield .",
+        "sentence2": "Buses run from the bus stop to Baildon , Bradford , Cleckheaton , Dewsbury , Elland , Halifax , Huddersfield , Leeds , Wakefield and Shipley .",
+        "label": 1
+      },
+      {
+        "id": 725,
+        "sentence1": "The other two children were the late Nathaniel Harris Hammond , who died in 1906 , and composer Richard Pindle Hammond , born in London , England .",
+        "sentence2": "Nathaniel Harris Hammond , died 1906 , and Richard Pindle Hammond , composer , born in London , England , were the two other children .",
+        "label": 1
+      },
+      {
+        "id": 3690,
+        "sentence1": "From medieval philosophy Charlesworth identified religious thinkers with modern relevance .",
+        "sentence2": "Charlesworth identified with medieval thinkers with modern relevance from religious philosophy .",
+        "label": 0
+      },
+      {
+        "id": 6314,
+        "sentence1": "It was founded in 1982 by Samuel Lipman , former art critic for `` The New York Times '' and Hilton Kramer , a pianist and music critic .",
+        "sentence2": "It was founded in 1982 by Samuel Lipman , a former art critic of `` New York Times '' and Hilton Kramer , pianist and music critic .",
+        "label": 1
+      },
+      {
+        "id": 2216,
+        "sentence1": "Ayurveda Eye Hospital is an Ayurvedic eye clinic and hospital in Trivandrum ( Thiruvananthapuram ) , Kerala , India .",
+        "sentence2": "Ayurveda eye clinic is an Ayurvedic eye hospital and a hospital in Thiruvananthapuram ( Trivandrum ) , Kerala , India .",
+        "label": 1
+      },
+      {
+        "id": 1633,
+        "sentence1": "The cars are defective and have moving parts that can break or become heavy .",
+        "sentence2": "The cars are defective and have moving parts that can break or become difficult .",
+        "label": 1
+      },
+      {
+        "id": 3643,
+        "sentence1": "Ramachandran initially recommended K. A. Thangavelu for the role of Punyakodi , but Saravanan said that his father wanted T. R. Ramachandran in the role .",
+        "sentence2": "Ramachandran recommended K. A. Thangavelu initially for the role of Punyakodi , but T. R. Ramachandran said that his father wanted Saravanan in the role .",
+        "label": 0
+      },
+      {
+        "id": 6697,
+        "sentence1": "There were 29 male and 48 female athletes representing the country at the 2000 Summer Paralympics .",
+        "sentence2": "There were 29 female and 48 male athletes representing the country during the summer - Paralympics 2000 .",
+        "label": 0
+      },
+      {
+        "id": 2233,
+        "sentence1": "In 1920 , 7,930 Italian-born white people spoke a foreign language in Baltimore .",
+        "sentence2": "In 1920 , 7,930 foreign-born White people in Baltimore spoke the Italian language .",
+        "label": 0
+      },
+      {
+        "id": 6136,
+        "sentence1": "Pharmalogical drugs can also be given including a Transsphenoidal surgery accompanying the following : pasireotide , temozolomide and octreotide .",
+        "sentence2": "Pharmalogical drugs can also be given accompanying transphenoidal surgery , including the following : pasireotide , temozolomide and octreotide .",
+        "label": 0
+      },
+      {
+        "id": 529,
+        "sentence1": "In 1662 , the Pages had a large brick nearby house built in cross-plan Middle Plantation .",
+        "sentence2": "In 1662 the pages had built a large brick nearby house in Kreuz - Plan Middle Plantation .",
+        "label": 1
+      },
+      {
+        "id": 7086,
+        "sentence1": "Meanwhile , the Vichy regime has promoted a highly traditional model of female roles .",
+        "sentence2": "Meanwhile , the Vichy regime has promoted a highly female model of traditional roles .",
+        "label": 0
+      },
+      {
+        "id": 1302,
+        "sentence1": "Mount Morris Charter Township is a charter township of Genesee County in the U.S. state of Michigan .",
+        "sentence2": "Genesee County is a charter community of Mount Morris Charter Township in the U.S. state of Michigan .",
+        "label": 0
+      },
+      {
+        "id": 7891,
+        "sentence1": "Trains used to run from Karachi to Delhi and vice versa via Bahawalnagar .",
+        "sentence2": "From Bahawalnagar to Karachi and vice versa Delhi used to run trains .",
+        "label": 0
+      },
+      {
+        "id": 3958,
+        "sentence1": "Kronecker rejected in his analysis the formulation of a continuous , nowhere differentiable function by his colleague Karl Weierstrass .",
+        "sentence2": "Kronecker rejected in his analysis the formulation of a differentiable function nowhere throughout by his colleague Karl Weierstrass .",
+        "label": 0
+      },
+      {
+        "id": 7036,
+        "sentence1": "The Baldwins lived in Washington , D.C. Helen Baldwin died in 1977 , and Robert Baldwin died from the disease of Lou Gehrig on March 14 , 1998 .",
+        "sentence2": "The Baldwins lived in Washington , D.C. Robert Baldwin died in 1977 , and Helen Baldwin died from the disease of Lou Gehrig on 14 March 1998 .",
+        "label": 0
+      },
+      {
+        "id": 6383,
+        "sentence1": "McNair was played by William Duell in the game and movie `` 1776 '' .",
+        "sentence2": "McNair was played in the play and movie `` 1776 '' by William Duell .",
+        "label": 1
+      },
+      {
+        "id": 7854,
+        "sentence1": "17.1 % were of German , 12.4 % Finnish , 10.5 % Norwegian , 9.4 % Italian , 6.4 % Swedish and 5.9 % Irish ancestry .",
+        "sentence2": "17.1 % were German , 12.4 % Finnish , 10.5 % Norwegian , 9.4 % Italian , 6.4 % Irish and 5.9 % of Swedish descent .",
+        "label": 0
+      },
+      {
+        "id": 2154,
+        "sentence1": "The death of Mao Zedong in 1976 , however , brought economic reform to the PRC , which led to Japan ’ s expected investment in the Chinese economy .",
+        "sentence2": "However , the death of Mao Zedong in 1976 brought economic reform to the PRC , which led to the expected Chinese investment in the Japanese economy .",
+        "label": 0
+      },
+      {
+        "id": 6012,
+        "sentence1": "The 2011 event was held again in the Glasgow Science Centre and once again organized by Laura Whitmore .",
+        "sentence2": "The 2011 event was again held in the Glasgow Science Centre and was once again hosted by Laura Whitmore .",
+        "label": 1
+      },
+      {
+        "id": 5713,
+        "sentence1": "In addition to the waters of the Colorado , water from Willow Creek is pumped under the dam to Lake Granby .",
+        "sentence2": "In addition to the waters of the Colorado , water from Willow Creek just below the dam is pumped up to Lake Granby .",
+        "label": 1
+      },
+      {
+        "id": 2296,
+        "sentence1": "Nesby Phips appeared in the documentary `` Mystery Lights '' , presented by Nowhere Studios , produced by Converse and released in the UK December 4 , 2015 .",
+        "sentence2": "Nesby Phips was released in the documentary `` Mystery Lights '' , produced by Nowhere Studios , presented by Converse and published in the UK on December 4 , 2015 .",
+        "label": 0
+      },
+      {
+        "id": 7799,
+        "sentence1": "It protects an area of restinga , exotic rainforest and land modified by dense plantations to be restored .",
+        "sentence2": "It protects an area of restinga , dense rainforest and land modified by exotic plantations that is to be restored .",
+        "label": 0
+      },
+      {
+        "id": 2968,
+        "sentence1": "Of these eighteen countries , four of them have listed IN , PA , OH and MD `` G. villosa '' as endangered species .",
+        "sentence2": "Of these eighteen states four of them IN , MD , OH , and PA have listed `` G. villosa '' as an endangered species .",
+        "label": 1
+      },
+      {
+        "id": 2830,
+        "sentence1": "It was available for the order in Shanghai on November 25 , 2013 in Beijing and November 29 , 2013 .",
+        "sentence2": "It was available for ordering on November 25 , 2013 , in Shanghai , and November 29 , 2013 , in Beijing .",
+        "label": 0
+      },
+      {
+        "id": 4347,
+        "sentence1": "Charlesworth identified with medieval thinkers with modern relevance from religious philosophy .",
+        "sentence2": "From religious philosophy Charlesworth identified medieval thinkers with modern relevance .",
+        "label": 1
+      },
+      {
+        "id": 3768,
+        "sentence1": "It is estimated that Japan has the potential for 144 GW of onshore wind and 608 GW for offshore wind capacity .",
+        "sentence2": "It has been estimated that Japan has the potential for 144 GW for offshore wind and 608 GW of onshore wind capacity .",
+        "label": 0
+      },
+      {
+        "id": 5943,
+        "sentence1": "Lolly cakes can be difficult to find in Australia , even in areas where many New Zealand migrants live .",
+        "sentence2": "In New Zealand , it can be difficult to find Lolly Cakes , even in areas where many Australian migrants live .",
+        "label": 0
+      },
+      {
+        "id": 7363,
+        "sentence1": "In 1908 , two Leap Year postcard sets designed by Hutaf were released by Paul C. Koeber and Illustrated Postcard Co .",
+        "sentence2": "In 1908 , two Leap Year postcard sets by Paul C. Koeber and Illustrated Postcard Co. , published by Hutaf , were designed .",
+        "label": 0
+      },
+      {
+        "id": 5456,
+        "sentence1": "Suleri Goodyear analyzed the work of the Urdu poet Ghalib and took",
+        "sentence2": "Suleri Goodyear , analyzed the work of the Urdu poet Ghalib , and included",
+        "label": 1
+      },
+      {
+        "id": 5916,
+        "sentence1": "Lielbērze is a village in Latvia and the Dobele municipality in the historic region of Zemgale , and the Zemgale Planning Region in Auri Parish .",
+        "sentence2": "Lielbērze is a village in Latvia and Dobele Municipality in the historical region of Zemgale , and the Zemgale Planning Region in Auri Parish .",
+        "label": 1
+      },
+      {
+        "id": 6369,
+        "sentence1": "Norman St John-Stevas wrote of him in 1955 as '' a man of excellent presence , a fine scholar `` .",
+        "sentence2": "Norman St John-Stevas wrote of him in 1955 as `` a man of fine presence , a distinguished scholar . ''",
+        "label": 0
+      },
+      {
+        "id": 3876,
+        "sentence1": "Warwick Brown ( born in Australia , 24 December 1949 ) is a former racing driver from Sydney .",
+        "sentence2": "Warwick Brown ( born December 24 , 1949 in Australia ) is a former Sydney racing driver .",
+        "label": 1
+      },
+      {
+        "id": 1464,
+        "sentence1": "The game was published on 2 October 2014 in Japan and in North America and Europe in June 2015 .",
+        "sentence2": "The game was released in Japan on October 2 , 2014 , and in North America and Europe in June 2015 .",
+        "label": 1
+      },
+      {
+        "id": 5236,
+        "sentence1": "His views on the death of Greg Dyke in the radio soap , The Archers , are quoted by Grace Archer in his McTaggart Lecture of 2000 .",
+        "sentence2": "His views of the death of Greg Dyke in the radio soap , The Archers , are quoted by Grace Archer in his 2000 McTaggart Lecture .",
+        "label": 1
+      },
+      {
+        "id": 1163,
+        "sentence1": "They do not follow the pattern of caldera - growth and destruction that do other shield - volcanoes , caldera may disappear , but they generally do not form .",
+        "sentence2": "They do not follow the pattern of caldera growth and destruction that other shield volcanoes do ; caldera may disappear , but they generally do not form .",
+        "label": 1
+      },
+      {
+        "id": 48,
+        "sentence1": "The U.S. Route 191 leads north from Douglas to Interstate 10 near Willcox , the Arizona State Route 80 leads west to Bisbee and northeast to Interstate 10 in New Mexico .",
+        "sentence2": "U.S. Route 191 leads north from Douglas to Interstate 10 near Willcox . Arizona State Route 80 leads west to Bisbee and northeast to Interstate 10 in New Mexico .",
+        "label": 1
+      },
+      {
+        "id": 3162,
+        "sentence1": "The schism was not repaired until the late 7th century for Milan and the late 6th century for Aquileia .",
+        "sentence2": "The schism was not repaired until the late 6th century for Milan and for Aquileia in the late 7th century .",
+        "label": 0
+      },
+      {
+        "id": 3705,
+        "sentence1": "Netanya is located on the historic Mediterranean Coastal Plain , the Israeli land bridge between Europe , Africa and Asia .",
+        "sentence2": "Netanya is located on the Israeli Mediterranean coast , the historic land bridge between Europe , Africa and Asia .",
+        "label": 0
+      },
+      {
+        "id": 3202,
+        "sentence1": "It was designed by local engineer Joseph H. Howe and designed by local builder Martin Johnson .",
+        "sentence2": "It was designed by the local engineer Joseph H. Howe and constructed by the local builder Martin Johnson .",
+        "label": 0
+      },
+      {
+        "id": 7236,
+        "sentence1": "In the 20th century , the house was renovated again , and the interior was remodelled in the early 19th century .",
+        "sentence2": "In the early 19th century the house was reconstructed and in the 20th century the interior was renovated .",
+        "label": 0
+      },
+      {
+        "id": 92,
+        "sentence1": "Aldous Huxley introduced Alfred Matthew Hubbard into the drug in 1955 , and Timothy Leary began to take it in 1962 .",
+        "sentence2": "Alfred Matthew Hubbard introduced Aldous Huxley to the drug in 1955 and Timothy Leary began taking it in 1962 .",
+        "label": 0
+      },
+      {
+        "id": 6348,
+        "sentence1": "McConnell , however , defeated McConnell in the 1984 campaign . Cook opposed the incumbent Democratic senator , Walter Huddleston .",
+        "sentence2": "McConnell , however , opposed the 1984 campaign . McConnell defeated the incumbent democratic senator , Walter Huddleston .",
+        "label": 0
+      },
+      {
+        "id": 2610,
+        "sentence1": "Although Huggins hoped to be selected as Ned Hanlon 's successor as Cincinnati 's manager after the 1907 season , the Reds instead went with John Ganzel .",
+        "sentence2": "Although Ned Hanlon hoped to be elected as Cincinnati 's manager after the 1907 season as the successor to John Ganzel , the reds went with Huggins instead .",
+        "label": 0
+      },
+      {
+        "id": 2236,
+        "sentence1": "Marcia appeared in cancelled I Love Money 3 , where Lacey was first eliminated , and Marcia and Lacey came to sixth place .",
+        "sentence2": "Marcia and Lacey appeared on cancelled I Love Money 3 where Marcia was the first to be eliminated , and Lacey came in sixth .",
+        "label": 0
+      },
+      {
+        "id": 7454,
+        "sentence1": "Jean de Tournes retired in 1653 and was taken over by his sons Jean Antoine and Samuel de Tournes in the family business .",
+        "sentence2": "Jean Antoine retired in 1653 , and was succeeded in the family business by his sons Jean de Tournes and Samuel de Tournes .",
+        "label": 0
+      },
+      {
+        "id": 4550,
+        "sentence1": "The sound is often acoustic or electro-electronic in the source and then electronically processed .",
+        "sentence2": "The sound is often electronic or electro-acoustic in source and then electronically processed .",
+        "label": 0
+      },
+      {
+        "id": 4380,
+        "sentence1": "She taught at Johns Hopkins University , at Goucher College , at the University of Maryland and at George Mason University .",
+        "sentence2": "She taught at George Mason University , Goucher College , the University of Maryland and the Johns Hopkins University .",
+        "label": 0
+      },
+      {
+        "id": 6094,
+        "sentence1": "Constante was the wife of musicologist Victor Brauner and the sister-in-law of the painter Harry Brauner .",
+        "sentence2": "Constante was the wife of the musicologist Victor Brauner , and the sister-in-law of the painter Harry Brauner .",
+        "label": 1
+      },
+      {
+        "id": 3873,
+        "sentence1": "The College was founded in 1438 by Henry Chichele from England and Henry VI ( fellow of New College and Archbishop of Canterbury ) .",
+        "sentence2": "The college was founded in 1438 by Henry VI of England and Henry Chichele ( fellow of the New College and Archbishop of Canterbury ) .",
+        "label": 0
+      },
+      {
+        "id": 5498,
+        "sentence1": "The Frasin River is a tributary of the Bistra Mare River in Romania .",
+        "sentence2": "The river Bistra Mare is a tributary of the River Frasin in Romania .",
+        "label": 0
+      },
+      {
+        "id": 4804,
+        "sentence1": "Mike Martin is the protagonist in two novels , `` The Fist of the God '' ( 1994 ) and `` The Afghan '' ( 2006 ) by Frederick Forsyth .",
+        "sentence2": "Frederick Forsyth is the protagonist of two novels , `` The Fist of God '' ( 1994 ) and `` The Afghan '' ( 2006 ) by Mike Martin .",
+        "label": 0
+      },
+      {
+        "id": 4379,
+        "sentence1": "The Vişeu River is a tributary of the Luhei River in Romania .",
+        "sentence2": "The river Vişeu is a tributary of the River Luhei in Romania .",
+        "label": 1
+      },
+      {
+        "id": 5724,
+        "sentence1": "Cannel coal is brown to black oil shale .",
+        "sentence2": "Cannel coal is black up to brown oil shale .",
+        "label": 0
+      }
+    ]
+  },
+  "raw_sources": {
+    "validation": {
+      "url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/161ece9501cf0a11f3e48bd356eaa82de46d6a09/labeled_final/validation-00000-of-00001.parquet",
+      "sha256": "7760d829453764ba342a6f562809a8ed21c2c3eec3fd9ffa544089f145d42f6d",
+      "rows": 8000,
+      "bytes": 1230379
+    },
+    "test": {
+      "url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/161ece9501cf0a11f3e48bd356eaa82de46d6a09/labeled_final/test-00000-of-00001.parquet",
+      "sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+      "rows": 8000,
+      "bytes": 1235128
+    }
+  }
+}

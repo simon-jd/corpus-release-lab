@@ -110,3 +110,66 @@ def test_retention_pins_expiration_and_diff(tmp_path):
         verify(root, a)
     with pytest.raises(ValueError, match="expired"):
         publish(fixture(tmp_path / "source"), root, license="CC0-1.0")
+
+
+@pytest.mark.parametrize('point',['after_tombstone','during_expiration','after_expiration'])
+def test_expiration_real_crash_resumes(tmp_path,point):
+    from corpus_release.lifecycle import expire
+    root=tmp_path/'catalog'
+    source=fixture(tmp_path/'source')
+    old=publish(source,root,license='CC0-1.0')['dataset_id']
+    new=publish(source,root,license='CC0-1.0',revision='review-v2')['dataset_id']
+    code='from corpus_release.lifecycle import expire; import sys; expire(sys.argv[1],sys.argv[2])'
+    proc=subprocess.run([sys.executable,'-c',code,str(root),old],env={**os.environ,'CORPUS_KILL_AT':point,'PYTHONPATH':str(Path(__file__).resolve().parents[1]/'src')})
+    assert proc.returncode==-9
+    assert verify(root)['dataset_id']==new
+    with pytest.raises(ValueError,match='expired'):
+        verify(root,old)
+    assert expire(root,old)['resumed']
+    assert not (root/'releases'/old).exists()
+    assert expire(root,old)['expired']
+
+
+def test_staging_cleanup_and_provenance_identity(tmp_path):
+    from corpus_release.lifecycle import cleanup_staging
+    source=fixture(tmp_path/'source')
+    root=tmp_path/'catalog'
+    first=publish(source,root,license='CC0-1.0',provenance={'release':'parent-1'})
+    second=publish(source,root,license='CC0-1.0',provenance={'release':'parent-2'})
+    assert first['dataset_id']!=second['dataset_id']
+    stage=root/'.staging-interrupted'
+    stage.mkdir()
+    (stage/'partial').write_text('unfinished')
+    assert cleanup_staging(root,min_age_seconds=0)['staging_directories']==[stage.name]
+    assert stage.exists()
+    cleanup_staging(root,min_age_seconds=0,dry_run=False)
+    assert not stage.exists()
+    verify(root,first['dataset_id'])
+    assert verify(root)['config']['source_provenance']=={'release':'parent-2'}
+
+
+def test_measurements_do_not_change_identity(tmp_path):
+    source=fixture(tmp_path/'source')
+    root=tmp_path/'catalog'
+    a=publish(source,root,license='CC0-1.0')
+    b=publish(source,root,license='CC0-1.0')
+    assert a['dataset_id']==b['dataset_id']
+    stages={r['stage']:r for r in a['measurements']['stages']}
+    assert stages['normalization']['input_artifact_bytes']==source.stat().st_size
+    assert stages['normalization']['output_artifact_bytes']>0
+    assert all(r['elapsed_seconds']>=0 and r['status']=='success' for r in stages.values())
+    assert 'measurements' not in verify(root)
+
+
+@pytest.mark.parametrize('point',['before_shards','during_shards','after_shards','before_manifest','after_manifest','before_pointer','after_pointer'])
+def test_fresh_catalog_never_discovers_incomplete_stage(tmp_path,point):
+    source=fixture(tmp_path/'source')
+    root=tmp_path/'catalog'
+    proc=subprocess.run([sys.executable,'-m','corpus_release.cli','publish',str(source),str(root),'--license','CC0-1.0'],env={**os.environ,'CORPUS_KILL_AT':point,'PYTHONPATH':str(Path(__file__).resolve().parents[1]/'src')})
+    assert proc.returncode==-9
+    if point=='after_pointer':
+        assert verify(root)['records']==2
+    else:
+        with pytest.raises(FileNotFoundError): verify(root)
+    result=publish(source,root,license='CC0-1.0')
+    assert verify(root)['dataset_id']==result['dataset_id']

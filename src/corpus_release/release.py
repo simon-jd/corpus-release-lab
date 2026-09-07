@@ -21,6 +21,7 @@ import unicodedata
 import duckdb
 import pyarrow as pa
 import pyarrow.parquet as pq
+from .metrics import Metrics
 
 
 def canonical(value):
@@ -118,23 +119,39 @@ def _prepare(source, target):
             writer.write_table(pa.Table.from_pylist(batch, schema=schema))
 
 
-def publish(source, root, *, license, seed=42, shard_rows=100_000):
-    if not license or shard_rows < 1:
+def publish(source, root, *, license, seed=42, shard_rows=100_000, revision="v1", provenance=None, expected_source_sha256=None):
+    if not isinstance(revision, str) or not revision.strip():
+        raise ValueError("nonempty processing revision required")
+    if provenance is not None and not isinstance(provenance, dict):
+        raise ValueError("provenance must be an object")
+    if not license or type(shard_rows) is not int or shard_rows < 1:
         raise ValueError("license and positive shard_rows required")
     root, source = Path(root), Path(source)
     started = time.monotonic()
+    metrics = Metrics()
     with lock(root):
         releases = root / "releases"
         releases.mkdir(exist_ok=True)
         stage = Path(tempfile.mkdtemp(prefix=".staging-", dir=root))
         # Partial stages are retained on failure for diagnosis; never discoverable by readers.
-        shutil.copyfile(source, stage / "source.jsonl")
-        source_hash = digest(stage / "source.jsonl")
+        with metrics.stage("source_snapshot") as measurement:
+            shutil.copyfile(source, stage / "source.jsonl")
+            source_hash = digest(stage / "source.jsonl")
+            if expected_source_sha256 is not None and source_hash != expected_source_sha256:
+                raise ValueError("source changed between receipt verification and snapshot copy")
+            measurement.update(input_artifact_bytes=source.stat().st_size, output_artifact_bytes=(stage / "source.jsonl").stat().st_size)
         config = {"contract": 1, "rules": "nfkc-whitespace-min20-v1", "seed": seed,
                   "tokenizer": None, "shard_rows": shard_rows, "license": license,
                   "split_policy": "explicit-evaluation-priority-v1",
                   "duckdb": duckdb.__version__, "pyarrow": pa.__version__}
-        _prepare(stage / "source.jsonl", stage / "prepared.parquet")
+        if revision != "v1":
+            config["processing_revision"] = revision
+        if provenance is not None:
+            # Metadata binds upstream release/transform identity; text bytes are hashed separately.
+            config["source_provenance"] = json.loads(canonical(provenance))
+        with metrics.stage("normalization") as measurement:
+            _prepare(stage / "source.jsonl", stage / "prepared.parquet")
+            measurement.update(input_artifact_bytes=(stage / "source.jsonl").stat().st_size, output_artifact_bytes=(stage / "prepared.parquet").stat().st_size)
         con = duckdb.connect(str(stage / "working.duckdb"))
         try:
             con.execute("SET threads=2")
@@ -142,61 +159,70 @@ def publish(source, root, *, license, seed=42, shard_rows=100_000):
             con.execute("SET preserve_insertion_order=false")
             con.execute("SET memory_limit='1GB'")
             con.execute("SET temp_directory=?", [str(stage / "spill")])
-            con.execute("CREATE TABLE raw AS SELECT * FROM read_parquet(?)", [str(stage / "prepared.parquet")])
+            with metrics.stage("duckdb_load"):
+                con.execute("CREATE TABLE raw AS SELECT * FROM read_parquet(?)", [str(stage / "prepared.parquet")])
             # Evaluation wins exact duplicate groups; train never contains evaluation text.
-            con.execute("""CREATE TABLE ranked AS SELECT * EXCLUDE(text), row_number() OVER (
-                PARTITION BY content_hash ORDER BY CASE requested_split
-                WHEN 'test' THEN 0 WHEN 'validation' THEN 1 ELSE 2 END, line) AS rank
-                FROM raw WHERE reason=''""")
-            con.execute("""CREATE TABLE audit AS SELECT r.* EXCLUDE(text),
-                CASE WHEN r.reason!='' THEN r.reason WHEN k.rank>1 THEN 'exact_duplicate'
-                ELSE 'accepted' END AS decision
-                FROM raw r LEFT JOIN ranked k USING(line)""")
-            con.sql("SELECT * FROM audit ORDER BY line").write_parquet(str(stage / "audit.parquet"), compression="zstd", row_group_size=2048)
-            con.execute("""CREATE TABLE accepted AS SELECT k.content_hash AS sample_id,
-                k.requested_split AS split, k.line AS source_line, k.record_id,
-                row_number() OVER (ORDER BY k.content_hash) AS ordinal
-                FROM ranked k WHERE k.rank=1""")
-            count = con.sql("SELECT count(*) FROM accepted").fetchone()[0]
+            with metrics.stage("exact_deduplication"):
+                con.execute("""CREATE TABLE ranked AS SELECT * EXCLUDE(text), row_number() OVER (
+                    PARTITION BY content_hash ORDER BY CASE requested_split
+                    WHEN 'test' THEN 0 WHEN 'validation' THEN 1 ELSE 2 END, line) AS rank
+                    FROM raw WHERE reason=''""")
+            with metrics.stage("audit_export"):
+                con.execute("""CREATE TABLE audit AS SELECT r.* EXCLUDE(text),
+                    CASE WHEN r.reason!='' THEN r.reason WHEN k.rank>1 THEN 'exact_duplicate'
+                    ELSE 'accepted' END AS decision
+                    FROM raw r LEFT JOIN ranked k USING(line)""")
+                con.sql("SELECT * FROM audit ORDER BY line").write_parquet(str(stage / "audit.parquet"), compression="zstd", row_group_size=2048)
+            with metrics.stage("shard_assignment"):
+                con.execute("""CREATE TABLE accepted AS SELECT k.content_hash AS sample_id,
+                    k.requested_split AS split, k.line AS source_line, k.record_id,
+                    row_number() OVER (ORDER BY k.content_hash) AS ordinal
+                    FROM ranked k WHERE k.rank=1""")
+                count = con.sql("SELECT count(*) FROM accepted").fetchone()[0]
             failpoint("before_shards")
-            for start in range(0, count, shard_rows):
-                path = stage / f"shard-{start // shard_rows:05d}.parquet"
-                con.sql(f"SELECT a.* EXCLUDE(ordinal), r.text FROM (SELECT * FROM accepted WHERE ordinal>{start} AND ordinal<={start+shard_rows}) a JOIN raw r ON a.source_line=r.line ORDER BY a.ordinal").write_parquet(str(path), compression="zstd", row_group_size=2048)
-                failpoint("during_shards")
+            with metrics.stage("shard_export"):
+                for start in range(0, count, shard_rows):
+                    path = stage / f"shard-{start // shard_rows:05d}.parquet"
+                    con.sql(f"SELECT a.* EXCLUDE(ordinal), r.text FROM (SELECT * FROM accepted WHERE ordinal>{start} AND ordinal<={start+shard_rows}) a JOIN raw r ON a.source_line=r.line ORDER BY a.ordinal").write_parquet(str(path), compression="zstd", row_group_size=2048)
+                    failpoint("during_shards")
             failpoint("after_shards")
             decisions = dict(con.sql("SELECT decision,count(*) FROM audit GROUP BY decision").fetchall())
         finally:
-            con.close()
-        (stage / "prepared.parquet").unlink()
-        (stage / "working.duckdb").unlink()
-        shutil.rmtree(stage / "spill", ignore_errors=True)
-        artifacts = [{"path": p.name, "sha256": digest(p), "bytes": p.stat().st_size}
-                     for p in sorted(stage.iterdir()) if p.is_file()]
+            with metrics.stage("database_flush_close"):
+                con.close()
+        with metrics.stage("temporary_artifact_cleanup"):
+            (stage / "prepared.parquet").unlink()
+            (stage / "working.duckdb").unlink()
+            shutil.rmtree(stage / "spill", ignore_errors=True)
+        with metrics.stage("artifact_hashing"):
+            artifacts = [{"path": p.name, "sha256": digest(p), "bytes": p.stat().st_size}
+                         for p in sorted(stage.iterdir()) if p.is_file()]
         body = {"schema_version": 1, "source_sha256": source_hash, "config": config,
                 "records": count, "decisions": decisions, "artifacts": artifacts}
         dataset_id = hashlib.sha256(canonical(body)).hexdigest()
         manifest = {**body, "dataset_id": dataset_id}
         if (root / "tombstones" / f"{dataset_id}.json").exists():
             raise ValueError("cannot republish expired identity; use a revised processing version")
-        failpoint("before_manifest")
-        atomic(stage / "manifest.json", canonical(manifest))
-        failpoint("after_manifest")
-        for p in stage.iterdir():
-            with p.open("rb") as f:
-                os.fsync(f.fileno())
-        syncdir(stage)
-        dest = releases / dataset_id
-        if dest.exists():
-            verify(root, dataset_id)
-            shutil.rmtree(stage)
-        else:
-            os.rename(stage, dest)
-            syncdir(releases)
-        failpoint("before_pointer")
-        atomic(root / "CURRENT", (dataset_id + "\n").encode())
-        failpoint("after_pointer")
+        with metrics.stage("publication"):
+            failpoint("before_manifest")
+            atomic(stage / "manifest.json", canonical(manifest))
+            failpoint("after_manifest")
+            for p in stage.iterdir():
+                with p.open("rb") as f:
+                    os.fsync(f.fileno())
+            syncdir(stage)
+            dest = releases / dataset_id
+            if dest.exists():
+                verify(root, dataset_id)
+                shutil.rmtree(stage)
+            else:
+                os.rename(stage, dest)
+                syncdir(releases)
+            failpoint("before_pointer")
+            atomic(root / "CURRENT", (dataset_id + "\n").encode())
+            failpoint("after_pointer")
         return {"dataset_id": dataset_id, "records": count, "decisions": decisions,
-                "elapsed_seconds": time.monotonic() - started}
+                "elapsed_seconds": time.monotonic() - started, "measurements": metrics.report()}
 
 
 def verify(root, dataset_id=None):

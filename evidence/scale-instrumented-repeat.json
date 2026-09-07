@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "source_code_sha256": {
+    "src/corpus_release/__init__.py": "e2f0ed2c600ef17f8cc5e9934cb8fbcc57ab50defdc424575c0dcc1b5244e851",
+    "src/corpus_release/cli.py": "d162a4edc1a0d3539e0c8f787e2fb5c97646d0cfca9fc00b2898a60630b70b85",
+    "src/corpus_release/lakebridge.py": "0ab5bfee76d793b83028e5ca139df5dc1520cc12ff82bd7301e03fdb3da21585",
+    "src/corpus_release/lifecycle.py": "f672156a40a1524f78cf7cd70ce934b11dd54be6199cd89e93f79181d6702863",
+    "src/corpus_release/metrics.py": "f8406b59c990d488e234cd834b87978cdac3f09cb5625f30f9c19e6fdb41ecb3",
+    "src/corpus_release/near_duplicates.py": "903e70f3eb7a5c883a2ae0e32e6ed04b85084546a9c90d6a595940f8369175b6",
+    "src/corpus_release/reconcile.py": "c14f81a4d718832d2b4144d645e63c550cb8aa6be84e113654a68ba2dc72f13f",
+    "src/corpus_release/release.py": "0cdc72dc2b3b061db8d9ecb08209d21da22a8a31972d9e82aa3504e043101d75"
+  },
+  "started_unix": 1788817044.7642407,
+  "host": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+  "python": "3.14.7 (main, Aug  7 2026, 02:26:00) [Clang 22.1.3 ]",
+  "input_bytes": 1073743632,
+  "input_records": 255318,
+  "source_sha256": "36057ff6d3e0d30f8283516f562bcafd75ad84bef5960b6b4716b204047ba026",
+  "license": "CC0-1.0",
+  "generator": "unique-sha256-words-v1",
+  "command": [
+    "/home/postedism/Desktop/data-experiment-infra/.venv/bin/python",
+    "-m",
+    "corpus_release.cli",
+    "publish",
+    "A-corpus-release-lab/.run/scale/synthetic.jsonl",
+    "A-corpus-release-lab/.run/scale/catalog",
+    "--license",
+    "CC0-1.0"
+  ],
+  "returncode": 0,
+  "stdout": "{\"dataset_id\": \"9e5237536671de720c75eba80cb77decd052bae09b89665ecb409e4f227faa7e\", \"decisions\": {\"accepted\": 255318}, \"elapsed_seconds\": 13.134907679996104, \"measurements\": {\"definitions\": {\"artifact_bytes\": \"Explicit measured source/output file sizes where included; distinct from storage-layer I/O.\", \"process_peak_rss_kib\": \"Process lifetime high-water mark at stage end, not incremental stage allocation.\", \"rchar/wchar\": \"Process syscall bytes, including cached reads, library metadata and observer overhead; not logical row sizes.\", \"read_bytes/write_bytes\": \"Linux process storage-layer I/O counters; cache hits may report zero. Not device-level total traffic.\"}, \"schema_version\": 1, \"stages\": [{\"elapsed_seconds\": 0.6938399479986401, \"input_artifact_bytes\": 1073743632, \"output_artifact_bytes\": 1073743632, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 2147487367, \"read_bytes\": 0, \"syscr\": 1031, \"syscw\": 1, \"wchar\": 1073743632, \"write_bytes\": 1073745920}, \"process_peak_rss_kib\": 102776, \"stage\": \"source_snapshot\", \"status\": \"success\"}, {\"elapsed_seconds\": 3.5388888369925553, \"input_artifact_bytes\": 1073743632, \"output_artifact_bytes\": 554741987, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 1083984055, \"read_bytes\": 0, \"syscr\": 8857, \"syscw\": 2016, \"wchar\": 554741987, \"write_bytes\": 554745856}, \"process_peak_rss_kib\": 236096, \"stage\": \"normalization\", \"status\": \"success\"}, {\"elapsed_seconds\": 1.7026251380011672, \"process_io_delta\": {\"cancelled_write_bytes\": 160923648, \"rchar\": 874321621, \"read_bytes\": 0, \"syscr\": 3147, \"syscw\": 5360, \"wchar\": 1400257512, \"write_bytes\": 1241759744}, \"process_peak_rss_kib\": 1276816, \"stage\": \"duckdb_load\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.19552586200006772, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 4456580, \"read_bytes\": 4096, \"syscr\": 19, \"syscw\": 44, \"wchar\": 11015392, \"write_bytes\": 11022336}, \"process_peak_rss_kib\": 1276816, \"stage\": \"exact_deduplication\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.2778301219950663, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 135, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 322, \"wchar\": 20517533, \"write_bytes\": 20520960}, \"process_peak_rss_kib\": 1276816, \"stage\": \"audit_export\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.1756459770112997, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 135, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 42, \"wchar\": 10490285, \"write_bytes\": 10493952}, \"process_peak_rss_kib\": 1276816, \"stage\": \"shard_assignment\", \"status\": \"success\"}, {\"elapsed_seconds\": 3.3046323739981744, \"process_io_delta\": {\"cancelled_write_bytes\": 628391936, \"rchar\": 3602120839, \"read_bytes\": 0, \"syscr\": 13754, \"syscw\": 3555, \"wchar\": 1256941849, \"write_bytes\": 1201565696}, \"process_peak_rss_kib\": 1487540, \"stage\": \"shard_export\", \"status\": \"success\"}, {\"elapsed_seconds\": 1.0346293409966165, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 406847624, \"read_bytes\": 0, \"syscr\": 1554, \"syscw\": 2163, \"wchar\": 566497333, \"write_bytes\": 566501376}, \"process_peak_rss_kib\": 1487540, \"stage\": \"database_flush_close\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.08258020199718885, \"process_io_delta\": {\"cancelled_write_bytes\": 378585088, \"rchar\": 136, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 0, \"wchar\": 0, \"write_bytes\": 0}, \"process_peak_rss_kib\": 1487540, \"stage\": \"temporary_artifact_cleanup\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.7537616530025844, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 1657203566, \"read_bytes\": 0, \"syscr\": 1596, \"syscw\": 0, \"wchar\": 0, \"write_bytes\": 0}, \"process_peak_rss_kib\": 1487540, \"stage\": \"artifact_hashing\", \"status\": \"success\"}, {\"elapsed_seconds\": 1.3583048519940348, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 1657204635, \"read_bytes\": 0, \"syscr\": 1598, \"syscw\": 2, \"wchar\": 1134, \"write_bytes\": 8192}, \"process_peak_rss_kib\": 1487540, \"stage\": \"publication\", \"status\": \"success\"}]}, \"records\": 255318}\n",
+  "stderr": "",
+  "resources": "{\"peak_rss_kib\":1487540,\"user_seconds\":15.81,\"system_seconds\":3.11,\"filesystem_inputs\":8,\"filesystem_outputs\":9141360}\n",
+  "result": {
+    "dataset_id": "9e5237536671de720c75eba80cb77decd052bae09b89665ecb409e4f227faa7e",
+    "decisions": {
+      "accepted": 255318
+    },
+    "elapsed_seconds": 13.134907679996104,
+    "measurements": {
+      "definitions": {
+        "artifact_bytes": "Explicit measured source/output file sizes where included; distinct from storage-layer I/O.",
+        "process_peak_rss_kib": "Process lifetime high-water mark at stage end, not incremental stage allocation.",
+        "rchar/wchar": "Process syscall bytes, including cached reads, library metadata and observer overhead; not logical row sizes.",
+        "read_bytes/write_bytes": "Linux process storage-layer I/O counters; cache hits may report zero. Not device-level total traffic."
+      },
+      "schema_version": 1,
+      "stages": [
+        {
+          "elapsed_seconds": 0.6938399479986401,
+          "input_artifact_bytes": 1073743632,
+          "output_artifact_bytes": 1073743632,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 2147487367,
+            "read_bytes": 0,
+            "syscr": 1031,
+            "syscw": 1,
+            "wchar": 1073743632,
+            "write_bytes": 1073745920
+          },
+          "process_peak_rss_kib": 102776,
+          "stage": "source_snapshot",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 3.5388888369925553,
+          "input_artifact_bytes": 1073743632,
+          "output_artifact_bytes": 554741987,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 1083984055,
+            "read_bytes": 0,
+            "syscr": 8857,
+            "syscw": 2016,
+            "wchar": 554741987,
+            "write_bytes": 554745856
+          },
+          "process_peak_rss_kib": 236096,
+          "stage": "normalization",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 1.7026251380011672,
+          "process_io_delta": {
+            "cancelled_write_bytes": 160923648,
+            "rchar": 874321621,
+            "read_bytes": 0,
+            "syscr": 3147,
+            "syscw": 5360,
+            "wchar": 1400257512,
+            "write_bytes": 1241759744
+          },
+          "process_peak_rss_kib": 1276816,
+          "stage": "duckdb_load",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.19552586200006772,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 4456580,
+            "read_bytes": 4096,
+            "syscr": 19,
+            "syscw": 44,
+            "wchar": 11015392,
+            "write_bytes": 11022336
+          },
+          "process_peak_rss_kib": 1276816,
+          "stage": "exact_deduplication",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.2778301219950663,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 135,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 322,
+            "wchar": 20517533,
+            "write_bytes": 20520960
+          },
+          "process_peak_rss_kib": 1276816,
+          "stage": "audit_export",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.1756459770112997,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 135,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 42,
+            "wchar": 10490285,
+            "write_bytes": 10493952
+          },
+          "process_peak_rss_kib": 1276816,
+          "stage": "shard_assignment",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 3.3046323739981744,
+          "process_io_delta": {
+            "cancelled_write_bytes": 628391936,
+            "rchar": 3602120839,
+            "read_bytes": 0,
+            "syscr": 13754,
+            "syscw": 3555,
+            "wchar": 1256941849,
+            "write_bytes": 1201565696
+          },
+          "process_peak_rss_kib": 1487540,
+          "stage": "shard_export",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 1.0346293409966165,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 406847624,
+            "read_bytes": 0,
+            "syscr": 1554,
+            "syscw": 2163,
+            "wchar": 566497333,
+            "write_bytes": 566501376
+          },
+          "process_peak_rss_kib": 1487540,
+          "stage": "database_flush_close",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.08258020199718885,
+          "process_io_delta": {
+            "cancelled_write_bytes": 378585088,
+            "rchar": 136,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 0,
+            "wchar": 0,
+            "write_bytes": 0
+          },
+          "process_peak_rss_kib": 1487540,
+          "stage": "temporary_artifact_cleanup",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.7537616530025844,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 1657203566,
+            "read_bytes": 0,
+            "syscr": 1596,
+            "syscw": 0,
+            "wchar": 0,
+            "write_bytes": 0
+          },
+          "process_peak_rss_kib": 1487540,
+          "stage": "artifact_hashing",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 1.3583048519940348,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 1657204635,
+            "read_bytes": 0,
+            "syscr": 1598,
+            "syscw": 2,
+            "wchar": 1134,
+            "write_bytes": 8192
+          },
+          "process_peak_rss_kib": 1487540,
+          "stage": "publication",
+          "status": "success"
+        }
+      ]
+    },
+    "records": 255318
+  },
+  "valid_records_per_second": 19438.1267246239
+}

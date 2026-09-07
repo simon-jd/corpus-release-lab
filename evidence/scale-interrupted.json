@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "source_sha256": "36057ff6d3e0d30f8283516f562bcafd75ad84bef5960b6b4716b204047ba026",
+  "source_bytes": 1073743632,
+  "observed_incomplete_shard": {
+    "path": "catalog/.staging-nlf10znt/shard-00000.parquet",
+    "bytes_before_kill": 6291456,
+    "observed_parquet_error": "ArrowInvalid"
+  },
+  "killed_exit_code": -9,
+  "previous_release_remained_readable": true,
+  "old_dataset_id": "b30f74ea5743e626504c59985ca9236ce766ca99fe12262701f3a6e815074328",
+  "recovered_dataset_id": "9e5237536671de720c75eba80cb77decd052bae09b89665ecb409e4f227faa7e",
+  "retry_matches_expected_release": true,
+  "runtime_evidence_sha256": {
+    "retry.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "killed.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "killed.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "retry.stdout": "ee4b3700250edc110356bef335270bf09763151eca84aaddf28334b43f7947b9"
+  }
+}

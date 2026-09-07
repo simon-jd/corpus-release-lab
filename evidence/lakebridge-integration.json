@@ -1,0 +1,1439 @@
+{
+  "schema_version": 1,
+  "upstream": {
+    "first": {
+      "schema_version": 1,
+      "adapter": "lakebridge-snapshot-json-v1",
+      "release": {
+        "release_id": "rel_corpus_initial",
+        "run_id": "corpus_initial",
+        "created_at": "2026-09-07T21:34:34.962325+00:00",
+        "rule_version": "v1",
+        "rule_scope": "all",
+        "input_high_watermark": 1,
+        "previous_input_high_watermark": 0,
+        "manifest_sha256": "f72e05c949058a628e465adb3caf28a3b9b28179a355c4b82e468892152517d9",
+        "dataset_id": "saas_seed_42",
+        "input_files": [
+          {
+            "path": "plans/history.parquet",
+            "kind": "plans",
+            "batch": 1,
+            "sha256": "b2010f4290cde68203f39788f6c26d0bc3abaabe4e1351cdded0012e8e50d631",
+            "bytes": 1632,
+            "rows": 10,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "plan_id",
+                "type": "string"
+              },
+              {
+                "name": "effective_from",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "effective_to",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "attributes",
+                "type": "string"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-06/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "7e0095993be2d9fecf55dc02aab56577afdac5755ba09d645a81166654a4c829",
+            "bytes": 2503,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-04/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "b529342ccfafb0ca1549a9c4ae1f274ada8beb1d9eca89a99777fdb0b31e7635",
+            "bytes": 2507,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-02/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "140059c00d0af28acb988bd742016d9c1d1bcd73f6d700d6a7c70ac747ae2476",
+            "bytes": 2609,
+            "rows": 19,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-07/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "6fbf58716adc23c5bf2d45fe57eb970fed670c92da2622fc672ebf338e23ced5",
+            "bytes": 2472,
+            "rows": 12,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-03/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "fcc1279a1483af82bddc0567fe515c6d4befa609c5eec14bf60b1cd3aefeb6db",
+            "bytes": 2533,
+            "rows": 16,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-01/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "34e672784fd74330a4493b4a77445c8b4fcd5ecb1911711d3ef65cec56eaef13",
+            "bytes": 2496,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-05/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "8ff9652862da7f0b501a508e424e84caac723407f25eab91fd09b47774843c3b",
+            "bytes": 2456,
+            "rows": 11,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          }
+        ],
+        "tables": {
+          "detail": {
+            "table": "lake.corpus_fixture.detail",
+            "snapshot_id": 2888032676485557402
+          },
+          "plans": {
+            "table": "lake.corpus_fixture.plans",
+            "snapshot_id": 2092677454330019018
+          },
+          "daily": {
+            "table": "lake.corpus_fixture.daily",
+            "snapshot_id": 5858613922827233493
+          }
+        },
+        "validation": {
+          "keys": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "detail": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "daily": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "duplicate_keys": 0,
+          "null_keys": 0,
+          "tombstones": 0,
+          "detail_rows": 100,
+          "live_rows": 100,
+          "passed": true
+        },
+        "queue_seconds": 0.04133855699910782,
+        "application_id": "local-1788816866436",
+        "reason": "Corpus adapter qualification",
+        "evidence": "/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/.run/lakebridge-qualified/lakebridge-runtime/runs/corpus_initial",
+        "execution_seconds": 8.282825463000336
+      },
+      "release_sha256": "acdc78e2e690b4eb55b7a2547b401db72b087ca96c94774b08a9fc93cde134ea",
+      "selected_table": "detail",
+      "pointer": {
+        "table": "lake.corpus_fixture.detail",
+        "snapshot_id": 2888032676485557402
+      },
+      "id_columns": [
+        "tenant_id",
+        "event_id"
+      ],
+      "text_columns": [
+        "tenant_id",
+        "event_id",
+        "units"
+      ],
+      "exclude_tombstones": true,
+      "source_snapshot_rows": 100,
+      "exported_rows": 100,
+      "source_file": "source.jsonl",
+      "source_sha256": "8f979c8a87379cb2c5dfeb14be043a379265536a1dc23d284ba771455913ddbe",
+      "source_bytes": 16797,
+      "upstream_code": {
+        "src/lakebridge/__init__.py": "8ff7143d5fdd15ab185a6ab7a12c57963a05f317682b413fc82c4ea080a200e7",
+        "src/lakebridge/adapters.py": "b569d32b91c35d2a9a377155803a5c56591a0663fe4f77b86d4fa88d83f5cf0c",
+        "src/lakebridge/benchmark.py": "ef6cc9bb8c2555799b0eaa76c5561d10fc0972ea1b66ba7b89c4d8c8ec8fd6dd",
+        "src/lakebridge/cli.py": "4552709c57f4e65b93f98b85c31e0b7b2ff1966fb15ca33ae50494c923edcc36",
+        "src/lakebridge/common.py": "ddb8cbef842729224d5d417436074f2a34346408b24a6b256a975df13894e72f",
+        "src/lakebridge/compatibility.py": "da69523ff1d4ad7678ccf046909a48133d210eae350af38b4f5d5ea3cf2a86a1",
+        "src/lakebridge/config.py": "6394cd2cc4c4b0b539221f8dbbf789396fccf9fdc55f64d110f327b313865e86",
+        "src/lakebridge/contracts.py": "e673f7245d71dc4765794c6eef00dc0051edd47b5384a89bd318de7e167e9dbb",
+        "src/lakebridge/control.py": "e46396ddb73187190aa99851405ca7f2c0dcb89bd528bc88aacc306d4306ad41",
+        "src/lakebridge/demo.py": "c2abcff8f1fb23ffcfa34715d86777d3b2a74526ecbf9f35c42fca4308ca3ce5",
+        "src/lakebridge/generate.py": "655073fd025305405b7becefc75a5498aec44e2d49a6547a55b5e98dbee3f67b",
+        "src/lakebridge/maintenance.py": "63674f08a6281ede87714956bbd02811f7a7789dda21f1a29b909635d5abd6b0",
+        "src/lakebridge/observability.py": "57294939c399a646556125611981a9aeedb7eacb15951bd75351a46cfd814863",
+        "src/lakebridge/oracle.py": "e6a1c673a59f08f1f24f9dd3b7f53977bd5ef7c60e8e4d47274a0a1ff8ab52bf",
+        "src/lakebridge/pipeline.py": "6690d43d61651f40936aeb1bbef5ccdc5125ce7fceaf86ca2be5a19a9892febf",
+        "src/lakebridge/simulation.py": "58110a4e611d3877fdf202d1727a7af9bb9decac7fea66495aea72f2c1cbf1de",
+        "src/lakebridge/simulation_cost.py": "3867550136d01e4a7a24a4926788ac7d463b4f4ae52ff94b3ee35c82874f6b6c",
+        "src/lakebridge/simulation_requests.py": "dac8ddaa89b7f61d9d9493091977625f4abcee6233b653fe7f22d11d82a45538",
+        "src/lakebridge/transform.py": "5bc5e0989c3cfc1ae243c1e4ea3418e17b5e3ca6513eefff8b7702dcc4cbd37c",
+        "src/lakebridge/validation.py": "aa82bd8064d189c3a5d41ef763adf04cc9326892543eb4934c5a91358e430e31"
+      },
+      "upstream_runtime": {
+        "spark": "3.5.9",
+        "python": "3.11.11"
+      }
+    },
+    "old_after_new_release": {
+      "schema_version": 1,
+      "adapter": "lakebridge-snapshot-json-v1",
+      "release": {
+        "release_id": "rel_corpus_initial",
+        "run_id": "corpus_initial",
+        "created_at": "2026-09-07T21:34:34.962325+00:00",
+        "rule_version": "v1",
+        "rule_scope": "all",
+        "input_high_watermark": 1,
+        "previous_input_high_watermark": 0,
+        "manifest_sha256": "f72e05c949058a628e465adb3caf28a3b9b28179a355c4b82e468892152517d9",
+        "dataset_id": "saas_seed_42",
+        "input_files": [
+          {
+            "path": "plans/history.parquet",
+            "kind": "plans",
+            "batch": 1,
+            "sha256": "b2010f4290cde68203f39788f6c26d0bc3abaabe4e1351cdded0012e8e50d631",
+            "bytes": 1632,
+            "rows": 10,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "plan_id",
+                "type": "string"
+              },
+              {
+                "name": "effective_from",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "effective_to",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "attributes",
+                "type": "string"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-06/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "7e0095993be2d9fecf55dc02aab56577afdac5755ba09d645a81166654a4c829",
+            "bytes": 2503,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-04/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "b529342ccfafb0ca1549a9c4ae1f274ada8beb1d9eca89a99777fdb0b31e7635",
+            "bytes": 2507,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-02/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "140059c00d0af28acb988bd742016d9c1d1bcd73f6d700d6a7c70ac747ae2476",
+            "bytes": 2609,
+            "rows": 19,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-07/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "6fbf58716adc23c5bf2d45fe57eb970fed670c92da2622fc672ebf338e23ced5",
+            "bytes": 2472,
+            "rows": 12,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-03/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "fcc1279a1483af82bddc0567fe515c6d4befa609c5eec14bf60b1cd3aefeb6db",
+            "bytes": 2533,
+            "rows": 16,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-01/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "34e672784fd74330a4493b4a77445c8b4fcd5ecb1911711d3ef65cec56eaef13",
+            "bytes": 2496,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-05/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "8ff9652862da7f0b501a508e424e84caac723407f25eab91fd09b47774843c3b",
+            "bytes": 2456,
+            "rows": 11,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          }
+        ],
+        "tables": {
+          "detail": {
+            "table": "lake.corpus_fixture.detail",
+            "snapshot_id": 2888032676485557402
+          },
+          "plans": {
+            "table": "lake.corpus_fixture.plans",
+            "snapshot_id": 2092677454330019018
+          },
+          "daily": {
+            "table": "lake.corpus_fixture.daily",
+            "snapshot_id": 5858613922827233493
+          }
+        },
+        "validation": {
+          "keys": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "detail": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "daily": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "duplicate_keys": 0,
+          "null_keys": 0,
+          "tombstones": 0,
+          "detail_rows": 100,
+          "live_rows": 100,
+          "passed": true
+        },
+        "queue_seconds": 0.04133855699910782,
+        "application_id": "local-1788816866436",
+        "reason": "Corpus adapter qualification",
+        "evidence": "/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/.run/lakebridge-qualified/lakebridge-runtime/runs/corpus_initial",
+        "execution_seconds": 8.282825463000336
+      },
+      "release_sha256": "acdc78e2e690b4eb55b7a2547b401db72b087ca96c94774b08a9fc93cde134ea",
+      "selected_table": "detail",
+      "pointer": {
+        "table": "lake.corpus_fixture.detail",
+        "snapshot_id": 2888032676485557402
+      },
+      "id_columns": [
+        "tenant_id",
+        "event_id"
+      ],
+      "text_columns": [
+        "tenant_id",
+        "event_id",
+        "units"
+      ],
+      "exclude_tombstones": true,
+      "source_snapshot_rows": 100,
+      "exported_rows": 100,
+      "source_file": "source.jsonl",
+      "source_sha256": "8f979c8a87379cb2c5dfeb14be043a379265536a1dc23d284ba771455913ddbe",
+      "source_bytes": 16797,
+      "upstream_code": {
+        "src/lakebridge/__init__.py": "8ff7143d5fdd15ab185a6ab7a12c57963a05f317682b413fc82c4ea080a200e7",
+        "src/lakebridge/adapters.py": "b569d32b91c35d2a9a377155803a5c56591a0663fe4f77b86d4fa88d83f5cf0c",
+        "src/lakebridge/benchmark.py": "ef6cc9bb8c2555799b0eaa76c5561d10fc0972ea1b66ba7b89c4d8c8ec8fd6dd",
+        "src/lakebridge/cli.py": "4552709c57f4e65b93f98b85c31e0b7b2ff1966fb15ca33ae50494c923edcc36",
+        "src/lakebridge/common.py": "ddb8cbef842729224d5d417436074f2a34346408b24a6b256a975df13894e72f",
+        "src/lakebridge/compatibility.py": "da69523ff1d4ad7678ccf046909a48133d210eae350af38b4f5d5ea3cf2a86a1",
+        "src/lakebridge/config.py": "6394cd2cc4c4b0b539221f8dbbf789396fccf9fdc55f64d110f327b313865e86",
+        "src/lakebridge/contracts.py": "e673f7245d71dc4765794c6eef00dc0051edd47b5384a89bd318de7e167e9dbb",
+        "src/lakebridge/control.py": "e46396ddb73187190aa99851405ca7f2c0dcb89bd528bc88aacc306d4306ad41",
+        "src/lakebridge/demo.py": "c2abcff8f1fb23ffcfa34715d86777d3b2a74526ecbf9f35c42fca4308ca3ce5",
+        "src/lakebridge/generate.py": "655073fd025305405b7becefc75a5498aec44e2d49a6547a55b5e98dbee3f67b",
+        "src/lakebridge/maintenance.py": "63674f08a6281ede87714956bbd02811f7a7789dda21f1a29b909635d5abd6b0",
+        "src/lakebridge/observability.py": "57294939c399a646556125611981a9aeedb7eacb15951bd75351a46cfd814863",
+        "src/lakebridge/oracle.py": "e6a1c673a59f08f1f24f9dd3b7f53977bd5ef7c60e8e4d47274a0a1ff8ab52bf",
+        "src/lakebridge/pipeline.py": "6690d43d61651f40936aeb1bbef5ccdc5125ce7fceaf86ca2be5a19a9892febf",
+        "src/lakebridge/simulation.py": "58110a4e611d3877fdf202d1727a7af9bb9decac7fea66495aea72f2c1cbf1de",
+        "src/lakebridge/simulation_cost.py": "3867550136d01e4a7a24a4926788ac7d463b4f4ae52ff94b3ee35c82874f6b6c",
+        "src/lakebridge/simulation_requests.py": "dac8ddaa89b7f61d9d9493091977625f4abcee6233b653fe7f22d11d82a45538",
+        "src/lakebridge/transform.py": "5bc5e0989c3cfc1ae243c1e4ea3418e17b5e3ca6513eefff8b7702dcc4cbd37c",
+        "src/lakebridge/validation.py": "aa82bd8064d189c3a5d41ef763adf04cc9326892543eb4934c5a91358e430e31"
+      },
+      "upstream_runtime": {
+        "spark": "3.5.9",
+        "python": "3.11.11"
+      }
+    },
+    "later": {
+      "schema_version": 1,
+      "adapter": "lakebridge-snapshot-json-v1",
+      "release": {
+        "release_id": "rel_corpus_later",
+        "run_id": "corpus_later",
+        "created_at": "2026-09-07T21:34:38.439121+00:00",
+        "rule_version": "v1",
+        "rule_scope": "all",
+        "input_high_watermark": 2,
+        "previous_input_high_watermark": 1,
+        "manifest_sha256": "f72e05c949058a628e465adb3caf28a3b9b28179a355c4b82e468892152517d9",
+        "dataset_id": "saas_seed_42",
+        "input_files": [
+          {
+            "path": "plans/history.parquet",
+            "kind": "plans",
+            "batch": 1,
+            "sha256": "b2010f4290cde68203f39788f6c26d0bc3abaabe4e1351cdded0012e8e50d631",
+            "bytes": 1632,
+            "rows": 10,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "plan_id",
+                "type": "string"
+              },
+              {
+                "name": "effective_from",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "effective_to",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "attributes",
+                "type": "string"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-06/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "7e0095993be2d9fecf55dc02aab56577afdac5755ba09d645a81166654a4c829",
+            "bytes": 2503,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-04/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "b529342ccfafb0ca1549a9c4ae1f274ada8beb1d9eca89a99777fdb0b31e7635",
+            "bytes": 2507,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-02/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "140059c00d0af28acb988bd742016d9c1d1bcd73f6d700d6a7c70ac747ae2476",
+            "bytes": 2609,
+            "rows": 19,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-07/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "6fbf58716adc23c5bf2d45fe57eb970fed670c92da2622fc672ebf338e23ced5",
+            "bytes": 2472,
+            "rows": 12,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-03/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "fcc1279a1483af82bddc0567fe515c6d4befa609c5eec14bf60b1cd3aefeb6db",
+            "bytes": 2533,
+            "rows": 16,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-01/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "34e672784fd74330a4493b4a77445c8b4fcd5ecb1911711d3ef65cec56eaef13",
+            "bytes": 2496,
+            "rows": 14,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0001/date=2025-01-05/part-000000.parquet",
+            "kind": "events",
+            "batch": 1,
+            "sha256": "8ff9652862da7f0b501a508e424e84caac723407f25eab91fd09b47774843c3b",
+            "bytes": 2456,
+            "rows": 11,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0002/date=2025-01-04/part-000000.parquet",
+            "kind": "events",
+            "batch": 2,
+            "sha256": "28e97460e1b01d36d19431e37dd723ec703884b951ac7318d0cd839676fb983d",
+            "bytes": 2240,
+            "rows": 3,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0002/date=2025-01-02/part-000000.parquet",
+            "kind": "events",
+            "batch": 2,
+            "sha256": "aa0a5c9781d264d69ac9c00e18f3b1faca21e4bfe06ae6dab23b154703c2e74d",
+            "bytes": 2268,
+            "rows": 6,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          },
+          {
+            "path": "events/batch=0002/date=2025-01-06/part-000000.parquet",
+            "kind": "events",
+            "batch": 2,
+            "sha256": "6fa6bafe446d523d6f9a723c32d354d4991a89d7f05d30d13c706624fd13aeae",
+            "bytes": 2277,
+            "rows": 6,
+            "schema": [
+              {
+                "name": "tenant_id",
+                "type": "string"
+              },
+              {
+                "name": "event_id",
+                "type": "string"
+              },
+              {
+                "name": "event_time",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "ingested_at",
+                "type": "timestamp[us]"
+              },
+              {
+                "name": "units",
+                "type": "decimal128(18, 6)"
+              },
+              {
+                "name": "source_version",
+                "type": "int64"
+              },
+              {
+                "name": "is_deleted",
+                "type": "bool"
+              }
+            ]
+          }
+        ],
+        "tables": {
+          "detail": {
+            "table": "lake.corpus_fixture.detail",
+            "snapshot_id": 7475669017976661352
+          },
+          "plans": {
+            "table": "lake.corpus_fixture.plans",
+            "snapshot_id": 5997846820589204078
+          },
+          "daily": {
+            "table": "lake.corpus_fixture.daily",
+            "snapshot_id": 452557969916741835
+          }
+        },
+        "validation": {
+          "keys": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "detail": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "daily": {
+            "missing": 0,
+            "unexpected": 0,
+            "passed": true
+          },
+          "duplicate_keys": 0,
+          "null_keys": 0,
+          "tombstones": 1,
+          "detail_rows": 100,
+          "live_rows": 99,
+          "passed": true
+        },
+        "queue_seconds": 0.006435396004235372,
+        "application_id": "local-1788816866436",
+        "reason": "Later revisions for snapshot isolation probe",
+        "evidence": "/home/postedism/Desktop/data-experiment-infra/A-corpus-release-lab/.run/lakebridge-qualified/lakebridge-runtime/runs/corpus_later",
+        "execution_seconds": 3.2202853500057245
+      },
+      "release_sha256": "80394c516acb33c76d4644eec3436b0b6891971f69195c49003b5764842f1896",
+      "selected_table": "detail",
+      "pointer": {
+        "table": "lake.corpus_fixture.detail",
+        "snapshot_id": 7475669017976661352
+      },
+      "id_columns": [
+        "tenant_id",
+        "event_id"
+      ],
+      "text_columns": [
+        "tenant_id",
+        "event_id",
+        "units"
+      ],
+      "exclude_tombstones": true,
+      "source_snapshot_rows": 100,
+      "exported_rows": 99,
+      "source_file": "source.jsonl",
+      "source_sha256": "cfae2af846b537b6b4e065a4bc758b1fc09d10d16028b70a303e887582dc9a0f",
+      "source_bytes": 16629,
+      "upstream_code": {
+        "src/lakebridge/__init__.py": "8ff7143d5fdd15ab185a6ab7a12c57963a05f317682b413fc82c4ea080a200e7",
+        "src/lakebridge/adapters.py": "b569d32b91c35d2a9a377155803a5c56591a0663fe4f77b86d4fa88d83f5cf0c",
+        "src/lakebridge/benchmark.py": "ef6cc9bb8c2555799b0eaa76c5561d10fc0972ea1b66ba7b89c4d8c8ec8fd6dd",
+        "src/lakebridge/cli.py": "4552709c57f4e65b93f98b85c31e0b7b2ff1966fb15ca33ae50494c923edcc36",
+        "src/lakebridge/common.py": "ddb8cbef842729224d5d417436074f2a34346408b24a6b256a975df13894e72f",
+        "src/lakebridge/compatibility.py": "da69523ff1d4ad7678ccf046909a48133d210eae350af38b4f5d5ea3cf2a86a1",
+        "src/lakebridge/config.py": "6394cd2cc4c4b0b539221f8dbbf789396fccf9fdc55f64d110f327b313865e86",
+        "src/lakebridge/contracts.py": "e673f7245d71dc4765794c6eef00dc0051edd47b5384a89bd318de7e167e9dbb",
+        "src/lakebridge/control.py": "e46396ddb73187190aa99851405ca7f2c0dcb89bd528bc88aacc306d4306ad41",
+        "src/lakebridge/demo.py": "c2abcff8f1fb23ffcfa34715d86777d3b2a74526ecbf9f35c42fca4308ca3ce5",
+        "src/lakebridge/generate.py": "655073fd025305405b7becefc75a5498aec44e2d49a6547a55b5e98dbee3f67b",
+        "src/lakebridge/maintenance.py": "63674f08a6281ede87714956bbd02811f7a7789dda21f1a29b909635d5abd6b0",
+        "src/lakebridge/observability.py": "57294939c399a646556125611981a9aeedb7eacb15951bd75351a46cfd814863",
+        "src/lakebridge/oracle.py": "e6a1c673a59f08f1f24f9dd3b7f53977bd5ef7c60e8e4d47274a0a1ff8ab52bf",
+        "src/lakebridge/pipeline.py": "6690d43d61651f40936aeb1bbef5ccdc5125ce7fceaf86ca2be5a19a9892febf",
+        "src/lakebridge/simulation.py": "58110a4e611d3877fdf202d1727a7af9bb9decac7fea66495aea72f2c1cbf1de",
+        "src/lakebridge/simulation_cost.py": "3867550136d01e4a7a24a4926788ac7d463b4f4ae52ff94b3ee35c82874f6b6c",
+        "src/lakebridge/simulation_requests.py": "dac8ddaa89b7f61d9d9493091977625f4abcee6233b653fe7f22d11d82a45538",
+        "src/lakebridge/transform.py": "5bc5e0989c3cfc1ae243c1e4ea3418e17b5e3ca6513eefff8b7702dcc4cbd37c",
+        "src/lakebridge/validation.py": "aa82bd8064d189c3a5d41ef763adf04cc9326892543eb4934c5a91358e430e31"
+      },
+      "upstream_runtime": {
+        "spark": "3.5.9",
+        "python": "3.11.11"
+      }
+    },
+    "invariants": {
+      "old_snapshot_export_stable": true,
+      "new_snapshot_changes_export": true,
+      "read_only_control_unchanged_during_export": true
+    },
+    "runtime": "real local Spark 3.5.9 + Iceberg 1.10.2 via LakeBridge; synthetic event text projection"
+  },
+  "corpus_first": "d7d269e9aabdc506e95d2f7332dbf5fcdc4f987f7382debf7f6db2461c4847a8",
+  "corpus_old_after_new_release": "d7d269e9aabdc506e95d2f7332dbf5fcdc4f987f7382debf7f6db2461c4847a8",
+  "corpus_later": "40f355d3466d9b760588d4b17308c84a2f45a51f972322200891c1324fa3865a",
+  "version_difference": {
+    "before": "d7d269e9aabdc506e95d2f7332dbf5fcdc4f987f7382debf7f6db2461c4847a8",
+    "after": "40f355d3466d9b760588d4b17308c84a2f45a51f972322200891c1324fa3865a",
+    "added": [
+      [
+        "098b3f863b47a6967f5138bae0aa3bcb1ebe401860b27bba846233a5c106cebb",
+        "train"
+      ],
+      [
+        "0db4a6a570eb03cbca41d7b6a60cc5773daf5c8435059eed457d01085be3e4d5",
+        "train"
+      ],
+      [
+        "ce83fb062255b135ff5a0da4aad16ebe502453d8c04c592dc7d00c1d4d3d1423",
+        "train"
+      ],
+      [
+        "d2bdde0a916292d481dd0df8e40d9ba84c682232828c09e7e73cf7acb9bba82a",
+        "train"
+      ]
+    ],
+    "removed": [
+      [
+        "0de9608f364a08858c3437718af0324e79d61a0f173e4387fc9330534c204451",
+        "train"
+      ],
+      [
+        "1f12053e32b1c3441f05a9e339de4ef02e84e9f765e852c7fc4eccd10e3c6821",
+        "train"
+      ],
+      [
+        "518c7d12f76565af076ff9e8937fd40804e1d450b87a0b8bce70f460e93c1842",
+        "train"
+      ],
+      [
+        "5ed6376f27d4a59d3516f993d8b35223164adce8f68fc99a803ef0c8565e0ddf",
+        "train"
+      ],
+      [
+        "bdee9e73c3c3909b4f86d85ead61211cf50b133918ef4ffd6a5a282320145a8e",
+        "train"
+      ]
+    ],
+    "unchanged": 95
+  },
+  "reconciliation": [
+    {
+      "dataset_id": "d7d269e9aabdc506e95d2f7332dbf5fcdc4f987f7382debf7f6db2461c4847a8",
+      "passed": true,
+      "checks": {
+        "manifest_record_count": true,
+        "unique_sample_ids": true,
+        "valid_split_values": true,
+        "normalized_text_hashes": true,
+        "audit_source_line_uniqueness": true,
+        "accepted_audit_bijection": true,
+        "decision_counts": true,
+        "source_line_coverage": true,
+        "no_exact_cross_split_leakage": true
+      },
+      "records": 100,
+      "source_lines": 100,
+      "decisions": {
+        "accepted": 100
+      },
+      "cross_split_leaked_hashes": [],
+      "rejected_fraction": 0.0,
+      "exact_duplicate_fraction": 0.0
+    },
+    {
+      "dataset_id": "40f355d3466d9b760588d4b17308c84a2f45a51f972322200891c1324fa3865a",
+      "passed": true,
+      "checks": {
+        "manifest_record_count": true,
+        "unique_sample_ids": true,
+        "valid_split_values": true,
+        "normalized_text_hashes": true,
+        "audit_source_line_uniqueness": true,
+        "accepted_audit_bijection": true,
+        "decision_counts": true,
+        "source_line_coverage": true,
+        "no_exact_cross_split_leakage": true
+      },
+      "records": 99,
+      "source_lines": 99,
+      "decisions": {
+        "accepted": 99
+      },
+      "cross_split_leaked_hashes": [],
+      "rejected_fraction": 0.0,
+      "exact_duplicate_fraction": 0.0
+    }
+  ],
+  "evidence_files": {
+    "export-later/source.jsonl": "cfae2af846b537b6b4e065a4bc758b1fc09d10d16028b70a303e887582dc9a0f",
+    "export-later/receipt.json": "91c1a9c03fc9a441cb8f3ba6bb2de7dae755d120aa2b1f89c7790fa96820dad3",
+    "export-first/source.jsonl": "8f979c8a87379cb2c5dfeb14be043a379265536a1dc23d284ba771455913ddbe",
+    "export-first/receipt.json": "68049af14c90e33853e0770318fe538890f4a26e860bd958339e16d5288573ba",
+    "export-old-again/source.jsonl": "8f979c8a87379cb2c5dfeb14be043a379265536a1dc23d284ba771455913ddbe",
+    "export-old-again/receipt.json": "68049af14c90e33853e0770318fe538890f4a26e860bd958339e16d5288573ba"
+  },
+  "limitations": [
+    "New synthetic local Spark/Iceberg integration, not a rerun of historical LakeBridge evidence.",
+    "JSON projections demonstrate lineage and pinned snapshots; they do not establish training-corpus quality."
+  ]
+}

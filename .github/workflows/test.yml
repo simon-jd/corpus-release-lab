@@ -10,6 +10,10 @@ jobs:
           python-version: '3.14'
       - run: python -m pip install -e '.[test]'
       - run: python -m pytest -q --junitxml=evidence/ci-tests.xml
+      - name: Reproduce frozen human-label evaluation
+        run: |
+          PYTHONPATH=src python scripts/evaluate_near_duplicates.py --from-fixture --output /tmp/near-duplicates.json
+          cmp evidence/near-duplicates.json /tmp/near-duplicates.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:

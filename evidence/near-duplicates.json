@@ -1,0 +1,6036 @@
+{
+  "schema_version": 1,
+  "fixture_sha256": "fcb655bfb7c3e0989dd7bf0866805ee8e093b196e698fe121bb9ff015a96da55",
+  "source": {
+    "source": "Google LLC, PAWS-Wiki Labeled (Final)",
+    "human_label_provenance": "Published paraphrase/fluency judgments, not labels authored or independently reviewed by this project.",
+    "repository": "https://github.com/google-research-datasets/paws",
+    "mirror": "https://huggingface.co/datasets/google-research-datasets/paws",
+    "mirror_revision": "161ece9501cf0a11f3e48bd356eaa82de46d6a09",
+    "license_file": "PAWS-LICENSE.txt",
+    "sampling": "lowest 200 SHA256(paws-audit-v1:<split>:<id>) per split, without label filtering",
+    "raw_sources": {
+      "validation": {
+        "url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/161ece9501cf0a11f3e48bd356eaa82de46d6a09/labeled_final/validation-00000-of-00001.parquet",
+        "sha256": "7760d829453764ba342a6f562809a8ed21c2c3eec3fd9ffa544089f145d42f6d",
+        "rows": 8000,
+        "bytes": 1230379
+      },
+      "test": {
+        "url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/161ece9501cf0a11f3e48bd356eaa82de46d6a09/labeled_final/test-00000-of-00001.parquet",
+        "sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+        "rows": 8000,
+        "bytes": 1235128
+      }
+    }
+  },
+  "fixed_rule": "casefolded word 3-shingle Jaccard >= 0.8; sensitivity grid is diagnostic, no test-set threshold tuning",
+  "reports": [
+    {
+      "shingle_width": 1,
+      "threshold": 0.5,
+      "pairs": 200,
+      "tp": 90,
+      "fp": 110,
+      "tn": 0,
+      "fn": 0,
+      "precision": 0.45,
+      "recall": 1.0,
+      "false_positive_rate": 1.0,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.7,
+      "pairs": 200,
+      "tp": 90,
+      "fp": 109,
+      "tn": 1,
+      "fn": 0,
+      "precision": 0.45226130653266333,
+      "recall": 1.0,
+      "false_positive_rate": 0.990909090909091,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.8,
+      "pairs": 200,
+      "tp": 90,
+      "fp": 100,
+      "tn": 10,
+      "fn": 0,
+      "precision": 0.47368421052631576,
+      "recall": 1.0,
+      "false_positive_rate": 0.9090909090909091,
+      "split": "validation",
+      "predictions": [
+        {
+          "id": 7351,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5537,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1343,
+          "score": 0.7894736842105263,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4489,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1594,
+          "score": 0.8888888888888888,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7275,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6692,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5910,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7727,
+          "score": 0.9047619047619048,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2757,
+          "score": 0.8947368421052632,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 971,
+          "score": 0.92,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6724,
+          "score": 0.8947368421052632,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6444,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3778,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4192,
+          "score": 0.8181818181818182,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5525,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4241,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1604,
+          "score": 0.8947368421052632,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7383,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6642,
+          "score": 0.9047619047619048,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 97,
+          "score": 0.8695652173913043,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4681,
+          "score": 0.9230769230769231,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4318,
+          "score": 0.9545454545454546,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2734,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 68,
+          "score": 0.8235294117647058,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5463,
+          "score": 0.7647058823529411,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2055,
+          "score": 0.9090909090909091,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1420,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3586,
+          "score": 0.9285714285714286,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2355,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4149,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5936,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5177,
+          "score": 0.9090909090909091,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 77,
+          "score": 0.782608695652174,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7683,
+          "score": 0.9545454545454546,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1110,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 290,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2539,
+          "score": 0.8636363636363636,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2254,
+          "score": 0.8421052631578947,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5939,
+          "score": 0.9545454545454546,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3400,
+          "score": 0.9444444444444444,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1854,
+          "score": 0.8235294117647058,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2058,
+          "score": 0.9166666666666666,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4495,
+          "score": 0.7777777777777778,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7157,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6447,
+          "score": 0.8260869565217391,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3244,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5545,
+          "score": 0.8095238095238095,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5504,
+          "score": 0.8,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 12,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4064,
+          "score": 0.9047619047619048,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3149,
+          "score": 0.8888888888888888,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5442,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7415,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6897,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5616,
+          "score": 0.85,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5048,
+          "score": 0.8888888888888888,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 248,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 147,
+          "score": 0.9047619047619048,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3628,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5654,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5544,
+          "score": 0.9333333333333333,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 203,
+          "score": 0.8125,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1310,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 201,
+          "score": 0.8235294117647058,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7185,
+          "score": 0.9523809523809523,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3932,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1316,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 627,
+          "score": 0.85,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6008,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 227,
+          "score": 0.9473684210526315,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2994,
+          "score": 0.782608695652174,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3490,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1759,
+          "score": 0.8,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7974,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4237,
+          "score": 0.88,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5961,
+          "score": 0.7647058823529411,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2590,
+          "score": 0.85,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3591,
+          "score": 0.9375,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2961,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6926,
+          "score": 0.9333333333333333,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4758,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3202,
+          "score": 0.84,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7379,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 933,
+          "score": 0.9166666666666666,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1870,
+          "score": 0.9,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1462,
+          "score": 0.9090909090909091,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1137,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6900,
+          "score": 0.9,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5834,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3936,
+          "score": 0.85,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7258,
+          "score": 0.9130434782608695,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7037,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3252,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6786,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5846,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6952,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4435,
+          "score": 0.8095238095238095,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2481,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6178,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7008,
+          "score": 0.9473684210526315,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2580,
+          "score": 0.8125,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5756,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7579,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4689,
+          "score": 0.9166666666666666,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4617,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4130,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3683,
+          "score": 0.9523809523809523,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4083,
+          "score": 0.7894736842105263,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5594,
+          "score": 0.9333333333333333,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4317,
+          "score": 0.9090909090909091,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5124,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1130,
+          "score": 0.9523809523809523,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3673,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6513,
+          "score": 0.9565217391304348,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 598,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6765,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7834,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 15,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1146,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3671,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6039,
+          "score": 0.9285714285714286,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4439,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 927,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3652,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4591,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6248,
+          "score": 0.84,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1181,
+          "score": 0.8888888888888888,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2523,
+          "score": 0.8695652173913043,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4820,
+          "score": 0.9523809523809523,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5377,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 773,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4208,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2269,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6009,
+          "score": 0.9047619047619048,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3917,
+          "score": 0.8235294117647058,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 981,
+          "score": 0.8125,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5475,
+          "score": 0.9411764705882353,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5793,
+          "score": 0.84,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2394,
+          "score": 0.9090909090909091,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 825,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4726,
+          "score": 0.9090909090909091,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6498,
+          "score": 0.84,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6675,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7695,
+          "score": 0.8235294117647058,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6961,
+          "score": 0.8571428571428571,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1156,
+          "score": 0.9090909090909091,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2016,
+          "score": 0.8695652173913043,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1209,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5330,
+          "score": 0.9375,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3885,
+          "score": 0.8947368421052632,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7781,
+          "score": 0.7916666666666666,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5962,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3712,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2547,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4098,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6200,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5188,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3875,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2010,
+          "score": 0.8636363636363636,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6254,
+          "score": 0.9285714285714286,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3204,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5311,
+          "score": 0.9285714285714286,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 360,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2098,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2896,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6875,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3147,
+          "score": 0.88,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1189,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5130,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7272,
+          "score": 0.6923076923076923,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4904,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1087,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5359,
+          "score": 0.9411764705882353,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3672,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5495,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7179,
+          "score": 0.9230769230769231,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1371,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1954,
+          "score": 0.9230769230769231,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5786,
+          "score": 0.9230769230769231,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4894,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 609,
+          "score": 0.8571428571428571,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4054,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6299,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2485,
+          "score": 0.8235294117647058,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3574,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6833,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6947,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 464,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4716,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5321,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3602,
+          "score": 0.84,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3623,
+          "score": 0.9,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6727,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5661,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2175,
+          "score": 0.9230769230769231,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3798,
+          "score": 0.95,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1486,
+          "score": 0.7857142857142857,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4893,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        }
+      ],
+      "false_deletion_examples": [
+        {
+          "id": 7351,
+          "sentence1": "The Khan rode out with an escort , Tsitsianov moved with two other men and was shot dead .",
+          "sentence2": "The khan advanced out with an escort , Tsitsianov rode with two other men and was shot dead .",
+          "label": 0
+        },
+        {
+          "id": 5537,
+          "sentence1": "The group played extensively , became famous in Israel and even toured in New York City in 2007 .",
+          "sentence2": "The group toured extensively and became famous in Israel , even playing in 2007 in New York City .",
+          "label": 0
+        },
+        {
+          "id": 1594,
+          "sentence1": "The regiment left Philadelphia in October 1777 to join the main army of General George Washington outside Boston .",
+          "sentence2": "The regiment left Boston in October 1777 to join General George Washington 's Main Army outside Philadelphia .",
+          "label": 0
+        },
+        {
+          "id": 7275,
+          "sentence1": "In 2000 , Poonam Devi defeated Devi of RJD Dharmendra Yadav , representing JDU .",
+          "sentence2": "Poonam Devi of RJD defeated Dharmendra Yadav representing JDU in 2000 .",
+          "label": 0
+        },
+        {
+          "id": 6692,
+          "sentence1": "`` Stopped '' Light refers in the context of an EIT medium to the `` quantum '' transmission of photons to the coherent system and back .",
+          "sentence2": "In the context of an EIT medium `` stopped light refers to '' coherent `` transmission of photons to the quantum system and back .",
+          "label": 0
+        }
+      ]
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.9,
+      "pairs": 200,
+      "tp": 40,
+      "fp": 52,
+      "tn": 58,
+      "fn": 50,
+      "precision": 0.43478260869565216,
+      "recall": 0.4444444444444444,
+      "false_positive_rate": 0.4727272727272727,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.95,
+      "pairs": 200,
+      "tp": 16,
+      "fp": 28,
+      "tn": 82,
+      "fn": 74,
+      "precision": 0.36363636363636365,
+      "recall": 0.17777777777777778,
+      "false_positive_rate": 0.2545454545454545,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 1.0,
+      "pairs": 200,
+      "tp": 12,
+      "fp": 23,
+      "tn": 87,
+      "fn": 78,
+      "precision": 0.34285714285714286,
+      "recall": 0.13333333333333333,
+      "false_positive_rate": 0.20909090909090908,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.5,
+      "pairs": 200,
+      "tp": 46,
+      "fp": 13,
+      "tn": 97,
+      "fn": 44,
+      "precision": 0.7796610169491526,
+      "recall": 0.5111111111111111,
+      "false_positive_rate": 0.11818181818181818,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.7,
+      "pairs": 200,
+      "tp": 14,
+      "fp": 1,
+      "tn": 109,
+      "fn": 76,
+      "precision": 0.9333333333333333,
+      "recall": 0.15555555555555556,
+      "false_positive_rate": 0.00909090909090909,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.8,
+      "pairs": 200,
+      "tp": 5,
+      "fp": 0,
+      "tn": 110,
+      "fn": 85,
+      "precision": 1.0,
+      "recall": 0.05555555555555555,
+      "false_positive_rate": 0.0,
+      "split": "validation",
+      "predictions": [
+        {
+          "id": 7351,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5537,
+          "score": 0.15384615384615385,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1343,
+          "score": 0.35714285714285715,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4489,
+          "score": 0.5882352941176471,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1594,
+          "score": 0.19230769230769232,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7275,
+          "score": 0.1875,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6692,
+          "score": 0.39285714285714285,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5910,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7727,
+          "score": 0.4230769230769231,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2757,
+          "score": 0.15625,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 971,
+          "score": 0.3611111111111111,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6724,
+          "score": 0.2571428571428571,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6444,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3778,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4192,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5525,
+          "score": 0.2,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4241,
+          "score": 0.21739130434782608,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1604,
+          "score": 0.5714285714285714,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7383,
+          "score": 0.32,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6642,
+          "score": 0.4666666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 97,
+          "score": 0.14634146341463414,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4681,
+          "score": 0.23529411764705882,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4318,
+          "score": 0.4827586206896552,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2734,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 68,
+          "score": 0.2608695652173913,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5463,
+          "score": 0.12,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2055,
+          "score": 0.21875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1420,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3586,
+          "score": 0.22727272727272727,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2355,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4149,
+          "score": 0.5384615384615384,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5936,
+          "score": 0.5652173913043478,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5177,
+          "score": 0.6428571428571429,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 77,
+          "score": 0.4838709677419355,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7683,
+          "score": 0.4722222222222222,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1110,
+          "score": 0.14285714285714285,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 290,
+          "score": 0.25,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2539,
+          "score": 0.5161290322580645,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2254,
+          "score": 0.34615384615384615,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5939,
+          "score": 0.41379310344827586,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3400,
+          "score": 0.6086956521739131,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1854,
+          "score": 0.43478260869565216,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2058,
+          "score": 0.45454545454545453,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4495,
+          "score": 0.1875,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7157,
+          "score": 0.16,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6447,
+          "score": 0.17073170731707318,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3244,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5545,
+          "score": 0.15151515151515152,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5504,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 12,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4064,
+          "score": 0.4375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3149,
+          "score": 0.7272727272727273,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5442,
+          "score": 0.43478260869565216,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7415,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6897,
+          "score": 0.4838709677419355,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5616,
+          "score": 0.16666666666666666,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5048,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 248,
+          "score": 0.16129032258064516,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 147,
+          "score": 0.4117647058823529,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3628,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5654,
+          "score": 0.5384615384615384,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5544,
+          "score": 0.3870967741935484,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 203,
+          "score": 0.34615384615384615,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1310,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 201,
+          "score": 0.2608695652173913,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7185,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3932,
+          "score": 0.7,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1316,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 627,
+          "score": 0.5185185185185185,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6008,
+          "score": 0.38095238095238093,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 227,
+          "score": 0.37037037037037035,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2994,
+          "score": 0.16666666666666666,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3490,
+          "score": 0.5652173913043478,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1759,
+          "score": 0.16129032258064516,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7974,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4237,
+          "score": 0.3939393939393939,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5961,
+          "score": 0.23809523809523808,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2590,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3591,
+          "score": 0.17391304347826086,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2961,
+          "score": 0.09090909090909091,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6926,
+          "score": 0.55,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4758,
+          "score": 0.29411764705882354,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3202,
+          "score": 0.5333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7379,
+          "score": 0.0,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 933,
+          "score": 0.13157894736842105,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1870,
+          "score": 0.2857142857142857,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1462,
+          "score": 0.058823529411764705,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1137,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6900,
+          "score": 0.3103448275862069,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5834,
+          "score": 0.6470588235294118,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3936,
+          "score": 0.2962962962962963,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7258,
+          "score": 0.3055555555555556,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7037,
+          "score": 0.17647058823529413,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3252,
+          "score": 0.2727272727272727,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6786,
+          "score": 0.5483870967741935,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5846,
+          "score": 0.45454545454545453,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6952,
+          "score": 0.4666666666666667,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4435,
+          "score": 0.35714285714285715,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2481,
+          "score": 0.14285714285714285,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6178,
+          "score": 0.14285714285714285,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7008,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2580,
+          "score": 0.2608695652173913,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5756,
+          "score": 0.5652173913043478,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7579,
+          "score": 0.391304347826087,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4689,
+          "score": 0.4666666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4617,
+          "score": 0.5384615384615384,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4130,
+          "score": 0.5806451612903226,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3683,
+          "score": 0.7619047619047619,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4083,
+          "score": 0.2413793103448276,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5594,
+          "score": 0.22727272727272727,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4317,
+          "score": 0.125,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5124,
+          "score": 0.5454545454545454,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1130,
+          "score": 0.4666666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3673,
+          "score": 0.6363636363636364,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6513,
+          "score": 0.5666666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 598,
+          "score": 0.3939393939393939,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6765,
+          "score": 0.15789473684210525,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7834,
+          "score": 0.35,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 15,
+          "score": 0.34782608695652173,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1146,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3671,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6039,
+          "score": 0.47619047619047616,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4439,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 927,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3652,
+          "score": 0.7142857142857143,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4591,
+          "score": 0.6153846153846154,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6248,
+          "score": 0.1794871794871795,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1181,
+          "score": 0.7894736842105263,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2523,
+          "score": 0.5172413793103449,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4820,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5377,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 773,
+          "score": 0.21739130434782608,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4208,
+          "score": 0.21428571428571427,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2269,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6009,
+          "score": 0.9166666666666666,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3917,
+          "score": 0.47619047619047616,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 981,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5475,
+          "score": 0.2222222222222222,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5793,
+          "score": 0.4375,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2394,
+          "score": 0.5333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 825,
+          "score": 0.18518518518518517,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4726,
+          "score": 0.6956521739130435,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6498,
+          "score": 0.20512820512820512,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6675,
+          "score": 0.043478260869565216,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7695,
+          "score": 0.125,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6961,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1156,
+          "score": 0.6153846153846154,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2016,
+          "score": 0.41379310344827586,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1209,
+          "score": 0.23809523809523808,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5330,
+          "score": 0.3076923076923077,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3885,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7781,
+          "score": 0.4,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5962,
+          "score": 0.6153846153846154,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3712,
+          "score": 0.2962962962962963,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2547,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4098,
+          "score": 0.42857142857142855,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6200,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5188,
+          "score": 0.32,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3875,
+          "score": 0.22580645161290322,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2010,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6254,
+          "score": 0.6875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3204,
+          "score": 0.08695652173913043,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5311,
+          "score": 0.4444444444444444,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 360,
+          "score": 0.7777777777777778,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2098,
+          "score": 0.4166666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2896,
+          "score": 0.05263157894736842,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6875,
+          "score": 0.5714285714285714,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3147,
+          "score": 0.41935483870967744,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1189,
+          "score": 0.72,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5130,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7272,
+          "score": 0.1111111111111111,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4904,
+          "score": 0.5714285714285714,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1087,
+          "score": 0.17857142857142858,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5359,
+          "score": 0.5238095238095238,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3672,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5495,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7179,
+          "score": 0.4375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1371,
+          "score": 0.4782608695652174,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1954,
+          "score": 0.10526315789473684,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5786,
+          "score": 0.7142857142857143,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5,
+          "score": 0.6842105263157895,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4894,
+          "score": 0.375,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 609,
+          "score": 0.5217391304347826,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4054,
+          "score": 0.2916666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6299,
+          "score": 0.3793103448275862,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2485,
+          "score": 0.0,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3574,
+          "score": 0.7142857142857143,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6833,
+          "score": 0.2,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6947,
+          "score": 0.4090909090909091,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 464,
+          "score": 0.48,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4716,
+          "score": 0.058823529411764705,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5321,
+          "score": 0.0967741935483871,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3602,
+          "score": 0.4117647058823529,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3623,
+          "score": 0.5769230769230769,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6727,
+          "score": 0.46153846153846156,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5661,
+          "score": 0.14814814814814814,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2175,
+          "score": 0.7142857142857143,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3798,
+          "score": 0.5357142857142857,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1486,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4893,
+          "score": 0.6666666666666666,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        }
+      ],
+      "false_deletion_examples": []
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.9,
+      "pairs": 200,
+      "tp": 3,
+      "fp": 0,
+      "tn": 110,
+      "fn": 87,
+      "precision": 1.0,
+      "recall": 0.03333333333333333,
+      "false_positive_rate": 0.0,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.95,
+      "pairs": 200,
+      "tp": 2,
+      "fp": 0,
+      "tn": 110,
+      "fn": 88,
+      "precision": 1.0,
+      "recall": 0.022222222222222223,
+      "false_positive_rate": 0.0,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 1.0,
+      "pairs": 200,
+      "tp": 2,
+      "fp": 0,
+      "tn": 110,
+      "fn": 88,
+      "precision": 1.0,
+      "recall": 0.022222222222222223,
+      "false_positive_rate": 0.0,
+      "split": "validation"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.5,
+      "pairs": 200,
+      "tp": 92,
+      "fp": 108,
+      "tn": 0,
+      "fn": 0,
+      "precision": 0.46,
+      "recall": 1.0,
+      "false_positive_rate": 1.0,
+      "split": "test"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.7,
+      "pairs": 200,
+      "tp": 92,
+      "fp": 107,
+      "tn": 1,
+      "fn": 0,
+      "precision": 0.4623115577889447,
+      "recall": 1.0,
+      "false_positive_rate": 0.9907407407407407,
+      "split": "test"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.8,
+      "pairs": 200,
+      "tp": 91,
+      "fp": 98,
+      "tn": 10,
+      "fn": 1,
+      "precision": 0.48148148148148145,
+      "recall": 0.9891304347826086,
+      "false_positive_rate": 0.9074074074074074,
+      "split": "test",
+      "predictions": [
+        {
+          "id": 4955,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4022,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4173,
+          "score": 0.8235294117647058,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7910,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4227,
+          "score": 0.72,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6006,
+          "score": 0.7692307692307693,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5146,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7058,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6748,
+          "score": 0.84,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4601,
+          "score": 0.9545454545454546,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4547,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1794,
+          "score": 0.9,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6774,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3511,
+          "score": 0.84,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3381,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3898,
+          "score": 0.9411764705882353,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3906,
+          "score": 0.9230769230769231,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2521,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1969,
+          "score": 0.88,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 796,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7445,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 176,
+          "score": 0.85,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1690,
+          "score": 0.84,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5953,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4875,
+          "score": 0.8461538461538461,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2366,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1096,
+          "score": 0.8260869565217391,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 33,
+          "score": 0.9545454545454546,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 236,
+          "score": 0.9285714285714286,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7568,
+          "score": 0.8260869565217391,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7477,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1983,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6942,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4159,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 861,
+          "score": 0.9130434782608695,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5226,
+          "score": 0.8695652173913043,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7030,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 751,
+          "score": 0.8235294117647058,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3923,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 254,
+          "score": 0.8125,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6049,
+          "score": 0.8461538461538461,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7667,
+          "score": 0.7647058823529411,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2089,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2120,
+          "score": 0.7777777777777778,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3102,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5611,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5792,
+          "score": 0.8888888888888888,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3647,
+          "score": 0.9166666666666666,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6682,
+          "score": 0.8888888888888888,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4453,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 262,
+          "score": 0.6875,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2536,
+          "score": 0.8181818181818182,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1473,
+          "score": 0.7857142857142857,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1952,
+          "score": 0.9375,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7351,
+          "score": 0.8095238095238095,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1837,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6283,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5693,
+          "score": 0.8214285714285714,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 225,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 587,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5684,
+          "score": 0.7857142857142857,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6482,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4750,
+          "score": 0.9047619047619048,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4877,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5132,
+          "score": 0.8260869565217391,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6267,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2071,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3506,
+          "score": 0.9090909090909091,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4621,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3246,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2976,
+          "score": 0.9130434782608695,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4176,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3395,
+          "score": 0.9090909090909091,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5031,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2016,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4306,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7425,
+          "score": 0.7692307692307693,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 221,
+          "score": 0.8260869565217391,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7196,
+          "score": 0.8636363636363636,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2240,
+          "score": 0.9166666666666666,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2073,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6681,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3949,
+          "score": 0.7777777777777778,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6571,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6361,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 65,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3223,
+          "score": 0.8125,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4764,
+          "score": 0.9047619047619048,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7311,
+          "score": 0.7368421052631579,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5591,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5375,
+          "score": 0.8235294117647058,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2712,
+          "score": 0.8571428571428571,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4826,
+          "score": 0.9,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6250,
+          "score": 0.8636363636363636,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4486,
+          "score": 0.9047619047619048,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4385,
+          "score": 0.8888888888888888,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5656,
+          "score": 0.9375,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4346,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7728,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5960,
+          "score": 0.9411764705882353,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6169,
+          "score": 0.9473684210526315,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2395,
+          "score": 0.8148148148148148,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6548,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7478,
+          "score": 0.85,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 997,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4886,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 327,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3152,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5349,
+          "score": 0.9285714285714286,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4944,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4386,
+          "score": 0.9523809523809523,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4553,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1300,
+          "score": 0.9,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6417,
+          "score": 0.9444444444444444,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1068,
+          "score": 0.9230769230769231,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7797,
+          "score": 0.9166666666666666,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7325,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2415,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4,
+          "score": 0.8214285714285714,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4301,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 812,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5367,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3295,
+          "score": 0.9375,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5843,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6843,
+          "score": 0.8260869565217391,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 893,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2646,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6743,
+          "score": 0.9166666666666666,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1261,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3563,
+          "score": 0.8095238095238095,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7460,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1558,
+          "score": 0.9333333333333333,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7176,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5971,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 662,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 890,
+          "score": 0.9444444444444444,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7072,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1401,
+          "score": 0.8636363636363636,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5379,
+          "score": 0.8421052631578947,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4987,
+          "score": 0.9130434782608695,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4925,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3466,
+          "score": 0.95,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3330,
+          "score": 0.8518518518518519,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6141,
+          "score": 0.9047619047619048,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 343,
+          "score": 0.9333333333333333,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7413,
+          "score": 0.9047619047619048,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2744,
+          "score": 0.8947368421052632,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 725,
+          "score": 0.9,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3690,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6314,
+          "score": 0.8695652173913043,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2216,
+          "score": 0.9285714285714286,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1633,
+          "score": 0.8666666666666667,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3643,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6697,
+          "score": 0.875,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2233,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6136,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 529,
+          "score": 0.875,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7086,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 1302,
+          "score": 0.9375,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7891,
+          "score": 0.9166666666666666,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3958,
+          "score": 0.8888888888888888,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7036,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6383,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 7854,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2154,
+          "score": 0.8636363636363636,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6012,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5713,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2296,
+          "score": 0.8260869565217391,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7799,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2968,
+          "score": 0.85,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 2830,
+          "score": 0.8125,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4347,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3768,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5943,
+          "score": 0.8421052631578947,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7363,
+          "score": 0.8947368421052632,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5456,
+          "score": 0.8333333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5916,
+          "score": 0.8888888888888888,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6369,
+          "score": 0.8823529411764706,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3876,
+          "score": 0.9333333333333333,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1464,
+          "score": 0.8823529411764706,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5236,
+          "score": 0.95,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1163,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 48,
+          "score": 0.9583333333333334,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3162,
+          "score": 0.9333333333333333,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3705,
+          "score": 0.8333333333333334,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3202,
+          "score": 0.8666666666666667,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7236,
+          "score": 0.7857142857142857,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 92,
+          "score": 0.85,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6348,
+          "score": 0.8571428571428571,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2610,
+          "score": 0.9166666666666666,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 2236,
+          "score": 0.8095238095238095,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 7454,
+          "score": 0.8421052631578947,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4550,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4380,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 6094,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3873,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5498,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4804,
+          "score": 0.9444444444444444,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 4379,
+          "score": 1.0,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5724,
+          "score": 0.8888888888888888,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        }
+      ],
+      "false_deletion_examples": [
+        {
+          "id": 4955,
+          "sentence1": "Tom Gullikson defeated Tim Gullikson , 4 -- 6 , 6 -- 2 , 7 -- 6",
+          "sentence2": "Tim Gullikson defeated Tom Gullikson 4 -- 6 , 6 -- 2 , 7 - 6 .",
+          "label": 0
+        },
+        {
+          "id": 4173,
+          "sentence1": "Luís Neves is a modern Portuguese composer of classical music and writer of several other genres .",
+          "sentence2": "Pedro Luís Neves is a classical composer of Portuguese modern music and author of several other genres .",
+          "label": 0
+        },
+        {
+          "id": 5146,
+          "sentence1": "In the second round , UTA eliminated Red Star Belgrade from the competition ( 0-3 , 1-3 ) .",
+          "sentence2": "In the second round UTA was eliminated from the competition by Red Star Belgrade ( 0-3 , 1-3 ) .",
+          "label": 0
+        },
+        {
+          "id": 7058,
+          "sentence1": "Līvi is a village in the parish of Biksti and the municipality of Dobele in the historical region of Zemgale and the planning region of Zemgale in Latvia .",
+          "sentence2": "Līvi is a village in Latvia and Dobele Municipality in the historical region of Zemgale , and the Zemgale Planning Region in Biksti Parish .",
+          "label": 0
+        },
+        {
+          "id": 4547,
+          "sentence1": "The book collects fourteen short stories , nineteen essays and two plays by the author , including two of his Jorkens - stories , with an introductory preface by Schweitzer .",
+          "sentence2": "The book collects fourteen Jorkens - stories , nineteen essays and two plays by the author , including two of his short stories , with an introductory preface by Schweitzer .",
+          "label": 0
+        }
+      ]
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.9,
+      "pairs": 200,
+      "tp": 38,
+      "fp": 47,
+      "tn": 61,
+      "fn": 54,
+      "precision": 0.4470588235294118,
+      "recall": 0.41304347826086957,
+      "false_positive_rate": 0.4351851851851852,
+      "split": "test"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 0.95,
+      "pairs": 200,
+      "tp": 19,
+      "fp": 26,
+      "tn": 82,
+      "fn": 73,
+      "precision": 0.4222222222222222,
+      "recall": 0.20652173913043478,
+      "false_positive_rate": 0.24074074074074073,
+      "split": "test"
+    },
+    {
+      "shingle_width": 1,
+      "threshold": 1.0,
+      "pairs": 200,
+      "tp": 14,
+      "fp": 25,
+      "tn": 83,
+      "fn": 78,
+      "precision": 0.358974358974359,
+      "recall": 0.15217391304347827,
+      "false_positive_rate": 0.23148148148148148,
+      "split": "test"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.5,
+      "pairs": 200,
+      "tp": 36,
+      "fp": 22,
+      "tn": 86,
+      "fn": 56,
+      "precision": 0.6206896551724138,
+      "recall": 0.391304347826087,
+      "false_positive_rate": 0.2037037037037037,
+      "split": "test"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.7,
+      "pairs": 200,
+      "tp": 12,
+      "fp": 4,
+      "tn": 104,
+      "fn": 80,
+      "precision": 0.75,
+      "recall": 0.13043478260869565,
+      "false_positive_rate": 0.037037037037037035,
+      "split": "test"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.8,
+      "pairs": 200,
+      "tp": 8,
+      "fp": 2,
+      "tn": 106,
+      "fn": 84,
+      "precision": 0.8,
+      "recall": 0.08695652173913043,
+      "false_positive_rate": 0.018518518518518517,
+      "split": "test",
+      "predictions": [
+        {
+          "id": 4955,
+          "score": 0.38461538461538464,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4022,
+          "score": 0.6875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4173,
+          "score": 0.16,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7910,
+          "score": 0.23076923076923078,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4227,
+          "score": 0.23529411764705882,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6006,
+          "score": 0.3076923076923077,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5146,
+          "score": 0.30434782608695654,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7058,
+          "score": 0.24324324324324326,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6748,
+          "score": 0.5483870967741935,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4601,
+          "score": 0.4,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4547,
+          "score": 0.6,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1794,
+          "score": 0.7333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6774,
+          "score": 1.0,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 3511,
+          "score": 0.1951219512195122,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3381,
+          "score": 0.5238095238095238,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3898,
+          "score": 0.5217391304347826,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3906,
+          "score": 0.6875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2521,
+          "score": 0.6363636363636364,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1969,
+          "score": 0.2894736842105263,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 796,
+          "score": 0.44,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7445,
+          "score": 0.42857142857142855,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 176,
+          "score": 0.17857142857142858,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1690,
+          "score": 0.5172413793103449,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5953,
+          "score": 0.21428571428571427,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4875,
+          "score": 0.1111111111111111,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2366,
+          "score": 0.4074074074074074,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1096,
+          "score": 0.4411764705882353,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 33,
+          "score": 0.5769230769230769,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 236,
+          "score": 0.5714285714285714,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7568,
+          "score": 0.1875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7477,
+          "score": 0.21052631578947367,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1983,
+          "score": 0.2857142857142857,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6942,
+          "score": 0.34782608695652173,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4159,
+          "score": 0.2571428571428571,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 861,
+          "score": 0.8260869565217391,
+          "label": 0,
+          "predicted": 1,
+          "outcome": "fp"
+        },
+        {
+          "id": 5226,
+          "score": 0.5161290322580645,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7030,
+          "score": 0.6470588235294118,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 751,
+          "score": 0.45,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3923,
+          "score": 0.7058823529411765,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 254,
+          "score": 0.11538461538461539,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6049,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7667,
+          "score": 0.30434782608695654,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2089,
+          "score": 0.3684210526315789,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2120,
+          "score": 0.52,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3102,
+          "score": 0.2916666666666667,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5611,
+          "score": 0.29411764705882354,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5792,
+          "score": 0.7142857142857143,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3647,
+          "score": 0.21052631578947367,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6682,
+          "score": 0.36,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4453,
+          "score": 0.05263157894736842,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 262,
+          "score": 0.19047619047619047,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2536,
+          "score": 0.3103448275862069,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1473,
+          "score": 0.17391304347826086,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1952,
+          "score": 0.12,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7351,
+          "score": 0.21428571428571427,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1837,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6283,
+          "score": 0.35,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5693,
+          "score": 0.4,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 225,
+          "score": 0.8636363636363636,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 587,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5684,
+          "score": 0.2,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6482,
+          "score": 0.8571428571428571,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 4750,
+          "score": 0.42857142857142855,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4877,
+          "score": 0.47619047619047616,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5132,
+          "score": 0.4,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6267,
+          "score": 0.4,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2071,
+          "score": 0.28,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3506,
+          "score": 0.2647058823529412,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4621,
+          "score": 0.6666666666666666,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3246,
+          "score": 0.5263157894736842,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2976,
+          "score": 0.5757575757575758,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4176,
+          "score": 0.6,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3395,
+          "score": 0.4838709677419355,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5031,
+          "score": 0.13333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2016,
+          "score": 0.1935483870967742,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4306,
+          "score": 0.4583333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7425,
+          "score": 0.225,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 221,
+          "score": 0.48148148148148145,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7196,
+          "score": 0.32142857142857145,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2240,
+          "score": 0.5384615384615384,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2073,
+          "score": 0.125,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6681,
+          "score": 0.4583333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3949,
+          "score": 0.42857142857142855,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6571,
+          "score": 0.35,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6361,
+          "score": 0.43478260869565216,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 65,
+          "score": 0.13043478260869565,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3223,
+          "score": 0.3181818181818182,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4764,
+          "score": 0.4,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7311,
+          "score": 0.07407407407407407,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5591,
+          "score": 0.5882352941176471,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5375,
+          "score": 0.1875,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2712,
+          "score": 0.3448275862068966,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4826,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 6250,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4486,
+          "score": 0.25806451612903225,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4385,
+          "score": 0.08333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5656,
+          "score": 0.44,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4346,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7728,
+          "score": 0.64,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5960,
+          "score": 0.7272727272727273,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6169,
+          "score": 0.5454545454545454,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2395,
+          "score": 0.1951219512195122,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6548,
+          "score": 0.7037037037037037,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7478,
+          "score": 0.3793103448275862,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 997,
+          "score": 0.4444444444444444,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4886,
+          "score": 0.4090909090909091,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 327,
+          "score": 0.23809523809523808,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3152,
+          "score": 0.20689655172413793,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5349,
+          "score": 0.25,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4944,
+          "score": 0.1,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4386,
+          "score": 0.3055555555555556,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4553,
+          "score": 0.4827586206896552,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1300,
+          "score": 0.6428571428571429,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6417,
+          "score": 0.85,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 1068,
+          "score": 0.6666666666666666,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7797,
+          "score": 0.6428571428571429,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7325,
+          "score": 0.2692307692307692,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2415,
+          "score": 0.25,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4,
+          "score": 0.1951219512195122,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4301,
+          "score": 0.15789473684210525,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 812,
+          "score": 0.16,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5367,
+          "score": 0.23076923076923078,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3295,
+          "score": 0.24,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5843,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6843,
+          "score": 0.3125,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 893,
+          "score": 0.16,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2646,
+          "score": 0.10714285714285714,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6743,
+          "score": 0.11764705882352941,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1261,
+          "score": 0.5,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3563,
+          "score": 0.21212121212121213,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7460,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1558,
+          "score": 0.5789473684210527,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7176,
+          "score": 0.2,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5971,
+          "score": 0.23529411764705882,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 662,
+          "score": 0.5789473684210527,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 890,
+          "score": 0.5714285714285714,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7072,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1401,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5379,
+          "score": 0.5925925925925926,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 4987,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4925,
+          "score": 0.32,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3466,
+          "score": 0.9545454545454546,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3330,
+          "score": 0.2564102564102564,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6141,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 343,
+          "score": 0.45,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7413,
+          "score": 0.36363636363636365,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2744,
+          "score": 0.23076923076923078,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 725,
+          "score": 0.11764705882352941,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3690,
+          "score": 0.13333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6314,
+          "score": 0.43333333333333335,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2216,
+          "score": 0.08,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1633,
+          "score": 0.8461538461538461,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3643,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6697,
+          "score": 0.12,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2233,
+          "score": 0.14285714285714285,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6136,
+          "score": 0.38095238095238093,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 529,
+          "score": 0.3333333333333333,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7086,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 1302,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7891,
+          "score": 0.10526315789473684,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3958,
+          "score": 0.45454545454545453,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7036,
+          "score": 0.5483870967741935,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6383,
+          "score": 0.17647058823529413,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 7854,
+          "score": 0.42857142857142855,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2154,
+          "score": 0.3939393939393939,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6012,
+          "score": 0.2692307692307692,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5713,
+          "score": 0.4074074074074074,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2296,
+          "score": 0.2222222222222222,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7799,
+          "score": 0.3333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2968,
+          "score": 0.09375,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 2830,
+          "score": 0.34782608695652173,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4347,
+          "score": 0.3076923076923077,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3768,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5943,
+          "score": 0.2222222222222222,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7363,
+          "score": 0.5,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5456,
+          "score": 0.8181818181818182,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 5916,
+          "score": 0.5925925925925926,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 6369,
+          "score": 0.5238095238095238,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3876,
+          "score": 0.08695652173913043,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1464,
+          "score": 0.3076923076923077,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5236,
+          "score": 0.5517241379310345,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 1163,
+          "score": 0.6428571428571429,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 48,
+          "score": 0.8,
+          "label": 1,
+          "predicted": 1,
+          "outcome": "tp"
+        },
+        {
+          "id": 3162,
+          "score": 0.5909090909090909,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3705,
+          "score": 0.34782608695652173,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 3202,
+          "score": 0.4,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7236,
+          "score": 0.375,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 92,
+          "score": 0.2962962962962963,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6348,
+          "score": 0.23809523809523808,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2610,
+          "score": 0.16666666666666666,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 2236,
+          "score": 0.17647058823529413,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 7454,
+          "score": 0.3225806451612903,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4550,
+          "score": 0.25,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4380,
+          "score": 0.28,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 6094,
+          "score": 0.7368421052631579,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 3873,
+          "score": 0.36666666666666664,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 5498,
+          "score": 0.15789473684210525,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4804,
+          "score": 0.32142857142857145,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        },
+        {
+          "id": 4379,
+          "score": 0.17647058823529413,
+          "label": 1,
+          "predicted": 0,
+          "outcome": "fn"
+        },
+        {
+          "id": 5724,
+          "score": 0.08333333333333333,
+          "label": 0,
+          "predicted": 0,
+          "outcome": "tn"
+        }
+      ],
+      "false_deletion_examples": [
+        {
+          "id": 6774,
+          "sentence1": "The Potez X was a French colonial transport aircraft of the 1920s designed and built by Potez .",
+          "sentence2": "The Potez X was a French colonial transport aircraft of the 1920s , designed and built by Potez .",
+          "label": 0
+        },
+        {
+          "id": 861,
+          "sentence1": "While the local archives can not be replaced , local universities and various groups in Quebec have collected books for a new Library Mégantic .",
+          "sentence2": "While the local archives can not be replaced , local universities and various groups in Quebec have collected books for a new Bibliothèque Mégantic .",
+          "label": 0
+        }
+      ]
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.9,
+      "pairs": 200,
+      "tp": 1,
+      "fp": 1,
+      "tn": 107,
+      "fn": 91,
+      "precision": 0.5,
+      "recall": 0.010869565217391304,
+      "false_positive_rate": 0.009259259259259259,
+      "split": "test"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 0.95,
+      "pairs": 200,
+      "tp": 1,
+      "fp": 1,
+      "tn": 107,
+      "fn": 91,
+      "precision": 0.5,
+      "recall": 0.010869565217391304,
+      "false_positive_rate": 0.009259259259259259,
+      "split": "test"
+    },
+    {
+      "shingle_width": 3,
+      "threshold": 1.0,
+      "pairs": 200,
+      "tp": 0,
+      "fp": 1,
+      "tn": 107,
+      "fn": 92,
+      "precision": 0.0,
+      "recall": 0.0,
+      "false_positive_rate": 0.009259259259259259,
+      "split": "test"
+    }
+  ],
+  "decision": "near_duplicate_filter_disabled; candidates are review-only",
+  "limitations": [
+    "PAWS is an adversarial paraphrase benchmark, not a representative corpus-duplicate label distribution.",
+    "Precision/recall here use human semantic equivalence labels as a deletion-risk stress test, not a verified estimate of production deduplication quality.",
+    "Published human judgments were reused unchanged; no newly collected annotation or human project review is claimed.",
+    "No records are removed by this evaluator. A quality improvement cannot be claimed from reducing output size."
+  ]
+}
