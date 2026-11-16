@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "experience_id": "project-jdinseattle-corpus-release-lab",
+  "repository": "JDinSeattle/corpus-release-lab",
+  "provenance": {
+    "kind": "owner_confirmed_separate_cloud_test_results",
+    "source": "experience bank",
+    "local_reproduction": false
+  },
+  "bullets": [
+    "Extended LakeBridge with deterministic corpus releases: fixed the source snapshot_id and export receipt, wrote schema, preprocessing rules, transform version and output file hashes into an immutable manifest, and ran a simulated round over 266,000 source records (train 248,000 + eval 18,000 with 3,000 exact cross-split overlaps) producing 263,000 audit decisions (train 245,000 + eval 18,000, with 3,000 train duplicates deleted, sum equal to input) on Python 3.14 / DuckDB 1.5.5 / PyArrow 25.0.1.",
+    "Made dedup reproducible: UTF-8 NFC and LF normalization preserving case, SHA256 grouping followed by bytewise comparison of normalized content (the hash only narrows candidates), evaluation side wins cross-split duplicates, within-split duplicates keep the smallest record_id, and output sorts stably by split and id.",
+    "Verified determinism by shuffling the same input 3 times: Parquet encoding and writer parameters fixed, the canonical manifest excluded run time and log paths, and each output file plus the canonical manifest produced identical SHA256 across 4 output files of 65,750 rows each with 4096-row row groups (boundaries also exposed to the reader).",
+    "Implemented crash-recoverable publication on one local filesystem: same-disk temporary directory, file and directory fsync, then atomic replacement of the current pointer; 5 fault windows x 3 runs = 15 fault cases left current on the old release for the first 9, exposed the complete new release for the next 3, and resumed tombstoned deletion of expired unpinned objects for the last 3, with no case where current pointed at a missing file.",
+    "Implemented pin-aware retention and tamper checks: 10 repeated reader-holding-R1 versus cleaner races showed that once a pin was acquired the R1 files were not deleted and once a tombstone committed new pins failed, so an expired release cannot be resurrected; 8 tampering cases that changed one bit of the receipt snapshot or file hash were all rejected, and the new round was validated with 30 tests split 10 dedup/normalization, 10 publication/recovery and 10 retention/receipt."
+  ],
+  "limits": [
+    "263,000 is the new round's retained output (from 266,000 raw inputs, 3,000 train duplicates deleted); the historical 255,318-record figure is a different round's input. Keep the rounds and labels separate, do not sum them, and do not attach old retained-run labels or any storage-size figure to the 263,000 count.",
+    "Crash verification is limited to process exit and SIGKILL: fsync call ordering is not evidence about power loss or disk controller behavior, and power-loss behavior remains unverified.",
+    "Exact dedup removes only identical content under the stated normalization; paraphrase, image rewrite and semantic overlap need separate evaluation, and near-duplicate assessment stays review-only and does not establish leakage prevention.",
+    "The 15 fault cases are 5 windows x 3 runs, not 15 independent scenarios; the window outcomes (first 9 old release, next 3 new release, last 3 resumed deletion) belong to this simulated matrix.",
+    "Local ext4 POSIX filesystem with 4 CPU / 8 GiB and synthetic inputs; this is a LakeBridge extension for data-preparation boundaries, not an independent production deployment, and it should not be duplicated as a second ETL entry on the same resume.",
+    "The timing endpoint runs from reading the already-fixed receipt to persisting the current pointer; source-side export and downstream training are excluded.",
+    "A matching SHA256 is not record identity: dedup still compares normalized bytes, the dedup rules are fixed in the manifest so a rule change does not silently reuse an identity, and callers still own pin lifetime."
+  ]
+}

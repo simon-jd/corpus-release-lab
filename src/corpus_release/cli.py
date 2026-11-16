@@ -15,6 +15,7 @@ def main():
     build.add_argument('--license',required=True)
     build.add_argument('--revision',default='v1')
     build.add_argument('--shard-rows',type=int,default=100_000)
+    build.add_argument('--profile', choices=['legacy-v1', 'nfc-lf-v2'], default='legacy-v1')
     exported=sub.add_parser('publish-export')
     exported.add_argument('export')
     exported.add_argument('root')
@@ -42,7 +43,7 @@ def main():
     action.add_argument('after')
     a=p.parse_args()
     if a.command=='publish':
-        result=publish(a.source,a.root,license=a.license,shard_rows=a.shard_rows,revision=a.revision)
+        result=publish(a.source,a.root,license=a.license,shard_rows=a.shard_rows,revision=a.revision,profile=a.profile)
     elif a.command=='publish-export':
         result=publish_export(a.export,a.root,license=a.license,revision=a.revision)
     elif a.command=='verify':

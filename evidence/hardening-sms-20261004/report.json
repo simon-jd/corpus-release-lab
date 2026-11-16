@@ -1,0 +1,307 @@
+{
+  "passed": true,
+  "dataset": {
+    "dataset": "SMS Spam Collection",
+    "authors": [
+      "Tiago Almeida",
+      "Jos\u00e9 Mar\u00eda G\u00f3mez Hidalgo"
+    ],
+    "year": 2011,
+    "doi": "https://doi.org/10.24432/C5CC84",
+    "source_page": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+    "download_url": "https://archive.ics.uci.edu/static/public/228/sms%2Bspam%2Bcollection.zip",
+    "license": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "verified_utc": "2026-10-04",
+    "archive_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+    "member": "SMSSpamCollection",
+    "member_sha256": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+    "expected_rows": 5574,
+    "transform": "UTF-8 labelled TSV to explicit JSONL IDs; NFC/LF text normalization; split by normalized-content SHA256 modulo 10 (0 test, 1 eval, others train). Labels retained in source JSONL only; no model trained."
+  },
+  "input_rows": 5574,
+  "label_counts": {
+    "ham": 4827,
+    "spam": 747
+  },
+  "reconciliation": {
+    "dataset_id": "434968f8c0f89cc8c8d923ae9d5151240891aad3fb34a125f2bf9804168cbb3f",
+    "passed": true,
+    "checks": {
+      "manifest_record_count": true,
+      "unique_sample_ids": true,
+      "valid_split_values": true,
+      "normalized_text_hashes": true,
+      "audit_source_line_uniqueness": true,
+      "accepted_audit_bijection": true,
+      "decision_counts": true,
+      "source_line_coverage": true,
+      "no_exact_cross_split_leakage": true
+    },
+    "records": 5171,
+    "source_lines": 5574,
+    "decisions": {
+      "accepted": 5171,
+      "exact_duplicate": 403
+    },
+    "cross_split_leaked_hashes": [],
+    "rejected_fraction": 0.0,
+    "exact_duplicate_fraction": 0.07229996411912451
+  },
+  "deterministic_reorder": true,
+  "rejected_source_hash": true,
+  "kill_exit_code": -9,
+  "recovered": {
+    "dataset_id": "a1e77723037e1ed3580784c3b4358dc30be23b1ff1c779a4d3e4d264aee32de6",
+    "decisions": {
+      "accepted": 5171,
+      "exact_duplicate": 403
+    },
+    "elapsed_seconds": 0.3434554939994996,
+    "measurements": {
+      "definitions": {
+        "artifact_bytes": "Explicit measured source/output file sizes where included; distinct from storage-layer I/O.",
+        "process_peak_rss_kib": "Process lifetime high-water mark at stage end, not incremental stage allocation.",
+        "rchar/wchar": "Process syscall bytes, including cached reads, library metadata and observer overhead; not logical row sizes.",
+        "read_bytes/write_bytes": "Linux process storage-layer I/O counters; cache hits may report zero. Not device-level total traffic."
+      },
+      "schema_version": 1,
+      "stages": [
+        {
+          "elapsed_seconds": 0.028302243999860366,
+          "input_artifact_bytes": 802880,
+          "output_artifact_bytes": 802880,
+          "process_io_delta": {
+            "cancelled_write_bytes": 806912,
+            "rchar": 3211618,
+            "read_bytes": 0,
+            "syscr": 11,
+            "syscw": 2,
+            "wchar": 1605760,
+            "write_bytes": 1613824
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "source_snapshot",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.016863281000041752,
+          "input_artifact_bytes": 802880,
+          "output_artifact_bytes": 459618,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 802995,
+            "read_bytes": 0,
+            "syscr": 10,
+            "syscw": 56,
+            "wchar": 459618,
+            "write_bytes": 462848
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "normalization",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.010443316999953822,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 463037,
+            "read_bytes": 0,
+            "syscr": 48,
+            "syscw": 7,
+            "wchar": 985276,
+            "write_bytes": 987136
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "duckdb_load",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.01317163600015192,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 116,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 7,
+            "wchar": 573700,
+            "write_bytes": 577536
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "exact_deduplication",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.01274795700010145,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 116,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 17,
+            "wchar": 802160,
+            "write_bytes": 806912
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "audit_export",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.009301440999479382,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 116,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 7,
+            "wchar": 521802,
+            "write_bytes": 528384
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "shard_assignment",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.025184846999763977,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 116,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 102,
+            "wchar": 452366,
+            "write_bytes": 499712
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "shard_export",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.0439289589994587,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 117,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 12,
+            "wchar": 2625585,
+            "write_bytes": 2629632
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "database_flush_close",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.00016309599959640764,
+          "process_io_delta": {
+            "cancelled_write_bytes": 462848,
+            "rchar": 117,
+            "read_bytes": 0,
+            "syscr": 2,
+            "syscw": 0,
+            "wchar": 0,
+            "write_bytes": 0
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "temporary_artifact_cleanup",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.0012938360005136929,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 1475429,
+            "read_bytes": 0,
+            "syscr": 71,
+            "syscw": 0,
+            "wchar": 0,
+            "write_bytes": 0
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "artifact_hashing",
+          "status": "success"
+        },
+        {
+          "elapsed_seconds": 0.16688313300073787,
+          "process_io_delta": {
+            "cancelled_write_bytes": 0,
+            "rchar": 1478787,
+            "read_bytes": 0,
+            "syscr": 73,
+            "syscw": 2,
+            "wchar": 3423,
+            "write_bytes": 8192
+          },
+          "process_peak_rss_kib": 184140,
+          "stage": "publication",
+          "status": "success"
+        }
+      ]
+    },
+    "records": 5171
+  },
+  "pinned_expiration_rejected": true,
+  "old_release_expiration": {
+    "dataset_id": "434968f8c0f89cc8c8d923ae9d5151240891aad3fb34a125f2bf9804168cbb3f",
+    "expired": true,
+    "resumed": false
+  },
+  "consumer_release": "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/evidence/hardening-sms-20261004/catalog/releases/a1e77723037e1ed3580784c3b4358dc30be23b1ff1c779a4d3e4d264aee32de6",
+  "scope": "Real licensed text; two exact publications and actual local process SIGKILL. No model quality or power-loss guarantee.",
+  "commands": [
+    {
+      "argv": [
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/.venv/bin/python",
+        "-m",
+        "corpus_release.cli",
+        "publish",
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/evidence/hardening-sms-20261004/source.jsonl",
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/evidence/hardening-sms-20261004/catalog",
+        "--license",
+        "CC-BY-4.0",
+        "--profile",
+        "nfc-lf-v2",
+        "--shard-rows",
+        "256",
+        "--revision",
+        "uci-sms-recovery-v2"
+      ],
+      "returncode": -9,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/.venv/bin/python",
+        "-m",
+        "corpus_release.cli",
+        "publish",
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/evidence/hardening-sms-20261004/source.jsonl",
+        "/home/postedism/Desktop/Find work/project-hardening/repos/corpus-release-lab/evidence/hardening-sms-20261004/catalog",
+        "--license",
+        "CC-BY-4.0",
+        "--profile",
+        "nfc-lf-v2",
+        "--shard-rows",
+        "256",
+        "--revision",
+        "uci-sms-recovery-v2"
+      ],
+      "returncode": 0,
+      "stdout": "{\"dataset_id\": \"a1e77723037e1ed3580784c3b4358dc30be23b1ff1c779a4d3e4d264aee32de6\", \"decisions\": {\"accepted\": 5171, \"exact_duplicate\": 403}, \"elapsed_seconds\": 0.3434554939994996, \"measurements\": {\"definitions\": {\"artifact_bytes\": \"Explicit measured source/output file sizes where included; distinct from storage-layer I/O.\", \"process_peak_rss_kib\": \"Process lifetime high-water mark at stage end, not incremental stage allocation.\", \"rchar/wchar\": \"Process syscall bytes, including cached reads, library metadata and observer overhead; not logical row sizes.\", \"read_bytes/write_bytes\": \"Linux process storage-layer I/O counters; cache hits may report zero. Not device-level total traffic.\"}, \"schema_version\": 1, \"stages\": [{\"elapsed_seconds\": 0.028302243999860366, \"input_artifact_bytes\": 802880, \"output_artifact_bytes\": 802880, \"process_io_delta\": {\"cancelled_write_bytes\": 806912, \"rchar\": 3211618, \"read_bytes\": 0, \"syscr\": 11, \"syscw\": 2, \"wchar\": 1605760, \"write_bytes\": 1613824}, \"process_peak_rss_kib\": 184140, \"stage\": \"source_snapshot\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.016863281000041752, \"input_artifact_bytes\": 802880, \"output_artifact_bytes\": 459618, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 802995, \"read_bytes\": 0, \"syscr\": 10, \"syscw\": 56, \"wchar\": 459618, \"write_bytes\": 462848}, \"process_peak_rss_kib\": 184140, \"stage\": \"normalization\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.010443316999953822, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 463037, \"read_bytes\": 0, \"syscr\": 48, \"syscw\": 7, \"wchar\": 985276, \"write_bytes\": 987136}, \"process_peak_rss_kib\": 184140, \"stage\": \"duckdb_load\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.01317163600015192, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 116, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 7, \"wchar\": 573700, \"write_bytes\": 577536}, \"process_peak_rss_kib\": 184140, \"stage\": \"exact_deduplication\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.01274795700010145, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 116, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 17, \"wchar\": 802160, \"write_bytes\": 806912}, \"process_peak_rss_kib\": 184140, \"stage\": \"audit_export\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.009301440999479382, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 116, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 7, \"wchar\": 521802, \"write_bytes\": 528384}, \"process_peak_rss_kib\": 184140, \"stage\": \"shard_assignment\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.025184846999763977, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 116, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 102, \"wchar\": 452366, \"write_bytes\": 499712}, \"process_peak_rss_kib\": 184140, \"stage\": \"shard_export\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.0439289589994587, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 117, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 12, \"wchar\": 2625585, \"write_bytes\": 2629632}, \"process_peak_rss_kib\": 184140, \"stage\": \"database_flush_close\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.00016309599959640764, \"process_io_delta\": {\"cancelled_write_bytes\": 462848, \"rchar\": 117, \"read_bytes\": 0, \"syscr\": 2, \"syscw\": 0, \"wchar\": 0, \"write_bytes\": 0}, \"process_peak_rss_kib\": 184140, \"stage\": \"temporary_artifact_cleanup\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.0012938360005136929, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 1475429, \"read_bytes\": 0, \"syscr\": 71, \"syscw\": 0, \"wchar\": 0, \"write_bytes\": 0}, \"process_peak_rss_kib\": 184140, \"stage\": \"artifact_hashing\", \"status\": \"success\"}, {\"elapsed_seconds\": 0.16688313300073787, \"process_io_delta\": {\"cancelled_write_bytes\": 0, \"rchar\": 1478787, \"read_bytes\": 0, \"syscr\": 73, \"syscw\": 2, \"wchar\": 3423, \"write_bytes\": 8192}, \"process_peak_rss_kib\": 184140, \"stage\": \"publication\", \"status\": \"success\"}]}, \"records\": 5171}\n",
+      "stderr": ""
+    }
+  ],
+  "code_sha256": {
+    "src/corpus_release/__init__.py": "e2f0ed2c600ef17f8cc5e9934cb8fbcc57ab50defdc424575c0dcc1b5244e851",
+    "src/corpus_release/cli.py": "8ee5134552462dafca14b2bbf58a4fc17b7cf09eabbfda45e8dc0c5aafdd7591",
+    "src/corpus_release/lakebridge.py": "1766c46c07b8af57058ba491a3e8f331e4d4d2089345875b902cd4e8961afb5c",
+    "src/corpus_release/lifecycle.py": "f672156a40a1524f78cf7cd70ce934b11dd54be6199cd89e93f79181d6702863",
+    "src/corpus_release/metrics.py": "f8406b59c990d488e234cd834b87978cdac3f09cb5625f30f9c19e6fdb41ecb3",
+    "src/corpus_release/near_duplicates.py": "903e70f3eb7a5c883a2ae0e32e6ed04b85084546a9c90d6a595940f8369175b6",
+    "src/corpus_release/reconcile.py": "a934200c3d2daa6aab2312b6854eeea35b93833c36ad3d1e8bd95b81d2062fec",
+    "src/corpus_release/release.py": "73d6797ba3b41353bf62ac621ac525efd1fe26a3f6a55becb61249dc7cc296f8"
+  },
+  "script_sha256": "b391dfa54f299e042d8d0c41b4a8a6ab6c9f435155a49454d30314d9e2f13967",
+  "uv_lock_sha256": "99a3de56fe11cdad2725b2ea5eead33af9003f9267e6269756e71090ffb552c8"
+}

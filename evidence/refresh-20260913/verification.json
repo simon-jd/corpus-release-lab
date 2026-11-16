@@ -1,0 +1,107 @@
+{
+  "verified_at": "2026-09-13T18:59:07.859288+00:00",
+  "scope": "local CPU, real local POSIX processes and loopback sockets where tested; no cloud/GPU/production execution",
+  "base_commit": "34063b5c4dbc5fcb6a4a6e4e9dfa36729a7840c7",
+  "source_state": "local_only_uncommitted_refresh",
+  "counts": {
+    "tests": 31,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "passed": 31
+  },
+  "environment": {
+    "mode": "local_cpu",
+    "python": "3.14.7",
+    "platform": "Linux-7.0.0-29-generic-x86_64-with-glibc2.43",
+    "logical_cpus": 32,
+    "affinity": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "dependencies": {
+      "duckdb": "1.5.5",
+      "pyarrow": "25.0.1",
+      "numpy": "2.5.3",
+      "pandas": "3.0.5",
+      "pytest": "9.1.1"
+    },
+    "thread_env": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    },
+    "cpu_model": "13th Gen Intel(R) Core(TM) i9-13900K",
+    "memory_total_kib": "129209084"
+  },
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/postedism/Desktop/data-experiment-infra/.venv/bin/python -m pytest -q",
+  "source_sha256": {
+    "src/corpus_release/__init__.py": "e2f0ed2c600ef17f8cc5e9934cb8fbcc57ab50defdc424575c0dcc1b5244e851",
+    "src/corpus_release/cli.py": "d162a4edc1a0d3539e0c8f787e2fb5c97646d0cfca9fc00b2898a60630b70b85",
+    "src/corpus_release/lakebridge.py": "1766c46c07b8af57058ba491a3e8f331e4d4d2089345875b902cd4e8961afb5c",
+    "src/corpus_release/lifecycle.py": "f672156a40a1524f78cf7cd70ce934b11dd54be6199cd89e93f79181d6702863",
+    "src/corpus_release/metrics.py": "f8406b59c990d488e234cd834b87978cdac3f09cb5625f30f9c19e6fdb41ecb3",
+    "src/corpus_release/near_duplicates.py": "903e70f3eb7a5c883a2ae0e32e6ed04b85084546a9c90d6a595940f8369175b6",
+    "src/corpus_release/reconcile.py": "ddb1c3226e32c3bbc2f8e0086d38d6312a51e911b8f2c35fd23fd104e5c043f2",
+    "src/corpus_release/release.py": "f3ae1c9a1402a96d6858abaa0b628fe53525b608966f699df949227d1feb9dec",
+    "scripts/benchmark.py": "e36cba549db5623cc1c18dc216458e34287b5c4ba76ddfc4701387e24654b833",
+    "scripts/evaluate_near_duplicates.py": "ae062a2a0c3e2b2f6f0752407d415ecbdc229aa572022c8be050d67bd81b8882",
+    "scripts/kill_during_shard.py": "6b4b8d8bbd98cfc24ec9c9265cdeba79f0e95c0f21b3c302c1dc8eca5e5576e9",
+    "scripts/qualify_lakebridge_upstream.py": "a9dbbf65a3ef7f14ee92047c0baf9ba3bb20b481f1530ad59e45c04f745fcf24",
+    "tests/test_cli.py": "bd8582c7bb77702f01d851691c8cfe018d42a31c112738aad4a8e24ddcf09572",
+    "tests/test_lakebridge_receipt.py": "cd0b72527958f7b43f14e8bda45c2d324577e0d2271921a3c28d27cf420a6467",
+    "tests/test_near_duplicates.py": "41424255c3c1d96bd6c29f79819ae6e985f0834e6b77b43a05cc56aa424a3630",
+    "tests/test_reconcile.py": "63f3be3e3624ffd9c7b7966990c63227f14dde088102bfbf074538e58e76199e",
+    "tests/test_release.py": "4c25db2cc926d25eef2a9df47dc20b5d2eabf886a19b22ddc205edae9c3af90b",
+    "pyproject.toml": "7670faf3606f21cfaa9204e0b1636c2115c0eefd35cc91f72f379bbe1ca61fa1"
+  },
+  "artifacts": {
+    "source-snapshot.tar.gz": {
+      "sha256": "7a92e1bce4032458d50097fab11e6fe22563f8a89dfc77bab202fe5a5ee3cfab",
+      "bytes": 18700
+    },
+    "tests.log": {
+      "sha256": "aa83299f80cf366cfc962b69568d09f692ec40f857adc44a38c845fe1dc89502",
+      "bytes": 100
+    },
+    "tests.xml": {
+      "sha256": "ad62cdf3c373e2663848c0b941bde5079aa4d954b670dca0c1b4092e170a2ed1",
+      "bytes": 3768
+    }
+  },
+  "limitations": [
+    "Historical performance records were inspected, not rerun.",
+    "No whole-query latency, production capacity or availability claim.",
+    "Remote CI has not run for these local changes."
+  ]
+}

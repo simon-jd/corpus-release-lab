@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-10-04T04:13:28.060066+00:00",
+  "scope": "local_cpu_verification_separate_from_owner_cloud_results",
+  "base_commit": "34063b5c4dbc5fcb6a4a6e4e9dfa36729a7840c7",
+  "remote_base": "34063b5c4dbc5fcb6a4a6e4e9dfa36729a7840c7",
+  "source_sha256": {
+    ".github/workflows/test.yml": "136fe30cf9558703dc2e72a4936e6d2845fab66ccd9be6c7264a03073b44d448",
+    "pyproject.toml": "7670faf3606f21cfaa9204e0b1636c2115c0eefd35cc91f72f379bbe1ca61fa1",
+    "scripts/benchmark.py": "e36cba549db5623cc1c18dc216458e34287b5c4ba76ddfc4701387e24654b833",
+    "scripts/evaluate_near_duplicates.py": "ae062a2a0c3e2b2f6f0752407d415ecbdc229aa572022c8be050d67bd81b8882",
+    "scripts/kill_during_shard.py": "6b4b8d8bbd98cfc24ec9c9265cdeba79f0e95c0f21b3c302c1dc8eca5e5576e9",
+    "scripts/qualify_lakebridge_upstream.py": "a9dbbf65a3ef7f14ee92047c0baf9ba3bb20b481f1530ad59e45c04f745fcf24",
+    "src/corpus_release/__init__.py": "e2f0ed2c600ef17f8cc5e9934cb8fbcc57ab50defdc424575c0dcc1b5244e851",
+    "src/corpus_release/cli.py": "8ee5134552462dafca14b2bbf58a4fc17b7cf09eabbfda45e8dc0c5aafdd7591",
+    "src/corpus_release/lakebridge.py": "1766c46c07b8af57058ba491a3e8f331e4d4d2089345875b902cd4e8961afb5c",
+    "src/corpus_release/lifecycle.py": "f672156a40a1524f78cf7cd70ce934b11dd54be6199cd89e93f79181d6702863",
+    "src/corpus_release/metrics.py": "f8406b59c990d488e234cd834b87978cdac3f09cb5625f30f9c19e6fdb41ecb3",
+    "src/corpus_release/near_duplicates.py": "903e70f3eb7a5c883a2ae0e32e6ed04b85084546a9c90d6a595940f8369175b6",
+    "src/corpus_release/reconcile.py": "a934200c3d2daa6aab2312b6854eeea35b93833c36ad3d1e8bd95b81d2062fec",
+    "src/corpus_release/release.py": "73d6797ba3b41353bf62ac621ac525efd1fe26a3f6a55becb61249dc7cc296f8",
+    "tests/test_canonical_profile.py": "22e7f86c6346aea1c4d86fff95191c9047e3a14ae85fecc5c7cf950432fa7bd7",
+    "tests/test_cli.py": "bd8582c7bb77702f01d851691c8cfe018d42a31c112738aad4a8e24ddcf09572",
+    "tests/test_lakebridge_receipt.py": "cd0b72527958f7b43f14e8bda45c2d324577e0d2271921a3c28d27cf420a6467",
+    "tests/test_near_duplicates.py": "41424255c3c1d96bd6c29f79819ae6e985f0834e6b77b43a05cc56aa424a3630",
+    "tests/test_reconcile.py": "63f3be3e3624ffd9c7b7966990c63227f14dde088102bfbf074538e58e76199e",
+    "tests/test_release.py": "4c25db2cc926d25eef2a9df47dc20b5d2eabf886a19b22ddc205edae9c3af90b"
+  },
+  "checks": [
+    {
+      "command": [
+        "/home/postedism/Desktop/data-experiment-infra/.venv/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider"
+      ],
+      "returncode": 0,
+      "seconds": 7.36,
+      "output": ".................................                                        [100%]\n33 passed in 7.13s\n"
+    }
+  ]
+}

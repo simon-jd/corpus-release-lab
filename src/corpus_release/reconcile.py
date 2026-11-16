@@ -22,7 +22,7 @@ def reconcile(root,dataset_id=None):
             checks={
                 'manifest_record_count':con.sql('SELECT count(*) FROM samples').fetchone()[0]==manifest['records'],
                 'unique_sample_ids':con.sql('SELECT count(*)-count(DISTINCT sample_id) FROM samples').fetchone()[0]==0,
-                'valid_split_values':con.sql("SELECT count(*) FROM samples WHERE split NOT IN ('train','validation','test') OR split IS NULL").fetchone()[0]==0,
+                'valid_split_values':con.sql("SELECT count(*) FROM samples WHERE split NOT IN ('train','eval','validation','test') OR split IS NULL").fetchone()[0]==0,
                 'normalized_text_hashes':con.sql('SELECT count(*) FROM samples WHERE sha256(text)!=sample_id OR text IS NULL OR sample_id IS NULL').fetchone()[0]==0,
                 'audit_source_line_uniqueness':con.sql('SELECT count(*)-count(DISTINCT line) FROM audit').fetchone()[0]==0,
                 'accepted_audit_bijection':con.sql("""SELECT count(*) FROM (SELECT line,content_hash,requested_split FROM audit WHERE decision='accepted') a

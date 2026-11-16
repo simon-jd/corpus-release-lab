@@ -1,0 +1,19 @@
+{
+  "dataset": "SMS Spam Collection",
+  "authors": [
+    "Tiago Almeida",
+    "Jos\u00e9 Mar\u00eda G\u00f3mez Hidalgo"
+  ],
+  "year": 2011,
+  "doi": "https://doi.org/10.24432/C5CC84",
+  "source_page": "https://archive.ics.uci.edu/dataset/228/sms+spam+collection",
+  "download_url": "https://archive.ics.uci.edu/static/public/228/sms%2Bspam%2Bcollection.zip",
+  "license": "CC-BY-4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "verified_utc": "2026-10-04",
+  "archive_sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3",
+  "member": "SMSSpamCollection",
+  "member_sha256": "7d039a24a6083ed9ef0f806ebad56bbb976e3aeb8de05669173bfdc4996c239d",
+  "expected_rows": 5574,
+  "transform": "UTF-8 labelled TSV to explicit JSONL IDs; NFC/LF text normalization; split by normalized-content SHA256 modulo 10 (0 test, 1 eval, others train). Labels retained in source JSONL only; no model trained."
+}

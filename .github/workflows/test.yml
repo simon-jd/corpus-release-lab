@@ -8,8 +8,14 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.14'
-      - run: python -m pip install -e '.[test]'
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.12.10'
+      - run: uv sync --frozen --extra test
+      - run: echo "$PWD/.venv/bin" >> "$GITHUB_PATH"
       - run: python -m pytest -q --junitxml=evidence/ci-tests.xml
+      - name: Qualify licensed real-text publication and crash recovery
+        run: python scripts/qualify_uci_sms.py --output /tmp/uci-sms-qualification
       - name: Reproduce frozen human-label evaluation
         run: |
           PYTHONPATH=src python scripts/evaluate_near_duplicates.py --from-fixture --output /tmp/near-duplicates.json
